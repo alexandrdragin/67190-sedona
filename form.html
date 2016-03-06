@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+
+    <nav class="top-nav">
+      <div class="top-nav__main">Главная</div>
+      <div class="top-nav__photo">Фото и видео</div>
+      <div class="top-nav__form">Форма отзыва</div>
+      <div class="top-nav__html">HTML Academy</div>
+
+      <div class="top-nav__close"></div>
+    </nav>
+
+
+    <header class="form-header">
+      <div class="form-header__logo"></div>
+      <div class="form-header__nav-button"></div>
+      <div class="form-header__image">
+        <img src="http://placehold.it/150x100" width="" height="" alt="">
+      </div>
+      <div class="form-header__header-on-image">cordova</div>
+      <div class="form-header__header">Оставьте свой отзыв</div>
+      <p class="form-header__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    </header>
+
+    <span class="span-divider"></span>
+
+    <from class="form">
+      <div class="form__wrapper">
+
+        <fieldset class="form-user">
+          <div class="form-user__header">Представьтесь, пожалуйста:</div>
+
+          <div class="form-user__first-name">
+            <label for="first-name">ИМЯ:</label>
+            <input id="first-name" type="text" value="Петр" name="first-name"></input>
+          </div>
+
+          <div class="form-user__last-name">
+            <label for="last-name">ФАМИЛИЯ:</label>
+            <input id="last-name" type="text" value="Иванов" name="last-name"></input>
+          </div>
+
+          <div class="form-user__middle-name">
+            <label for="middle-name">ОТЧЕСТВО:</label>
+            <input id="middle-name" type="text" value="Александрович" name="middle-name"></input>
+          </div>
+        </fieldset>
+
+        <span class="span-divider"></span>
+
+        <fieldset class="form-contact">
+          <div class="form-contact__header">Контактная информация:</div>
+
+          <div class="form-contact__phone">
+            <label for="phone">Контактный телефон:</label>
+            <input id="phone" type="" value="Введите телефон" name="phone"></input>
+            <div class="form-contact__phone-image">
+              <img src="" width="" height="" alt="">
+            </div>
+          </div>
+
+          <div class="form-contact__mail">
+            <label for="mail">Электронная почта:</label>
+            <input id="mail" type="text" value="Введите e-mail" name="mail"></input>
+            <div class="form-contact__mail-image">
+              <img src="" width="" height="" alt="">
+            </div>
+          </div>
+        </fieldset>
+
+        <span class="span-divider"></span>
+
+        <fieldset class="form-radio">
+          <div class="form-radio__header">Вaше Общее впечатление:</div>
+
+          <div class="form-radio__radio-button">
+            <label><input type="radio" name="+" checked>Скорее положительное</input></label>
+          </div>
+          <div class="form-radio__radio-button">
+            <label><input type="radio" name="-">Скорее отрицательное</input></label>
+          </div>
+          <div class="form-radio__radio-button">
+            <label><input type="radio" name="+-">Затрудняюсь ответить</input></label>
+          </div>
+        </fieldset>
+
+        <span class="span-divider"></span>
+
+        <fieldset class="form-checkbox">
+          <div class="form-checkbox__header">Посещенные достопримечательности:</div>
+
+          <div class="form-checkbox__checkbox-button">
+            <label><input type="checkbox" value="" name="Мост Дьявола" checked>Мост Дьявола</label>
+          </div>
+          <div class="form-checkbox__checkbox-button">
+            <label><input type="checkbox" value="" name="Слайд-парк" checked>Слайд-парк</label>
+          </div>
+          <div class="form-checkbox__checkbox-button">
+            <label><input type="checkbox" value="" name="Гора-Колокол">Гора-Колокол</label>
+          </div>
+          <div class="form-checkbox__checkbox-button">
+            <label><input type="checkbox" value="" name="Красные скалы" checked>Красные скалы</label>
+          </div>
+        </fieldset>
+
+        <span class="span-divider"></span>
+
+        <fieldset class="form-review">
+          <div class="form-checkbox__header">Опишите свои эмоции:</div>
+
+          <label for="review"></label>
+          <textarea name="review" id="review">
+            Опишите подробно все свои восторги
+          </textarea>
+
+        </fieldset>
+
+        <button class="form-submit">
+          <input type="submit" value="ОТПРАВИТЬ ОТЗЫВ"></input>
+        </button>
+
+      </div>
+    </form>
+
+
+    <section class="social">
+      <div class="social__header">#visitSEDONA</div>
+      <span class="social__twitter"></span>
+      <span class="social__facebook"></span>
+      <span class="social__youtube"></span>
+
+      <div class="social__copyrigth">Разработано</div>
+      <span class="social__copyrigth-logo">
+        <img src="" width="" height="" alt="">
+      </span>
+    </section>
+
+  </body>
+</html>
