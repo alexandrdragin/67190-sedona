@@ -6,115 +6,83 @@
   </head>
   <body>
 
-    <nav class="top-nav">
-      <div class="top-nav__main">Главная</div>
-      <div class="top-nav__photo">Фото и видео</div>
-      <div class="top-nav__form">Форма отзыва</div>
-      <div class="top-nav__html">HTML Academy</div>
+    <header class="page-header">
 
-      <div class="top-nav__close"></div>
-    </nav>
+      <nav class="main-nav">
+        <a href="index.html" class="main-nav__item">Главная</a>
+        <a href="photo.html" class="main-nav__item">Фото и видео</a>
+        <a href="form.html" class="main-nav__item">Форма отзыва</a>
+        <a href="html.html" class="main-nav__item">HTML Academy</a>
+        <button class="main-nav__button top-nav__button--close"></button>
+      </nav>
 
-    <header class="photo-header">
-      <div class="photo-header__logo"></div>
-      <div class="photo-header__nav-button"></div>
-      <div class="photo-header__image">
-        <img src="http://placehold.it/150x100" width="" height="" alt="">
-      </div>
-      <div class="photo-header__header-on-image">cordova</div>
-      <div class="photo-header__header">Фото и видео</div>
-      <p class="photo-header__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      <img class="page-header__logo" src="" width="103" height="83" alt="City of Sedona(logo)">
+
+      <div class="page-header__image">Sedona</div>
+
     </header>
 
-    <section class="photo">
-      <div class="photo__wrapper">
+    <h1 class="page-header__header">Фото и видео</h1>
+    <p class="page-header__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
 
-        <span class="span-divider"></span>
+    <section class="photo-block">
 
-        <div class="photo-template">
-          <div class="photo-template__image">
-            <img src="http://placehold.it/150x100" width="" height="" alt="">
-          </div>
-          <div class="photo-template__header">неродные просторы</div>
-          <p class="photo-template__author">Автор фото: Борис</p>
-          <span class="photo-template__like"></span>
-          <div class="photo-template__amount-of-likes">1350</div>
+        <div class="photo">
+          <img class="photo__image" src="http://placehold.it/150x100" width="280" height="280" alt="Неродные просторы">
+          <div class="photo__header">Неродные просторы</div>
+          <p class="photo__author">Автор фото: Борис</p>
+          <span class="photo__like">1350</span>
         </div>
 
-        <span class="span-divider"></span>
-
-        <div class="photo-template">
-          <div class="photo-template__image">
-            <img src="http://placehold.it/150x100" width="" height="" alt="">
-          </div>
-          <div class="photo-template__header">Местная растительность</div>
-          <p class="photo-template__author">Автор фото: Сергей</p>
-          <span class="photo-template__like"></span>
-          <div class="photo-template__amount-of-likes">143</div>
+        <div class="photo">
+          <img class="photo__image" src="http://placehold.it/150x100" width="280" height="280" alt="Местная растительность">
+          <div class="photo__header">Местная растительность</div>
+          <p class="photo__author">Автор фото: Сергей</p>
+          <span class="photo__like">143</span>
         </div>
 
-        <span class="span-divider"></span>
-
-        <div class="photo-template">
-          <div class="photo-template__image">
-            <img src="http://placehold.it/150x100" width="" height="" alt="">
-          </div>
-          <div class="photo-template__header">Дорога на север</div>
-          <p class="photo-template__author">Автор фото: Петр</p>
-          <span class="photo-template__like"></span>
-          <div class="photo-template__amount-of-likes">96</div>
+        <div class="photo">
+          <img class="photo__image" src="http://placehold.it/150x100" width="280" height="280" alt="Дорога на север">
+          <div class="photo__header">Дорога на север</div>
+          <p class="photo__author">Автор фото: Петр</p>
+          <span class="photo__like">96</span>
         </div>
 
-        <span class="span-divider"></span>
-
-        <div class="photo-template">
-          <div class="photo-template__image">
-            <img src="http://placehold.it/150x100" width="" height="" alt="">
-          </div>
-          <div class="photo-template__header">Мост дьявола</div>
-          <p class="photo-template__author">Автор фото: Антон</p>
-          <span class="photo-template__like"></span>
-          <div class="photo-template__amount-of-likes">254</div>
+        <div class="photo-block">
+          <img class="photo-block__image" src="http://placehold.it/150x100" width="280" height="280" alt="Мост дьявола">
+          <div class="photo-block__header">Мост дьявола</div>
+          <p class="photo-block__author">Автор фото: Антон</p>
+          <span class="photo-block__like">254</span>
         </div>
-
-        <span class="span-divider"></span>
-
-      </div>
     </section>
 
-    <section class="video">
-      <div class="video__wrapper">
+    <section class="video-block">
+          <h2 class="video__header">Все еще сомневаетесь?</h2>
+          <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
 
-        <div class="video-template">
-          <div class="video-template__header">Все еще сомневаетесь?</div>
-          <p class="video-template__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-
-          <div class="video-template__video">
-            <video width="" height="" alt="">
-              <source src="http://placehold.it/150x100" type="video/mp4">
+          <div class="video">
+            <video width="320" height="260" alt="видосик не загрузился(">
+              <source poster="http://placehold.it/150x100" src="" type="video/mp4">
             </video>
           </div>
-          <span class="video-template__box-controls">
-            <span class="video-template__scroll"></span>
-            <span class="video-template__replay"></span>
-            <span class="video-template__sub"></span>
-            <span class="video-template__full-screen"></span>
-          </span>
-        </div>
 
-      </div>
+          <span class="video__box-controls">
+            <span class="video__scroll"></span>
+            <span class="video__replay"></span>
+            <span class="video__sub"></span>
+            <span class="video__full-screen"></span>
+          </span>
+
     </section>
 
     <section class="social">
       <div class="social__header">#visitSEDONA</div>
-      <span class="social__twitter"></span>
-      <span class="social__facebook"></span>
-      <span class="social__youtube"></span>
+
+      <a href="http://www.twitter.com" class="social__item social__item--tw"></a>
+      <a href="http://www.facebook.com" class="social__item social__item--fb"></a>
+      <a href="http://www.youtube.com" class="social__item social__item--yt"></a>
 
       <div class="social__copyrigth">Разработано</div>
-      <span class="social__copyrigth-logo">
-        <img src="" width="" height="" alt="">
-      </span>
     </section>
 
   </body>

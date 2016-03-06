@@ -6,138 +6,94 @@
   </head>
   <body>
 
-    <nav class="top-nav">
-      <div class="top-nav__main">Главная</div>
-      <div class="top-nav__photo">Фото и видео</div>
-      <div class="top-nav__form">Форма отзыва</div>
-      <div class="top-nav__html">HTML Academy</div>
+    <header class="page-header">
 
-      <div class="top-nav__close"></div>
-    </nav>
+      <nav class="main-nav">
+        <a href="index.html" class="main-nav__item">Главная</a>
+        <a href="photo.html" class="main-nav__item">Фото и видео</a>
+        <a href="form.html" class="main-nav__item">Форма отзыва</a>
+        <a href="html.html" class="main-nav__item">HTML Academy</a>
+        <button class="main-nav__button top-nav__button--close"></button>
+      </nav>
 
+      <img href="index.html" class="page-header__logo" src="" width="103" height="83" alt="City of Sedona(logo)">
+      <div class="page-header__image">Sedona</div>
 
-    <header class="form-header">
-      <div class="form-header__logo"></div>
-      <div class="form-header__nav-button"></div>
-      <div class="form-header__image">
-        <img src="http://placehold.it/150x100" width="" height="" alt="">
-      </div>
-      <div class="form-header__header-on-image">cordova</div>
-      <div class="form-header__header">Оставьте свой отзыв</div>
-      <p class="form-header__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </header>
 
-    <span class="span-divider"></span>
+    <h1 class="page-header__header">Оставьте свой отзыв</h1>
+    <p class="page-header__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
 
-    <from class="form">
-      <div class="form__wrapper">
+    <form class="form-block">
 
-        <fieldset class="form-user">
-          <div class="form-user__header">Представьтесь, пожалуйста:</div>
+        <fieldset class="form">
+          <h2 class="form__header">Представьтесь, пожалуйста:</h2>
 
-          <div class="form-user__first-name">
+          <div class="form__first-name">
             <label for="first-name">ИМЯ:</label>
-            <input id="first-name" type="text" value="Петр" name="first-name"></input>
+            <input id="first-name" type="text" value="Петр" name="first-name" required></input>
           </div>
-
-          <div class="form-user__last-name">
+          <div class="form__last-name">
             <label for="last-name">ФАМИЛИЯ:</label>
-            <input id="last-name" type="text" value="Иванов" name="last-name"></input>
+            <input id="last-name" type="text" value="Иванов" name="last-name" required></input>
           </div>
-
-          <div class="form-user__middle-name">
+          <div class="form__middle-name">
             <label for="middle-name">ОТЧЕСТВО:</label>
             <input id="middle-name" type="text" value="Александрович" name="middle-name"></input>
           </div>
         </fieldset>
 
-        <span class="span-divider"></span>
+        <fieldset class="form">
+          <h2 class="form__header">Контактная информация:</h2>
 
-        <fieldset class="form-contact">
-          <div class="form-contact__header">Контактная информация:</div>
-
-          <div class="form-contact__phone">
-            <label for="phone">Контактный телефон:</label>
-            <input id="phone" type="" value="Введите телефон" name="phone"></input>
-            <div class="form-contact__phone-image">
-              <img src="" width="" height="" alt="">
-            </div>
+          <div class="form__phone">
+            <label for="tel">Контактный телефон:</label>
+            <input id="tel" type="tel" value="Введите телефон" name="tel" required></input>
           </div>
-
-          <div class="form-contact__mail">
-            <label for="mail">Электронная почта:</label>
-            <input id="mail" type="text" value="Введите e-mail" name="mail"></input>
-            <div class="form-contact__mail-image">
-              <img src="" width="" height="" alt="">
-            </div>
+          <div class="form__mail">
+            <label for="email">Электронная почта:</label>
+            <input id="email" type="text" value="Введите e-mail" name="email"></input>
           </div>
         </fieldset>
 
-        <span class="span-divider"></span>
+        <fieldset class="form">
+          <h2 class="form__header">Вaше Общее впечатление:</h2>
 
-        <fieldset class="form-radio">
-          <div class="form-radio__header">Вaше Общее впечатление:</div>
-
-          <div class="form-radio__radio-button">
-            <label><input type="radio" name="+" checked>Скорее положительное</input></label>
-          </div>
-          <div class="form-radio__radio-button">
-            <label><input type="radio" name="-">Скорее отрицательное</input></label>
-          </div>
-          <div class="form-radio__radio-button">
-            <label><input type="radio" name="+-">Затрудняюсь ответить</input></label>
-          </div>
+          <input class="form__radio-button" type="radio" name="impess" value="nice" checked>Скорее положительное</input>
+          <input class="form__radio-button" type="radio" name="impess" value="notnice">Скорее отрицательное</input>
+          <input class="form__radio-button" type="radio" name="impess" value="dunno">Затрудняюсь ответить</input>
         </fieldset>
 
-        <span class="span-divider"></span>
+        <fieldset class="form">
+          <h2 class="form__header">Посещенные достопримечательности:</h2>
 
-        <fieldset class="form-checkbox">
-          <div class="form-checkbox__header">Посещенные достопримечательности:</div>
-
-          <div class="form-checkbox__checkbox-button">
-            <label><input type="checkbox" value="" name="Мост Дьявола" checked>Мост Дьявола</label>
-          </div>
-          <div class="form-checkbox__checkbox-button">
-            <label><input type="checkbox" value="" name="Слайд-парк" checked>Слайд-парк</label>
-          </div>
-          <div class="form-checkbox__checkbox-button">
-            <label><input type="checkbox" value="" name="Гора-Колокол">Гора-Колокол</label>
-          </div>
-          <div class="form-checkbox__checkbox-button">
-            <label><input type="checkbox" value="" name="Красные скалы" checked>Красные скалы</label>
-          </div>
+          <input class="form__checkbox-button" type="checkbox" value="Мост Дьявола" name="locals" checked>Мост Дьявола</input>
+          <input class="form__checkbox-button" type="checkbox" value="Слайд-парк" name="locals" checked>Слайд-парк</input>
+          <input class="form__checkbox-button" type="checkbox" value="Гора-Колокол" name="locals">Гора-Колокол</input>
+          <input class="form__checkbox-button" type="checkbox" value="Красные скалы" name="locals" checked>Красные скалы</input>
         </fieldset>
 
-        <span class="span-divider"></span>
+        <fieldset class="form">
+          <h2 class="form__header">Опишите свои эмоции:</h2>
 
-        <fieldset class="form-review">
-          <div class="form-checkbox__header">Опишите свои эмоции:</div>
-
-          <label for="review"></label>
           <textarea name="review" id="review">
             Опишите подробно все свои восторги
           </textarea>
-
         </fieldset>
 
-        <button class="form-submit">
-          <input type="submit" value="ОТПРАВИТЬ ОТЗЫВ"></input>
-        </button>
+        <button class="form-submit" type="submit">Отправить отзыв</button>
 
-      </div>
     </form>
 
 
     <section class="social">
       <div class="social__header">#visitSEDONA</div>
-      <span class="social__twitter"></span>
-      <span class="social__facebook"></span>
-      <span class="social__youtube"></span>
+
+      <a href="http://www.twitter.com" class="social__item social__item--tw"></a>
+      <a href="http://www.facebook.com" class="social__item social__item--fb"></a>
+      <a href="http://www.youtube.com" class="social__item social__item--yt"></a>
 
       <div class="social__copyrigth">Разработано</div>
-      <span class="social__copyrigth-logo">
-        <img src="" width="" height="" alt="">
-      </span>
     </section>
 
   </body>
