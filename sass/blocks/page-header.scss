@@ -1,0 +1,9 @@
+$border: 1px solid gray;
+
+.page-header {
+  border: $border;
+}
+
+.page-header__image {
+  background-image: url("../img/bg-back-mobile.jpg");
+}
