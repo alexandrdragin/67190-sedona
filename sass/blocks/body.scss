@@ -1,0 +1,63 @@
+$bg-ligthtgrey: #FFFFFF;
+$mobile-widths: "(max-width:767px)";
+$tablet-widths: "(min-width:768px)";
+$desktop-widths: "(max-width:1200px)";
+
+body{
+  margin: 0;
+  padding: 0;
+
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  line-height: 27px;
+  color: #333333;
+  font-style: normal;
+
+  background-color: $bg-ligthtgrey;
+}
+
+.clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+
+  @media #{$tablet-widths} {
+    width: 640px;
+  }
+
+  @media #{$desktop-widths} {
+    width: 960px;
+  }
+
+}
+
+.line {
+
+}
+
+body{
+  padding: 6px;
+  background: $bg-ligthtgrey url('img/sedona-photo-mobile.png') no-repeat center top / 720px auto;
+  min-height: 2555px;
+}
+
+@media #{$tablet-widths} {
+  body{
+    background: $bg-ligthtgrey url('..img/sedona-photo-tablet.png') no-repeat center top / 1178px auto;
+    min-height: 2400px;
+  }
+}
+
+@media #{$tablet-widths} {
+  body{
+    background: $bg-ligthtgrey url('..img/sedona-photo-desktop.png') no-repeat center top / 1391px auto;
+    min-height: 2250px;
+  }
+}
