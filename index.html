@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Седона</title>
   </head>
@@ -10,7 +11,7 @@
     <header class="page-header">
 
       <nav class="main-nav">
-        <a href="index.html" class="main-nav__item">Главная</a>
+        <a class="main-nav__item">Главная</a>
         <a href="photo.html" class="main-nav__item">Фото и видео</a>
         <a href="form.html" class="main-nav__item">Форма отзыва</a>
         <a href="html.html" class="main-nav__item">HTML Academy</a>
@@ -26,6 +27,7 @@
     <p class="page-header__text">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
 
     <section class="reasons-block">
+      <div class="reasons-block__wrapper">
 
         <div class="reasons reasons-block--open">
           <h2 class="reasons__header">НАСТОЯЩИЙ ГОРОДОК</h2>
@@ -76,28 +78,34 @@
           <p class="reasons__header-text">Большинство едет в гранд каньон и толпится там</p>
 
         </div>
+      </div>
     </section>
 
 
     <section class="map">
-      <h4 class="map__header">ЗАИНТЕРЕСОВАЛИСЬ?</h4>
-      <p class="map__text">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <button class="map__button">Найти гостиницу</button>
+      <div class="map__wrapper">
 
-      <div class="map__nice-map">
-        <img class="map__map-image" src="img/bg-map-mobile.jpg" width="320" height="350" alt="Фейковая карта">
+        <h4 class="map__header">ЗАИНТЕРЕСОВАЛИСЬ?</h4>
+        <p class="map__text">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <button class="map__button">Найти гостиницу</button>
+
+        <div class="map__nice-map">
+          <img class="map__map-image" src="img/bg-map-mobile.jpg" width="320" height="350" alt="Фейковая карта">
+        </div>
       </div>
     </section>
 
 
     <section class="social">
-      <div class="social__header">#visitSEDONA</div>
+      <div class="social__wrapper">
+        <div class="social__header">#visitSEDONA</div>
 
-      <a href="http://www.twitter.com" class="social__item social__item--tw"></a>
-      <a href="http://www.facebook.com" class="social__item social__item--fb"></a>
-      <a href="http://www.youtube.com" class="social__item social__item--yt"></a>
+        <a class="social__item social__item--tw" href="http://www.twitter.com "></a>
+        <a class="social__item social__item--fb" href="http://www.facebook.com"></a>
+        <a class="social__item social__item--yt" href="http://www.youtube.com" ></a>
 
-      <div class="social__copyrigth">Разработано</div>
+        <div class="social__copyrigth">Разработано</div>
+      </div>
     </section>
 
   </body>
