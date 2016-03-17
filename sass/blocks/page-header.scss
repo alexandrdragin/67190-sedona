@@ -1,9 +1,26 @@
 $border: 1px solid gray;
 
 .page-header {
-  
+  @include container;
 }
 
-.page-header__image {
-  background-image: url("../img/bg-back-mobile.jpg");
+
+.page-header__logo {
+  border: 1px solid red;
+  height: 85px;
+  display: block;
+  margin: 0 auto;
 }
+
+.page-header__image{
+   display: block;
+   margin: 0 auto;
+   margin-top: -35px;
+   height: 160px;
+   border: 1px solid gray;
+
+   @media #{$tablet-widths} {
+     margin-top: -50px;
+     height: 235px;
+     }
+ }

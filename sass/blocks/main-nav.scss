@@ -1,5 +1,30 @@
 $border: 1px solid gray;
 
-.main-nav {
+.main-nav{
+
+  border: 1px solid blue;
+  height: 220px;
+  background-color: #84B2D5;
+  text-align: center;
+
+  @media #{$tablet-widths} {
+    border: 1px solid blue;
+    background-color: none;
+    height: 0px;
+    color: black;}
+}
+
+.main-nav__item{
+
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  list-style: none;
+
+  @media #{$tablet-widths} {
+    color: black;
+    font-size: 10px;
+    padding: 0px 50px 0px 50px;
+    }
 
 }
