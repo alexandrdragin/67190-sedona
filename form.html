@@ -10,14 +10,16 @@
     <header class="page-header">
 
       <nav class="main-nav">
-        <a href="index.html" class="main-nav__item">Главная</a>
-        <a href="photo.html" class="main-nav__item">Фото и видео</a>
-        <a href="form.html" class="main-nav__item">Форма отзыва</a>
-        <a href="#" class="main-nav__item">HTML Academy</a>
+        <a class="main-nav__item" href="index.html">Главная</a>
+        <a class="main-nav__item" href="photo.html">Фото и видео</a>
+        <a class="main-nav__item" href="form.html">Форма отзыва</a>
+        <a class="main-nav__item" href="#" >HTML Academy</a>
         <button class="main-nav__button top-nav__button--close"></button>
       </nav>
 
-      <img href="index.html" class="page-header__logo" src="img/logo-sedona-mobile.svg" width="103" height="83" alt="City of Sedona(logo)">
+      <a class="page-header__logo">
+        <img href="index.html" src="img/logo-sedona-mobile.svg" width="103" height="83" alt="City of Sedona(logo)">
+      </a>
       <div class="page-header__image">Sedona</div>
 
     </header>
@@ -77,9 +79,7 @@
         <fieldset class="form">
           <h2 class="form__header">Опишите свои эмоции:</h2>
 
-          <textarea name="review" id="review">
-            Опишите подробно все свои восторги
-          </textarea>
+          <textarea name="review" id="review">Опишите подробно все свои восторги</textarea>
         </fieldset>
 
         <button class="form-submit" type="submit">Отправить отзыв</button>

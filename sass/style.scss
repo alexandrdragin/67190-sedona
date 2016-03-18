@@ -5,12 +5,16 @@
 
 @import "blocks/main-nav.scss";
 @import "blocks/page-header.scss";
+@import "blocks/social.scss";
 
 @import "blocks/reasons-block.scss";
 @import "blocks/map.scss";
-@import "blocks/social.scss";
 
 @import "blocks/photo-block.scss";
 @import "blocks/video-block.scss";
 
 @import "blocks/form-block.scss";
+
+body{
+  width: 320px;
+}
