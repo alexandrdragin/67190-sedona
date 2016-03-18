@@ -4,6 +4,8 @@
   border: 1px solid blue;
 
   height: 300px;
+
+  text-align: center;
 }
 
 .social__header{
@@ -14,10 +16,11 @@
 }
 
 .social__item{
+  display: inline-block;
+  margin: 0 auto;
   width: 48px;
   height: 48px;
   background: #4679BD;
-
 }
 
 .social__copyrigth{

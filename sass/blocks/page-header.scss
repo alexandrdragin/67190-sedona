@@ -2,6 +2,7 @@ $border: 1px solid gray;
 
 .page-header {
   @include container;
+
 }
 
 
@@ -14,6 +15,10 @@ $border: 1px solid gray;
   right: 0;
   margin-left: auto;
   margin-right: auto;
+
+  @media #{$tablet-widths} {
+    top: 0px;
+    }
 }
 
 .page-header__image{
@@ -21,10 +26,15 @@ $border: 1px solid gray;
    margin: 0 auto;
    margin-top: 50px;
    height: 160px;
-   border: 1px solid gray;
+   border: 2px solid gray;
 
    @media #{$tablet-widths} {
-     margin-top: -50px;
-     height: 235px;
+     margin-top: 45px;
+     height: 240px;
      }
+
+    @media #{$desktop-widths} {
+       margin-top: 45px;
+       height: 220px;
+      }
  }

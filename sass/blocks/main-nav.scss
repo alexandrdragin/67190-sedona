@@ -20,6 +20,7 @@ $border: 1px solid gray;
   text-transform: uppercase;
   text-decoration: none;
   list-style: none;
+  display: block;
 
   @media #{$tablet-widths} {
     color: black;
@@ -34,4 +35,8 @@ $border: 1px solid gray;
   padding: 0;
 
   list-style: none;
+
+  @media #{$tablet-widths} {
+    display: none;
+    }
 }
