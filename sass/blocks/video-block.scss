@@ -1,3 +1,12 @@
 .video-block {
+ @include container;
 
+ border: 1px solid green;
+}
+
+.video__header{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-top: 40px;
 }

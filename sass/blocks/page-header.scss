@@ -8,14 +8,18 @@ $border: 1px solid gray;
 .page-header__logo {
   border: 1px solid red;
   height: 85px;
-  display: block;
-  margin: 0 auto;
+  position: absolute;
+  top: 220px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .page-header__image{
    display: block;
    margin: 0 auto;
-   margin-top: -35px;
+   margin-top: 50px;
    height: 160px;
    border: 1px solid gray;
 

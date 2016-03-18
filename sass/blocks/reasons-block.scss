@@ -1,7 +1,5 @@
-.reasons {
-  
-}
-
 .reasons-block {
+  @include container;
 
+  border: 1px solid blue;
 }
