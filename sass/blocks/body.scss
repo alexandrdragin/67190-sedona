@@ -16,10 +16,9 @@ body{
 
 body{
   padding: 0px;
-  background: $bg-ligthtgrey url('../img/sedona-form-mobile.png') no-repeat center top / 320px auto;
+  background: $bg-ligthtgrey url('../img/sedona-index-mobile.png') no-repeat center top / 320px auto;
   min-height: 3528px;
-
-  }
+}
 
 
 @media #{$tablet-widths} {

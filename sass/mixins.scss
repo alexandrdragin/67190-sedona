@@ -17,14 +17,4 @@
   @media #{$desktop-widths} {
     width: 960px;
   }
-
-}
-
-@mixin lines {
-
-  height: 1px;
-  background: red;
-  width: 100%;
-
-  bottom: 0px;
 }
