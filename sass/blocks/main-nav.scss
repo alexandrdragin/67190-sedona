@@ -22,6 +22,9 @@ $border: 1px solid gray;
   list-style: none;
   display: block;
 
+  margin-top: 20px;
+  border-top: 1px solid gray;
+
   @media #{$tablet-widths} {
     color: black;
     font-size: 10px;

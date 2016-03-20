@@ -1,3 +1,19 @@
 .map {
+  @include container;
 
+  border: 1px solid blue;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.map__button{
+  height: 50px;
+  width: 85%;
+  background-color: $someblue;
+  color: white;
+}
+
+.map__nice-map{
+  margin-top: 50px;
 }
