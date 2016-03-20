@@ -24,14 +24,14 @@ body{
 
 @media #{$tablet-widths} {
   body{
-    background: $bg-ligthtgrey url('../img/sedona-photo-tablet.png') no-repeat center top / 640px auto;
+    background: $bg-ligthtgrey url('../img/sedona-index-tablet.png') no-repeat center top / 640px auto;
     min-height: 2200px;
   }
 }
 
 @media #{$desktop-widths} {
   body{
-    background: $bg-ligthtgrey url('../img/sedona-photo-desktop.png') no-repeat center top / 960px auto;
+    background: $bg-ligthtgrey url('../img/sedona-index-desktop.png') no-repeat center top / 960px auto;
     min-height: 2262px;
   }
 }

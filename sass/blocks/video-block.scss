@@ -2,11 +2,20 @@
  @include container;
 
  border: 1px solid green;
+
+ height: 500px;
 }
 
 .video__header{
   text-align: center;
   text-transform: uppercase;
   font-size: 18px;
-  margin-top: 40px;
+  margin-top: 25px;
+}
+
+.video__text{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin: 20px;
 }

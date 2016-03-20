@@ -8,10 +8,11 @@ $border: 1px solid gray;
   text-align: center;
 
   @media #{$tablet-widths} {
-    border: 1px solid blue;
-    background-color: none;
     height: 0px;
-    color: black;}
+    color: black;
+  }
+
+
 }
 
 .main-nav__item{
@@ -26,10 +27,16 @@ $border: 1px solid gray;
   border-top: 1px solid gray;
 
   @media #{$tablet-widths} {
+    display: inline;
+
     color: black;
     font-size: 10px;
-    padding: 0px 50px 0px 50px;
-    }
+    padding: 0px 30px 0px 50px;
+  }
+
+  @media #{$desktop-widths} {
+    padding: 0px 80px 0px 50px;
+  }
 
 }
 
