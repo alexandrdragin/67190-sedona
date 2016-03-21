@@ -4,6 +4,15 @@
  border: 1px solid green;
 
  height: 500px;
+
+ @media #{$tablet-widths} {
+
+   height: 580px;
+   }
+
+  @media #{$desktop-widths} {
+     height: 580px;
+    }
 }
 
 .video__header{

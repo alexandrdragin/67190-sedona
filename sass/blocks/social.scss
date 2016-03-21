@@ -4,16 +4,6 @@
   border: 1px solid blue;
   height: 300px;
   text-align: center;
-
-  @media #{$tablet-widths} {
-    display: inline;
-    border: 2px solid blue;
-  }
-
-  @media #{$desktop-widths} {
-    display: inline;
-    border: 3px solid blue;
-  }
 }
 
 .social__header{
@@ -59,6 +49,7 @@
   margin-top: 40px;
 
   @media #{$tablet-widths} {
+    margin-top: 20px;
     display: inline;
   }
 
