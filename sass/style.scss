@@ -3,6 +3,8 @@
 @import "variables.scss";
 @import "mixins.scss";
 @import "blocks/body.scss";
+@import "blocks/main.scss";
+
 
 @import "blocks/main-nav.scss";
 @import "blocks/page-header.scss";
@@ -11,6 +13,7 @@
 @import "blocks/reasons-block.scss";
 @import "blocks/map.scss";
 
+@@import "block/photo.scss";
 @import "blocks/photo-block.scss";
 @import "blocks/video-block.scss";
 

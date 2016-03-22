@@ -64,28 +64,6 @@
 
 }
 
-.photo{
-  border: 1px solid red;
-  height: 415px;
-  width: 100%;
-  position: relative;
-
-
-  @media #{$tablet-widths} {
-    height: 280px;
-    width: 49%;
-    display: inline-block;
-
-}
-
-  @media #{$desktop-widths} {
-    height: 200px;
-    width: 33%;
-    display: inline-block;
-    margin-left: -3px;
-  }
-}
-
 .photo__image{
   position: relative;
   margin: 20px;
