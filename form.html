@@ -24,70 +24,71 @@
 
     </header>
 
-    <form class="form-block">
+    <main>
+      <form class="form-block">
         <div class="form-block__wrapper">
 
-        <h1 class="form-header">Оставьте свой отзыв</h1>
-        <p class="form-text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <h1 class="form-header">Оставьте свой отзыв</h1>
+          <p class="form-text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
 
-        <fieldset class="form">
-          <h2 class="form__header">Представьтесь, пожалуйста:</h2>
+          <fieldset class="form">
+            <h2 class="form__header">Представьтесь, пожалуйста:</h2>
 
-          <div class="form__first-name">
-            <label for="first-name">ИМЯ:</label>
-            <input id="first-name" type="text" value="Петр" name="first-name" required></input>
-          </div>
-          <div class="form__last-name">
-            <label for="last-name">ФАМИЛИЯ:</label>
-            <input id="last-name" type="text" value="Иванов" name="last-name" required></input>
-          </div>
-          <div class="form__middle-name">
-            <label for="middle-name">ОТЧЕСТВО:</label>
-            <input id="middle-name" type="text" value="Александрович" name="middle-name"></input>
-          </div>
-        </fieldset>
+            <div class="form__first-name">
+              <label for="first-name">ИМЯ:</label>
+              <input id="first-name" type="text" value="Петр" name="first-name" required></input>
+            </div>
+            <div class="form__last-name">
+              <label for="last-name">ФАМИЛИЯ:</label>
+              <input id="last-name" type="text" value="Иванов" name="last-name" required></input>
+            </div>
+            <div class="form__middle-name">
+              <label for="middle-name">ОТЧЕСТВО:</label>
+              <input id="middle-name" type="text" value="Александрович" name="middle-name"></input>
+            </div>
+          </fieldset>
 
-        <fieldset class="form">
-          <h2 class="form__header">Контактная информация:</h2>
+          <fieldset class="form">
+            <h2 class="form__header">Контактная информация:</h2>
 
-          <div class="form__phone">
-            <label for="tel">Контактный телефон:</label>
-            <input id="tel" type="tel" value="Введите телефон" name="tel" required></input>
-          </div>
-          <div class="form__mail">
-            <label for="email">Электронная почта:</label>
-            <input id="email" type="text" value="Введите e-mail" name="email"></input>
-          </div>
-        </fieldset>
+            <div class="form__phone">
+              <label for="tel">Контактный телефон:</label>
+              <input id="tel" type="tel" value="Введите телефон" name="tel" required></input>
+            </div>
+            <div class="form__mail">
+              <label for="email">Электронная почта:</label>
+              <input id="email" type="text" value="Введите e-mail" name="email"></input>
+            </div>
+          </fieldset>
 
-        <fieldset class="form">
-          <h2 class="form__header">Вaше Общее впечатление:</h2>
+          <fieldset class="form">
+            <h2 class="form__header">Вaше Общее впечатление:</h2>
 
-          <input class="form__radio-button" type="radio" name="impess" value="nice" checked>Скорее положительное</input>
-          <input class="form__radio-button" type="radio" name="impess" value="notnice">Скорее отрицательное</input>
-          <input class="form__radio-button" type="radio" name="impess" value="dunno">Затрудняюсь ответить</input>
-        </fieldset>
+            <input class="form__radio-button" type="radio" name="impess" value="nice" checked>Скорее положительное</input>
+            <input class="form__radio-button" type="radio" name="impess" value="notnice">Скорее отрицательное</input>
+            <input class="form__radio-button" type="radio" name="impess" value="dunno">Затрудняюсь ответить</input>
+          </fieldset>
 
-        <fieldset class="form">
-          <h2 class="form__header">Посещенные достопримечательности:</h2>
+          <fieldset class="form">
+            <h2 class="form__header">Посещенные достопримечательности:</h2>
 
-          <input class="form__checkbox-button" type="checkbox" value="Мост Дьявола" name="locals" checked>Мост Дьявола</input>
-          <input class="form__checkbox-button" type="checkbox" value="Слайд-парк" name="locals" checked>Слайд-парк</input>
-          <input class="form__checkbox-button" type="checkbox" value="Гора-Колокол" name="locals">Гора-Колокол</input>
-          <input class="form__checkbox-button" type="checkbox" value="Красные скалы" name="locals" checked>Красные скалы</input>
-        </fieldset>
+            <input class="form__checkbox-button" type="checkbox" value="Мост Дьявола" name="locals" checked>Мост Дьявола</input>
+            <input class="form__checkbox-button" type="checkbox" value="Слайд-парк" name="locals" checked>Слайд-парк</input>
+            <input class="form__checkbox-button" type="checkbox" value="Гора-Колокол" name="locals">Гора-Колокол</input>
+            <input class="form__checkbox-button" type="checkbox" value="Красные скалы" name="locals" checked>Красные скалы</input>
+          </fieldset>
 
-        <fieldset class="form">
-          <h2 class="form__header">Опишите свои эмоции:</h2>
+          <fieldset class="form">
+            <h2 class="form__header">Опишите свои эмоции:</h2>
 
-          <textarea name="review" id="review">Опишите подробно все свои восторги</textarea>
-        </fieldset>
+            <textarea name="review" id="review">Опишите подробно все свои восторги</textarea>
+          </fieldset>
 
-        <button class="form-submit" type="submit">Отправить отзыв</button>
+          <button class="form-submit" type="submit">Отправить отзыв</button>
 
-      </div>
-    </form>
-
+        </div>
+      </form>
+    </main>
 
     <footer class="social">
       <div class="social__wrapper">

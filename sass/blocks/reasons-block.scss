@@ -1,7 +1,5 @@
 .reasons-block {
-  @include container;
 
-  border: 1px solid blue;
 }
 
 .reasons-block__wrapper{
@@ -10,7 +8,7 @@
       margin-left: 28px;
       margin-right: 28px;
       border: 1px solid red;
-     }
+   }
 }
 
 .reasons-header {
@@ -30,8 +28,7 @@
      }
 }
 
-.reasons-text
-{
+.reasons-text {
   text-align: center;
   text-transform: uppercase;
   font-size: 12px;
@@ -41,7 +38,7 @@
   color: #333333;
 }
 
-.reasons{
+.reasons {
   border: 1px solid green;
   text-align: center;
   text-transform: uppercase;
@@ -51,7 +48,6 @@
 .reasons-block--open {
   background-color: $someblue 0;
   color: white;
-  height: 460px;
 
 
     @media #{$tablet-widths} {
@@ -138,7 +134,7 @@
      }
 }
 
-.reasons-mini{
+.reasons-mini {
 
   @media #{$tablet-widths} {
     display: inline-block;

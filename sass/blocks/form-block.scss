@@ -1,15 +1,12 @@
 .form-block {
-  @include container;
-
-  border: 1px solid blue;
-  height: 1900px;
+  height: 1900;
 
   @media #{$tablet-widths} {
-    height: 1350px;
+    height: 1350;
   }
 
   @media #{$desktop-widths} {
-    height: 1050px;
+    height: 1050;
   }
 }
 

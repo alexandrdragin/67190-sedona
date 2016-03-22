@@ -1,8 +1,4 @@
 .video-block {
- @include container;
-
- border: 1px solid green;
-
  height: 500px;
 
  @media #{$tablet-widths} {
