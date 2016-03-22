@@ -1,9 +1,39 @@
-$border: 1px solid gray;
-
 .page-header {
-  border: $border;
+  @include container;
 }
 
-.page-header__image {
-  background-image: url("../img/bg-back-mobile.jpg");
+.page-header__logo {
+  border: 1px solid red;
+  height: 85px;
+  position: absolute;
+  top: 220px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media #{$tablet-widths} {
+    top: 0px;
+    }
 }
+
+.page-header__image{
+   display: block;
+   margin: 0 auto;
+   margin-top: 50px;
+   height: 160px;
+
+   @media #{$tablet-widths} {
+     margin-top: 45px;
+     height: 240px;
+     }
+
+    @media #{$desktop-widths} {
+       margin-top: 40px;
+       height: 220px;
+      }
+ }
+
+ .page-header__image--big {
+    height: 400px;
+ }

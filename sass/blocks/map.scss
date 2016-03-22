@@ -1,3 +1,42 @@
 .map {
-  background-color: lightgray
+  text-align: center;
+  text-transform: uppercase;
+
+  @media #{$desktop-widths} {
+    height: 500px;
+  }
+}
+
+.map__button{
+  height: 50px;
+  width: 85%;
+  background-color: $someblue;
+  color: white;
+  border: none;
+}
+
+.map__nice-map{
+  margin-top: 50px;
+
+  @media #{$tablet-widths} {
+    margin-top: 40px;
+    height: 290px;
+    width: 100%;
+    }
+
+   @media #{$desktop-widths} {
+
+     width: 100%;
+     }
+}
+
+.map__map-image {
+
+  @media #{$tablet-widths} {
+    height: 270px;
+    }
+
+   @media #{$desktop-widths} {
+     height: 270px;
+     }
 }

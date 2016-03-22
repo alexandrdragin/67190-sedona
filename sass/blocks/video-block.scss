@@ -1,3 +1,26 @@
 .video-block {
-  background-color: lightgray;
+ height: 500px;
+
+ @media #{$tablet-widths} {
+
+   height: 580px;
+   }
+
+  @media #{$desktop-widths} {
+     height: 580px;
+    }
+}
+
+.video__header{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-top: 25px;
+}
+
+.video__text{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin: 20px;
 }
