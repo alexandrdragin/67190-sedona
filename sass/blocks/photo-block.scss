@@ -68,6 +68,7 @@
   border: 1px solid red;
   height: 415px;
   width: 100%;
+  position: relative;
 
 
   @media #{$tablet-widths} {
@@ -105,7 +106,7 @@
 
 
   @media #{$tablet-widths} {
-
+width: 100%;
     position: absolute;
     background-color: #F2F2F2;
 }
