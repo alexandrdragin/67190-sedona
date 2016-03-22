@@ -115,7 +115,6 @@
 
 .reasons-mini-block {
   border: 1px solid red;
-  height: 400px;
   color: black;
   text-align: left;
   margin-left: 70px;
@@ -125,11 +124,9 @@
     text-align: center;
     margin:auto 0;
     width: 100%;
-    height: 275px;
     }
 
    @media #{$desktop-widths} {
-     height: 245px;
 
      }
 }
@@ -165,7 +162,6 @@
 }
 
 .reasons-block--close {
-  height: 150px;
   background-color: lightgray 0;
   margin-top: 10px;
 
@@ -173,7 +169,6 @@
     display: inline-block;
     text-align: center;
     margin: 0;
-    height: 200px;
     width: 32%;
     }
 

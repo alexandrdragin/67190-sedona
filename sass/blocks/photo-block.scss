@@ -1,5 +1,5 @@
 .photo-block {
-  
+
 }
 
 .photo-block__wrapper{
@@ -111,7 +111,7 @@
   @media #{$desktop-widths} {
     background-color: rgba(0, 0, 0, .4);
     margin-top: -70px;
-    z-index: 20;
+    z-index: 2;
   }
 
 }
@@ -155,7 +155,7 @@
 
   @media #{$tablet-widths} {
     display: inline;
-    margin-left: 350px;
+    float: right;
     text-align: right;
   }
 

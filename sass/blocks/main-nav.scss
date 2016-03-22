@@ -20,6 +20,7 @@
   display: block;
 
   margin-top: 20px;
+
   border-top: 1px solid gray;
 
   @media #{$tablet-widths} {
@@ -35,6 +36,8 @@
   }
 
 }
+
+.main-nav__item:first-child{margin-top: 0px;}
 
 .main-nav__button {
   margin: 0;

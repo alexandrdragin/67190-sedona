@@ -8,11 +8,7 @@ body{
   margin: 0;
   padding: 0;
 
-  font-size: 18px;
-  font-family: Arial, sans-serif;
-  line-height: 27px;
-  color: #333333;
-  font-style: normal;
+
 }
 
 main, header, footer {
@@ -25,22 +21,23 @@ img {
 }
 
 body{
-  padding: 0px;
-  background: $bg-ligthtgrey url('../img/sedona-index-mobile.png') no-repeat center top / 320px auto;
-  min-height: 3528px;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  line-height: 27px;
+  color: #333333;
+  font-style: normal;
+
 }
 
 
 @media #{$tablet-widths} {
   body{
-    background: $bg-ligthtgrey url('../img/sedona-index-tablet.png') no-repeat center top / 640px auto;
-    min-height: 2200px;
+
   }
 }
 
 @media #{$desktop-widths} {
   body{
-    background: $bg-ligthtgrey url('../img/sedona-index-desktop.png') no-repeat center top / 960px auto;
-    min-height: 2262px;
+  
   }
 }
