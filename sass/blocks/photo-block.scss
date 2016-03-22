@@ -86,7 +86,9 @@
 }
 
 .photo__image{
+  position: relative;
   margin: 20px;
+  z-index: -1;
 
   @media #{$tablet-widths} {
     margin: 0px;
@@ -101,16 +103,17 @@
 
 .photo__about{
 
+
   @media #{$tablet-widths} {
-    height: 60px;
-    margin-top: -10px;
-    z-index: 1;
+
+    position: absolute;
     background-color: #F2F2F2;
 }
 
   @media #{$desktop-widths} {
     background-color: rgba(0, 0, 0, .4);
-    margin-top: -70px;
+    position: absolute;
+    bottom: 0;
     z-index: 2;
   }
 
@@ -186,7 +189,7 @@
   @media #{$tablet-widths} {
 
     height: 335px;
-    width: auto;
+    width: 100%;
   }
 
   @media #{$desktop-widths} {

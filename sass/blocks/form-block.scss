@@ -1,12 +1,11 @@
 .form-block {
-  height: 1900;
 
   @media #{$tablet-widths} {
-    height: 1350;
+
   }
 
   @media #{$desktop-widths} {
-    height: 1050;
+  
   }
 }
 
