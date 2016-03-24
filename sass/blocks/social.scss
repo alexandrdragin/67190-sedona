@@ -1,21 +1,32 @@
 .social {
   @include container;
-  height: 300px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+
+  border: 1px solid red;
+  min-height: 100px;
+
+  @media #{$tablet-widths} {
+    flex-direction: row;
+  
+  }
 }
 
 .social__header{
-  text-align: center;
+  border: 1px solid blue;
+
   text-transform: uppercase;
   font-size: 20px;
-  margin-top: 20px;
 
   @media #{$tablet-widths} {
-    display: inline;
+
   }
 
   @media #{$desktop-widths} {
-    display: inline;
+
   }
 
 }
@@ -23,8 +34,7 @@
 .social__item{
 
   display: inline-block;
-  margin: 0 auto;
-  margin-top: 35px;
+  margin: 5px;
   width: 48px;
   height: 48px;
   background: $someblue;
@@ -41,17 +51,20 @@
 }
 
 .social__copyrigth{
-  text-align: center;
+  border: 1px solid blue;
   text-transform: uppercase;
   font-size: 14px;
-  margin-top: 40px;
 
   @media #{$tablet-widths} {
-    margin-top: 20px;
-    display: inline;
+
+
   }
 
   @media #{$desktop-widths} {
-    display: inline;
+
   }
+}
+
+.social__item-wrapper {
+   border: 1px solid blue;
 }

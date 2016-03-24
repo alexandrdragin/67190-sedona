@@ -5,9 +5,10 @@
 .reasons-block__wrapper{
    display: flex;
    flex-wrap: wrap;
-   
+
    align-items: stretch;
    align-content: stretch;
+
 
    @media #{$desktop-widths} {
 
@@ -90,26 +91,43 @@
 .reasons__image {
 
   @media #{$tablet-widths} {
-    margin-top: 0px;
     height: 210px;
     }
 
    @media #{$desktop-widths} {
-       margin-top: 0px;
        height: 190px;
      }
 }
 
-.reasons-mini-block {
-  border: 1px solid red;
-  color: black;
-  text-align: left;
-  margin-left: 70px;
+.reasons-block--close {
+  background-color: #EEEEEE;
 
   @media #{$tablet-widths} {
     display: inline-block;
     text-align: center;
-    margin:auto 0;
+    margin: 0;
+    width: 33%;
+    }
+
+   @media #{$desktop-widths} {
+
+     }
+}
+
+.reasons-mini-block {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  align-items:stretch;
+
+  border: 1px solid red;
+  color: black;
+  text-align: left;
+  padding-left: 70px;
+
+  @media #{$tablet-widths} {
+    text-align: center;
+    padding: 0;
     width: 100%;
     }
 
@@ -133,8 +151,6 @@
 
      text-align: center;
      margin:auto 0;
-     width: 32%;
-
      }
 }
 
@@ -143,23 +159,6 @@
   text-transform: uppercase;
 
   @media #{$desktop-widths} {
-        font-size: 10px;
-
+      font-size: 10px;
     }
-}
-
-.reasons-block--close {
-  background-color: lightgray 0;
-  margin-top: 10px;
-
-  @media #{$tablet-widths} {
-    display: inline-block;
-    text-align: center;
-    margin: 0;
-    width: 32%;
-    }
-
-   @media #{$desktop-widths} {
-
-     }
 }
