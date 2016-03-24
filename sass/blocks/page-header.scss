@@ -1,9 +1,10 @@
 .page-header {
   @include container;
+  position: relative;
+
 }
 
 .page-header__logo {
-  border: 1px solid red;
   height: 85px;
   position: absolute;
   top: 220px;
@@ -12,9 +13,16 @@
   margin-left: auto;
   margin-right: auto;
 
+  background: url("../img/logo-sedona-mobile.svg") 50% 0% no-repeat;
+
   @media #{$tablet-widths} {
     top: 0px;
+    background: url("../img/logo-sedona-tablet.svg") 50% 0% no-repeat;
     }
+
+    @media #{$desktop-widths} {
+        background: url("../img/logo-sedona-desktop.svg") 50% 0% no-repeat;
+      }
 }
 
 .page-header__image{
@@ -22,6 +30,9 @@
    margin: 0 auto;
    margin-top: 50px;
    height: 160px;
+
+   background: url("../img/bg-back-mobile.jpg") 50% 50% no-repeat;
+   background-size: cover;
 
    @media #{$tablet-widths} {
      margin-top: 45px;
@@ -31,9 +42,13 @@
     @media #{$desktop-widths} {
        margin-top: 40px;
        height: 220px;
-      }
- }
+      } }
 
+
+      @media #{$desktop-widths} {
+         margin-top: 40px;
+         height: 220px;
+        }
  .page-header__image--big {
     height: 400px;
  }
