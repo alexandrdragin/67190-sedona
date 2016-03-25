@@ -1,7 +1,178 @@
-.reasons {
-  background: lightgray;
+.reasons-block {
+
 }
 
-.reasons-block {
-  background: gray;
+.reasons-block__wrapper{
+
+   @media #{$desktop-widths} {
+      margin-left: 28px;
+      margin-right: 28px;
+      border: 1px solid red;
+   }
+}
+
+.reasons-header {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin: 18px;
+  margin-top: 30px;
+  color: #333333;
+
+  @media #{$tablet-widths} {
+    margin-top: 50px;
+    }
+
+   @media #{$desktop-widths} {
+     margin-top: 20px;
+     }
+}
+
+.reasons-text {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin: 14px;
+  margin-top: 25px;
+  margin-bottom: 40px;
+  color: #333333;
+}
+
+.reasons {
+  border: 1px solid green;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.reasons-block--open {
+  background-color: $someblue 0;
+  color: white;
+
+
+    @media #{$tablet-widths} {
+      height: 210px;
+      width: 100%;
+
+      border: 1px solid yellow;
+      }
+
+     @media #{$desktop-widths} {
+       height: 190px;
+       width: 100%;
+       }
+
+}
+
+.reasons__group {
+
+  @media #{$tablet-widths} {
+    background-color: $someblue;
+    float: left;
+    width: 210px;
+    height: 200px;
+    }
+
+   @media #{$desktop-widths} {
+     width: 310px;
+     height: 190px;
+     }
+}
+
+.reasons__header {
+  margin-top: 40px;
+
+  @media #{$tablet-widths} {
+  margin-top: 30px;
+    }
+
+   @media #{$desktop-widths} {
+     }
+}
+
+.reasons__header-text {
+  margin: 20px;
+  margin-top: -10px;
+
+
+}
+
+.reasons__image {
+  margin-top: 10px;
+
+  @media #{$tablet-widths} {
+    margin-top: 0px;
+    width: 65%;
+    height: 210px;
+    }
+
+   @media #{$desktop-widths} {
+       margin-top: 0px;
+       width: 60%;
+       height: 190px;
+     }
+}
+
+.reasons-mini-block {
+  border: 1px solid red;
+  color: black;
+  text-align: left;
+  margin-left: 70px;
+
+  @media #{$tablet-widths} {
+    display: inline-block;
+    text-align: center;
+    margin:auto 0;
+    width: 100%;
+    }
+
+   @media #{$desktop-widths} {
+
+     }
+}
+
+.reasons-mini {
+
+  @media #{$tablet-widths} {
+    display: inline-block;
+    text-align: center;
+    margin:auto 0;
+    height: 220px;
+    width: 30%;
+    }
+
+   @media #{$desktop-widths} {
+     border: 1px solid red;
+
+     text-align: center;
+     margin:auto 0;
+     width: 32%;
+
+     }
+}
+
+.mini-reasons__text {
+  font-size: 12px;
+  text-transform: uppercase;
+
+  @media #{$desktop-widths} {
+        font-size: 10px;
+
+    }
+}
+
+.reasons-block--close {
+  background-color: lightgray 0;
+  margin-top: 10px;
+
+  @media #{$tablet-widths} {
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    width: 32%;
+    }
+
+   @media #{$desktop-widths} {
+
+     }
 }
