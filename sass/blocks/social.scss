@@ -11,7 +11,7 @@
 
   @media #{$tablet-widths} {
     flex-direction: row;
-  
+
   }
 }
 
@@ -31,13 +31,14 @@
 
 }
 
+
 .social__item{
 
   display: inline-block;
   margin: 5px;
   width: 48px;
   height: 48px;
-  background: $someblue;
+
 
   @media #{$tablet-widths} {
     width: 38px;
@@ -50,6 +51,21 @@
   }
 }
 
+.social__item--fb{
+  background: $someblue url("../img/icon-facebook.svg") 50% 50% no-repeat;
+  fill: white;
+}
+
+.social__item--tw{
+  background: $someblue url("../img/icon-twitter.svg") 50% 50% no-repeat;
+}
+
+.social__item--yt{
+  background: $someblue url("../img/icon-youtube.svg") 50% 50% no-repeat;
+}
+
+
+
 .social__copyrigth{
   border: 1px solid blue;
   text-transform: uppercase;
@@ -57,12 +73,15 @@
 
   @media #{$tablet-widths} {
 
-
   }
 
   @media #{$desktop-widths} {
 
   }
+}
+
+.social__copyrigth::after {
+  background: url("../img/logo-htmlacademy.svg") 50% 50% no-repeat;
 }
 
 .social__item-wrapper {

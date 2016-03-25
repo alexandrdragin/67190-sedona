@@ -10,18 +10,24 @@
 
     <header class="page-header">
 
-      <div class="page-header__logo" href="#"></div>
-
       <nav class="main-nav">
         <a class="main-nav__item">Главная</a>
-        <a  class="main-nav__item" href="photo.html">Фото и видео</a>
+        <a class="main-nav__item" href="photo.html">Фото и видео</a>
+        <a class="main-nav__item" href="/"></a>
         <a class="main-nav__item" href="form.html">Форма отзыва</a>
-        <a class="main-nav__item" href="/" >HTML Academy</a>
+        <a class="main-nav__item" href="/">HTML Academy</a>
       </nav>
+
+      <div class="page-header__logo" href="#"></div>
 
       <button class="main-nav__button main-nav__button--close"></button>
 
-      <img class="page-header__image page-header__image--big" src="img/text-sedona-index.svg" width="100%" height="390" alt="Wecome to Sedona">
+      <picture class="page-header__image-wrapper page-header__image-wrapper--big">
+        <img class="page-header__image page-header__image--big" src="img/text-sedona-index.svg" alt="Wecome to Sedona">
+        <source class="page-header__triangle" media="(min-width:1200px)" srcset="../img/bg-intro-triangle-desktop.svg">
+        <source class="page-header__triangle" media="(min-width:768px)" srcset="../img/bg-intro-triangle-tablet.svg">
+        <img class="page-header__triangle" src="../img/bg-intro-triangle-mobile.svg">
+      </picture>
 
     </header>
 
@@ -29,12 +35,12 @@
       <section class="reasons-block">
         <div class="reasons-block__wrapper">
 
-          <div class="reasons-header">
-            <h1 class="reasons-header__header">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h1>
-            <p class="reasons-header__text">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
+          <div class="reasons-main-header">
+            <h1 class="reasons-main-header__header">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h1>
+            <p class="reasons-main-header__text">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
           </div>
 
-          <div class="reasons reasons-block--blue">
+          <div class="reasons reasons-block--blue reasons-block--triangle">
             <h2 class="reasons__header">НАСТОЯЩИЙ ГОРОДОК</h2>
             <p class="reasons__header-text">— №1 —</p>
             <p class="reasons__header-text">СЕДОНА НЕ АТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>

@@ -7,16 +7,15 @@
 .page-header__logo {
   height: 100px;
   width: 200px;
-  position: absolute;
   top: 220px;
   left: 0;
   right: 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 
   background: url("../img/logo-sedona-mobile.svg") 50% 0% no-repeat;
 
   @media #{$tablet-widths} {
+    position: absolute;
     top: 0px;
     background: url("../img/logo-sedona-tablet.svg") 50% 0% no-repeat;
     }
@@ -26,30 +25,97 @@
       }
 }
 
-.page-header__image{
-   display: block;
+.page-header__image-wrapper {
+   display: flex;
+   position: relative;
+
    margin: 0 auto;
-   margin-top: 50px;
+   margin-top: -48px;
    height: 160px;
+   z-index: -1;
 
    background: url("../img/bg-back-mobile.jpg") 50% 50% no-repeat;
    background-size: cover;
 
+   @media(min-resolution: 1.5dppx) {
+     background: url("../img/bg-back-mobile@2x.jpg") 50% 50% no-repeat;
+   }
+
    @media #{$tablet-widths} {
-     margin-top: 45px;
-     height: 240px;
+     background: url("../img/bg-back-desktop.jpg") 50% 50% no-repeat;
+
+     margin-top: 0px;
+     height: 290px;
+
+     @media(min-resolution: 1.5dppx) {
+       background: url("../img/bg-back-desktop@2x.jpg") 50% 50% no-repeat;
      }
 
+     }
+
+
+
     @media #{$desktop-widths} {
-       margin-top: 40px;
-       height: 220px;
-      } }
+       margin-top: 0px;
+       height: 300px;
+      }
+    }
 
 
-      @media #{$desktop-widths} {
-         margin-top: 40px;
-         height: 220px;
+
+ .page-header__image-wrapper--big {
+    height: 390px;
+    z-index: -2;
+
+
+    @media #{$tablet-widths} {
+      height: 520px;
+      }
+
+   @media #{$desktop-widths} {
+    height: 520px;
         }
- .page-header__image--big {
-    height: 400px;
+ }
+
+ .page-header__image{
+   margin: auto;
+   margin-bottom: 70px;
+   width: 230px;
+
+
+   @media #{$tablet-widths} {
+      width: 460px;
+      padding-bottom: 45px;
+     }
+
+  @media #{$desktop-widths} {
+
+       }
+
+
+ }
+
+
+ .page-header__image--big{
+   margin: auto;
+   width: 280px;
+
+
+   @media #{$tablet-widths} {
+      width: 460px;
+      padding-bottom: 14px;
+   }
+
+  @media #{$desktop-widths} {
+
+       }
+
+ }
+
+ .page-header__triangle{
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   width: 100%;
  }

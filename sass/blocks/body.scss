@@ -1,18 +1,15 @@
 $bg-ligthtgrey: #FFFFFF;
 $someblue: #7EB3D6;
+
 $mobile-widths: "(max-width:767px)";
 $tablet-widths: "(min-width:768px)";
 $desktop-widths: "(min-width:1200px)";
 
-body{
-  margin: 0;
-  padding: 0;
-}
+$blue: #81b3d2;
+$border-menu-dark: #678fa8;
+$border-menu-light: #9ac2db;
 
-img {
-  max-width: 100%;
-  height: auto;
-}
+
 
 body{
   font-size: 18px;
@@ -21,16 +18,20 @@ body{
   color: #333333;
   font-style: normal;
 
+  background: $bg-ligthtgrey url('/img/sedona-index-mobile.png') no-repeat center top / 320px auto;
+  min-height: 2555px;
 
 @media #{$tablet-widths} {
-  body{
 
-  }
+    background: $bg-ligthtgrey url('/img/sedona-index-tablet.png') no-repeat center top / 768px auto;
+    min-height: 2400px;
+
 }
 
 @media #{$desktop-widths} {
-  body{
+
+    background: $bg-ligthtgrey url('/img/sedona-index-desktop.png') no-repeat center top / 1280px auto;
+    min-height: 2250px;
 
   }
-}
 }

@@ -1,5 +1,6 @@
 .reasons-block {
 
+
 }
 
 .reasons-block__wrapper{
@@ -8,6 +9,7 @@
 
    align-items: stretch;
    align-content: stretch;
+   justify-content:flex-start;
 
 
    @media #{$desktop-widths} {
@@ -15,36 +17,56 @@
    }
 }
 
-.reasons-header {
+.reasons-header{
+  margin: auto;
+  border: 1px solid black;
+}
+
+.reasons-main-header__header {
   text-align: center;
   text-transform: uppercase;
   font-size: 16px;
   margin: 18px;
-  margin-top: 30px;
+  margin-top: 40px;
   color: #333333;
-  align-self: center;
+
 
   @media #{$tablet-widths} {
-    margin-top: 50px;
+    font-size: 20px;
+    margin: 50px;
+    margin-bottom: 25px;
     }
 
    @media #{$desktop-widths} {
-     margin-top: 20px;
+     margin-left: 280px;
+     margin-right: 280px;
+     margin-top: 50px;
      }
 }
 
-.reasons-text {
+.reasons-main-header__text {
   text-align: center;
   text-transform: uppercase;
   font-size: 12px;
   margin: 14px;
   margin-top: 25px;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   color: #333333;
+
+  @media #{$tablet-widths} {
+    margin: 30px;
+    margin-top: 8px;
+    margin-bottom: 50px;
+    }
+
+   @media #{$desktop-widths} {
+     margin-top: 10px;
+     font-size: 10px;
+     }
 }
 
 .reasons {
-  border: 1px solid green;
+
   text-align: center;
   text-transform: uppercase;
   font-size: 12px;
@@ -59,7 +81,6 @@
   background-color: $someblue;
   color: white;
 
-
     @media #{$tablet-widths} {
       height: 210px;
       }
@@ -68,6 +89,12 @@
        height: 190px;
        }
 
+}
+
+reasons-block--triangle {
+  @media #{$mobile-widths:}{
+      background: url("../img/bg-triangle.svg") 100% 50% no-repeat;
+  }
 }
 
 .reasons__header {
@@ -89,6 +116,7 @@
 }
 
 .reasons__image {
+  height: 210px;
 
   @media #{$tablet-widths} {
     height: 210px;

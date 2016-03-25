@@ -10,17 +10,24 @@
 
   <header class="page-header">
 
-    <div class="page-header__logo" href="#"></div>
-
     <nav class="main-nav">
       <a class="main-nav__item" href="index.html">Главная</a>
       <a class="main-nav__item">Фото и видео</a>
+      <a class="main-nav__item"></a>
       <a class="main-nav__item" href="form.html">Форма отзыва</a>
       <a class="main-nav__item" href="/">HTML Academy</a>
-      <button class="main-nav__button main-nav__button--close"></button>
     </nav>
 
-    <div class="page-header__image">Sedona</div>
+    <div class="page-header__logo" href="#"></div>
+
+    <button class="main-nav__button main-nav__button--close"></button>
+
+    <picture class="page-header__image-wrapper">
+      <img class="page-header__image" src="img/text-sedona.svg" alt="Wecome to Sedona">
+      <source class="page-header__triangle" media="(min-width:1200px)" srcset="../img/bg-intro-triangle-desktop.svg">
+      <source class="page-header__triangle" media="(min-width:768px)" srcset="../img/bg-intro-triangle-tablet.svg">
+      <img class="page-header__triangle" src="../img/bg-intro-triangle-mobile.svg">
+    </picture>
 
   </header>
 
