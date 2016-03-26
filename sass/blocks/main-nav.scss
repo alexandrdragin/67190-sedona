@@ -38,6 +38,9 @@
     padding:0;
     color: black;
     font-size: 10px;
+
+    font-family: "PT Sans";
+    font-weight: 700;
   }
 
   @media #{$desktop-widths} {
@@ -70,7 +73,6 @@
 
 }
 
-
 @media #{$mobile-widths} {
   .main-nav__item:nth-child(3) {
      display: none;
@@ -99,7 +101,6 @@
   height: 55px;
 
   border: none;
-
   background: url("../img/icon-cross.svg") 50% 50% no-repeat;
 }
 

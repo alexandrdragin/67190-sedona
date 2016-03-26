@@ -37,7 +37,7 @@
    background: url("../img/bg-back-mobile.jpg") 50% 50% no-repeat;
    background-size: cover;
 
-   @media(min-resolution: 1.5dppx) {
+   @media #{$mobile-widths} and (min-resolution: 1.5dppx) {
      background: url("../img/bg-back-mobile@2x.jpg") 50% 50% no-repeat;
    }
 
@@ -47,26 +47,20 @@
      margin-top: 0px;
      height: 290px;
 
-     @media(min-resolution: 1.5dppx) {
+    }
+
+    @media #{$tablet-widths} and (min-resolution: 1.5dppx) {
        background: url("../img/bg-back-desktop@2x.jpg") 50% 50% no-repeat;
-     }
-
-     }
-
-
+    }
 
     @media #{$desktop-widths} {
-       margin-top: 0px;
        height: 300px;
       }
     }
 
-
-
  .page-header__image-wrapper--big {
     height: 390px;
     z-index: -2;
-
 
     @media #{$tablet-widths} {
       height: 520px;
@@ -115,7 +109,8 @@
  .page-header__triangle{
    position: absolute;
    bottom: 0;
-   left: 0;
-   right: 0;
-   width: 100%;
+   left: -1px;
+   right: -1px;
+   width: calc(100% + 2px);
+
  }
