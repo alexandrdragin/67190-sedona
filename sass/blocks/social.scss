@@ -2,24 +2,34 @@
   @include container;
   display: flex;
   flex-direction: column;
+  align-content: stretch;
+  justify-content:space-around;
+
+  text-align: center;
+
   align-items: center;
-  justify-content: space-around;
 
+  min-height: 220px;
 
-  border: 1px solid red;
-  min-height: 100px;
+  margin-top: 5px;
+
 
   @media #{$tablet-widths} {
     flex-direction: row;
+    margin-top: 25px;
+    min-height: 60px;
+
+    @media #{$desktop-widths} {
+      margin-top: 155px;
+    }
 
   }
 }
 
 .social__header{
-  border: 1px solid blue;
-
   text-transform: uppercase;
   font-size: 20px;
+  font-weight: 700;
 
   @media #{$tablet-widths} {
 
@@ -31,23 +41,20 @@
 
 }
 
-
 .social__item{
-
   display: inline-block;
-  margin: 5px;
+  margin: 1px;
   width: 48px;
   height: 48px;
 
-
   @media #{$tablet-widths} {
-    width: 38px;
-    height: 38px;
+    width: 48px;
+    height: 48px;
   }
 
   @media #{$desktop-widths} {
-    width: 38px;
-    height: 38px;
+    width: 48px;
+    height: 48px;
   }
 }
 
@@ -64,12 +71,10 @@
   background: $someblue url("../img/icon-youtube.svg") 50% 50% no-repeat;
 }
 
-
-
-.social__copyrigth{
-  border: 1px solid blue;
+.social__copyrigth {
   text-transform: uppercase;
   font-size: 14px;
+  position: relative;
 
   @media #{$tablet-widths} {
 
@@ -81,9 +86,15 @@
 }
 
 .social__copyrigth::after {
-  background: url("../img/logo-htmlacademy.svg") 50% 50% no-repeat;
+  content: "";
+  display: inline-block;
+  margin-bottom: -20px;
+  width: 40px;
+  height: 40px;
+
+  background: url("../img/logo-htmlacademy.svg") 100% 0% no-repeat;
 }
 
 .social__item-wrapper {
-   border: 1px solid blue;
+
 }
