@@ -1,19 +1,60 @@
 .photo {
-  border: 1px solid red;
-  height: 415px;
   width: 100%;
-  position: relative;
 
   @media #{$tablet-widths} {
-    height: 280px;
-    width: 49%;
-    display: inline-block;
+    width: 50%;
 }
 
   @media #{$desktop-widths} {
-    height: 200px;
-    width: 33%;
-    display: inline-block;
-    margin-left: -3px;
+    width: 400px;
+    position: relative;
+    height: 267px;
+  }
+}
+
+.photo::before {
+
+  @media #{$mobile-widths} {
+    content: "";
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    background-color: $grey-border;
+  }
+}
+
+.photo__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+
+  @media #{$tablet-widths} {
+    padding-top: 42px;
+    padding-left: 58px;
+    padding-right: 58px;
+    padding-bottom: 0px;
+
+    min-height: 150px;
+}
+
+  @media #{$desktop-widths} {
+    padding:0px;
+    min-height: 670px;
+  }
+}
+
+.photo__wrapper::after {
+
+  @media #{$mobile-widths} {
+    content: "";
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    background-color: $grey-border;
   }
 }

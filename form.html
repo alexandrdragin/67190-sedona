@@ -10,17 +10,24 @@
 
     <header class="page-header">
 
-      <img href="index.html" class="page-header__logo" src="img/logo-sedona-mobile.svg" width="103" height="83" alt="City of Sedona(logo)">
-
       <nav class="main-nav">
-        <a class="main-nav__item" href="index.html" >Главная</a>
-        <a class="main-nav__item"  href="photo.html">Фото и видео</a>
+        <a class="main-nav__item" href="index.html">Главная</a>
+        <a class="main-nav__item" href="photo.html">Фото и видео</a>
+        <a class="main-nav__item" href="/"></a>
         <a class="main-nav__item">Форма отзыва</a>
-        <a class="main-nav__item" href="/" >HTML Academy</a>
-        <button class="main-nav__button top-nav__button--close"></button>
+        <a class="main-nav__item" href="/">HTML Academy</a>
       </nav>
 
-      <div class="page-header__image">Sedona</div>
+      <div class="page-header__logo" href="#"></div>
+
+      <button class="main-nav__button main-nav__button--close"></button>
+
+      <picture class="page-header__image-wrapper">
+        <img class="page-header__image" src="img/text-sedona.svg" alt="Wecome to Sedona">
+        <source class="page-header__triangle" media="(min-width:1200px)" srcset="../img/bg-intro-triangle-desktop.svg">
+        <source class="page-header__triangle" media="(min-width:768px)" srcset="../img/bg-intro-triangle-tablet.svg">
+        <img class="page-header__triangle" src="../img/bg-intro-triangle-mobile.svg">
+      </picture>
 
     </header>
 

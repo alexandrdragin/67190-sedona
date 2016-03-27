@@ -7,16 +7,28 @@
 }
 
 @mixin container {
+
   width: 320px;
   margin: 0 auto;
 
   @media #{$tablet-widths} {
-    width: 640px;
+    width: 768px;
   }
 
   @media #{$desktop-widths} {
-    width: 960px;
+    width: 1200px;
   }
 }
 
-$border: 1px solid gray;
+@mixin mobile-padding-right {
+  padding-right: 20px;
+}
+
+@mixin mobile-padding-left {
+  padding-left: 20px;
+}
+
+@mixin mobile-padding {
+  @include mobile-padding-right;
+  @include mobile-padding-left;
+}

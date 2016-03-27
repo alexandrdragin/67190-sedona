@@ -2,41 +2,85 @@
   text-align: center;
   text-transform: uppercase;
 
+
+
   @media #{$desktop-widths} {
     height: 500px;
   }
 }
 
-.map__button{
-  height: 50px;
-  width: 85%;
-  background-color: $someblue;
-  color: white;
-  border: none;
+.map__header{
+  @include mobile-padding;
+  margin-top:28px;
+
+  @media #{$tablet-widths} {
+    margin-top:22px;
+    font-size: 30px;
+  }
+
+   @media #{$desktop-widths} {
+
+    }
 }
 
-.map__nice-map{
-  margin-top: 50px;
+.map__text{
+  @include mobile-padding;
+  margin-bottom: 38px;
+  font-size: 14px;
+  line-height: 22px;
+
+  @media #{$tablet-widths} {
+    margin-left: 160px;
+    margin-right: 160px;
+    margin-bottom: 43px;
+  }
+
+  @media #{$desktop-widths} {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 47px;
+   }
+
+}
+
+
+.map__button{
+  height: 60px;
+  width: 280px;
+  border: 1px dashed green;
+  /*background-color: $someblue;*/
+  color: white;
+  border: none;
+
+  @media #{$tablet-widths} {
+    width: 460px;
+    margin-bottom: 43px;
+  }
+
+}
+
+.map__picture-map{
 
   @media #{$tablet-widths} {
     margin-top: 40px;
     height: 290px;
     width: 100%;
-    }
+  }
 
    @media #{$desktop-widths} {
 
-     width: 100%;
-     }
+    }
 }
 
 .map__map-image {
+  margin-top: 50px;
 
   @media #{$tablet-widths} {
-    height: 270px;
+    margin-top: 15px;
+    height: 350px;
     }
 
    @media #{$desktop-widths} {
-     height: 270px;
+     margin-top: 25px;
      }
 }
