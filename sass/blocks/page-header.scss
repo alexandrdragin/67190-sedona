@@ -70,13 +70,13 @@
   background: url("../img/bg-intro-triangle-mobile.svg") 100% 0% no-repeat;
 
   @media #{$tablet-widths} {
-    bottom: -2px;
+    bottom: -4px;
     height: 60px;
     background: url("../img/bg-intro-triangle-tablet.svg") 100% 0% no-repeat;
   }
 
  @media #{$desktop-widths} {
-    bottom: -2px;
+    bottom: -5px;
     background: url("../img/bg-intro-triangle-desktop.svg") 100% 0% no-repeat;
   }
 }
