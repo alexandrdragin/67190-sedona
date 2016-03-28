@@ -109,11 +109,10 @@
 
 .mini-reasons__text {
   margin-bottom: 0px;
-  font-size: 14px;
   line-height: 20px;
-  text-transform: uppercase;
   margin-top: -4px;
 
+  @include sub-header;
   @include mobile-padding-right;
 
   @media #{$tablet-widths} {
@@ -124,7 +123,6 @@
     }
 
   @media #{$desktop-widths} {
-      font-size: 14px;
       margin-bottom: 50px;
     }
 }

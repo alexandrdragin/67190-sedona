@@ -32,3 +32,10 @@
   @include mobile-padding-right;
   @include mobile-padding-left;
 }
+
+@mixin sub-header {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+
+}

@@ -73,8 +73,7 @@
 }
 
 .social__copyrigth {
-  text-transform: uppercase;
-  font-size: 14px;
+  @include sub-header;
   position: relative;
 
   @media #{$tablet-widths} {

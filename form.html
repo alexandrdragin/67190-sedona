@@ -15,7 +15,7 @@
         <a class="main-nav__item" href="photo.html">Фото и видео</a>
         <a class="main-nav__item" href="/"></a>
         <a class="main-nav__item">Форма отзыва</a>
-        <a class="main-nav__item" href="/">HTML Academy</a>
+        <a class="main-nav__item" href="playground.html">HTML Academy</a>
       </nav>
 
       <div class="page-header__logo" href="#"></div>
@@ -24,11 +24,7 @@
 
       <picture class="page-header__image-wrapper">
         <img class="page-header__image" src="img/text-sedona.svg" alt="Wecome to Sedona">
-        <source class="page-header__triangle" media="(min-width:1200px)" srcset="../img/bg-intro-triangle-desktop.svg">
-        <source class="page-header__triangle" media="(min-width:768px)" srcset="../img/bg-intro-triangle-tablet.svg">
-        <img class="page-header__triangle" src="../img/bg-intro-triangle-mobile.svg">
       </picture>
-
     </header>
 
     <main class="main">
@@ -39,37 +35,37 @@
           <p class="form-text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
 
           <fieldset class="form">
-            <h2 class="form__header">Представьтесь, пожалуйста:</h2>
+            <h2 class="form__inside-header">Представьтесь, пожалуйста:</h2>
 
-            <div class="form__first-name">
-              <label for="first-name">ИМЯ:</label>
-              <input id="first-name" type="text" value="Петр" name="first-name" required></input>
+            <div class="form__name">
+              <label class="form__name-label" for="first-name">ИМЯ:</label>
+              <input class="form__name-input" id="first-name" type="text" value="Петр" name="first-name" required></input>
             </div>
-            <div class="form__last-name">
-              <label for="last-name">ФАМИЛИЯ:</label>
-              <input id="last-name" type="text" value="Иванов" name="last-name" required></input>
+            <div class="form__name">
+              <label class="form__name-label" for="last-name">ФАМИЛИЯ:</label>
+              <input class="form__name-input" id="last-name" type="text" value="Иванов" name="last-name" required></input>
             </div>
-            <div class="form__middle-name">
-              <label for="middle-name">ОТЧЕСТВО:</label>
-              <input id="middle-name" type="text" value="Александрович" name="middle-name"></input>
+            <div class="form__name">
+              <label class="form__name-label" for="middle-name">ОТЧЕСТВО:</label>
+              <input class="form__name-input" id="middle-name" type="text" value="Александрович" name="middle-name"></input>
             </div>
           </fieldset>
 
           <fieldset class="form">
-            <h2 class="form__header">Контактная информация:</h2>
+            <h2 class="form__inside-header">Контактная информация:</h2>
 
             <div class="form__phone">
-              <label for="tel">Контактный телефон:</label>
-              <input id="tel" type="tel" value="Введите телефон" name="tel" required></input>
+              <label class="form__phone-label" for="tel">Контактный телефон:</label>
+              <input class="form__phone-input" id="tel" type="tel" value="Введите телефон" name="tel" required></input>
             </div>
             <div class="form__mail">
-              <label for="email">Электронная почта:</label>
-              <input id="email" type="text" value="Введите e-mail" name="email"></input>
+              <label class="form__mail-label" for="email">Электронная почта:</label>
+              <input class="form__mail-input" id="email" type="text" value="Введите e-mail" name="email"></input>
             </div>
           </fieldset>
 
           <fieldset class="form">
-            <h2 class="form__header">Вaше Общее впечатление:</h2>
+            <h2 class="form__inside-header">Вaше Общее впечатление:</h2>
 
             <input class="form__radio-button" type="radio" name="impess" value="nice" checked>Скорее положительное</input>
             <input class="form__radio-button" type="radio" name="impess" value="notnice">Скорее отрицательное</input>
@@ -77,7 +73,7 @@
           </fieldset>
 
           <fieldset class="form">
-            <h2 class="form__header">Посещенные достопримечательности:</h2>
+            <h2 class="form__inside-header">Посещенные достопримечательности:</h2>
 
             <input class="form__checkbox-button" type="checkbox" value="Мост Дьявола" name="locals" checked>Мост Дьявола</input>
             <input class="form__checkbox-button" type="checkbox" value="Слайд-парк" name="locals" checked>Слайд-парк</input>
@@ -86,7 +82,7 @@
           </fieldset>
 
           <fieldset class="form">
-            <h2 class="form__header">Опишите свои эмоции:</h2>
+            <h2 class="form__inside-header">Опишите свои эмоции:</h2>
 
             <textarea name="review" id="review">Опишите подробно все свои восторги</textarea>
           </fieldset>
@@ -105,7 +101,7 @@
         <a class="social__item social__item--fb" href="http://www.facebook.com"></a>
         <a class="social__item social__item--yt" href="http://www.youtube.com" ></a>
 
-        <div class="social__copyrigth">Разработано</div>
+        <div class="social__copyrigth">Друзья</div>
       </div>
     </footer>
 

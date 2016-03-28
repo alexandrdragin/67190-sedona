@@ -25,8 +25,10 @@
 
 .map__text{
   @include mobile-padding;
+  @include sub-header;
+
   margin-bottom: 38px;
-  font-size: 14px;
+
   line-height: 22px;
 
   @media #{$tablet-widths} {

@@ -46,9 +46,7 @@
 }
 
 .video__text{
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 14px;
+  @include sub-header;
   margin: 26px;
 
   line-height: 24px;
@@ -123,7 +121,7 @@
   }
 
    @media #{$desktop-widths} {
-    
+
     }
 
 }
