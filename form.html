@@ -29,12 +29,13 @@
 
     <main class="main">
       <form class="form-block">
+
+        <h1 class="form-header">Оставьте свой отзыв</h1>
+        <p class="form-text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+
         <div class="form-block__wrapper">
 
-          <h1 class="form-header">Оставьте свой отзыв</h1>
-          <p class="form-text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-
-          <fieldset class="form">
+          <fieldset class="form form--tablet">
             <h2 class="form__inside-header">Представьтесь, пожалуйста:</h2>
 
             <div class="form__name">
@@ -54,37 +55,60 @@
           <fieldset class="form">
             <h2 class="form__inside-header">Контактная информация:</h2>
 
-            <div class="form__phone">
+            <div class="form__contact">
               <label class="form__phone-label" for="tel">Контактный телефон:</label>
               <input class="form__phone-input" id="tel" type="tel" value="Введите телефон" name="tel" required></input>
+              <div class="form-icon">
+                <img src="../img/icon-phone.svg">
+
+              </div>
+              <div class="form__bad-input">Ошибка, перепроверьте номер</div>
             </div>
-            <div class="form__mail">
-              <label class="form__mail-label" for="email">Электронная почта:</label>
-              <input class="form__mail-input" id="email" type="text" value="Введите e-mail" name="email"></input>
+            <div class="form__contact">
+              <label class="form__phone-label" for="email">Электронная почта:</label>
+              <input class="form__phone-input" id="email" type="text" value="Введите e-mail" name="email"></input>
+              <div class="form-icon">
+                <img src="../img/icon-mail.svg">
+              </div>
             </div>
           </fieldset>
 
-          <fieldset class="form">
-            <h2 class="form__inside-header">Вaше Общее впечатление:</h2>
+          <fieldset class="form form--tablet form--order-1">
 
-            <input class="form__radio-button" type="radio" name="impess" value="nice" checked>Скорее положительное</input>
-            <input class="form__radio-button" type="radio" name="impess" value="notnice">Скорее отрицательное</input>
-            <input class="form__radio-button" type="radio" name="impess" value="dunno">Затрудняюсь ответить</input>
+            <h2 class="form__inside-header form--order-1">Вaше Общее впечатление:</h2>
+
+            <div class="form__inside-header--margin-bottom">
+              <input class="form__radio-input" type="radio" name="impess" value="nice" id="radio" checked/>
+              <label class="form__radio-label" for="radio">Скорее положительное</label>
+
+              <input class="form__radio-input" type="radio" name="impess" value="notnice" id="radio" />
+              <label class="form__radio-label" for="radio">Скорее отрицательное</label>
+
+              <input class="form__radio-input" type="radio" name="impess" value="dunno" id="radio" />
+              <label class="form__radio-label" for="radio">Затрудняюсь ответить</label>
+            </div>
           </fieldset>
 
           <fieldset class="form">
             <h2 class="form__inside-header">Посещенные достопримечательности:</h2>
 
-            <input class="form__checkbox-button" type="checkbox" value="Мост Дьявола" name="locals" checked>Мост Дьявола</input>
-            <input class="form__checkbox-button" type="checkbox" value="Слайд-парк" name="locals" checked>Слайд-парк</input>
-            <input class="form__checkbox-button" type="checkbox" value="Гора-Колокол" name="locals">Гора-Колокол</input>
-            <input class="form__checkbox-button" type="checkbox" value="Красные скалы" name="locals" checked>Красные скалы</input>
+            <div class="form__inside-header--margin-bottom2">
+              <input class="form__checkbox-input" type="checkbox" value="Мост Дьявола" name="locals" checked/>
+              <label class="form__checkbox-label" for="checkbox">Мост Дьявола</label>
+              <input class="form__checkbox-input" type="checkbox" value="Слайд-парк" name="locals" checked/>
+              <label class="form__checkbox-label" for="checkbox">Слайд-парк</label>
+              <input class="form__checkbox-input" type="checkbox" value="Гора-Колокол" name="locals" />
+              <label class="form__checkbox-label" for="checkbox">Гора-Колокол</label>
+              <input class="form__checkbox-input" type="checkbox" value="Красные скалы" name="locals" checked/>
+              <label class="form__checkbox-label" for="checkbox">Красные скалы</label>
+            </div>
           </fieldset>
 
           <fieldset class="form">
             <h2 class="form__inside-header">Опишите свои эмоции:</h2>
 
-            <textarea name="review" id="review">Опишите подробно все свои восторги</textarea>
+            <textarea class="form__textarea" name="review" id="review" placeholder="Опишите подробно все свои восторги"></textarea>
+
           </fieldset>
 
           <button class="form-submit" type="submit">Отправить отзыв</button>
@@ -92,18 +116,18 @@
         </div>
       </form>
     </main>
-
     <footer class="social">
-      <div class="social__wrapper">
-        <div class="social__header">#visitSEDONA</div>
+      <div class="social__header">#visitSEDONA</div>
 
-        <a class="social__item social__item--tw" href="http://www.twitter.com "></a>
+      <div class="social__item-wrapper">
+        <a class="social__item social__item--tw" href="http://www.twitter.com"></a>
         <a class="social__item social__item--fb" href="http://www.facebook.com"></a>
         <a class="social__item social__item--yt" href="http://www.youtube.com" ></a>
-
-        <div class="social__copyrigth">Друзья</div>
       </div>
+
+      <div class="social__copyrigth">Друзья</div>
     </footer>
+
 
   </body>
 </html>

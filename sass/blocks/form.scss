@@ -1,0 +1,164 @@
+.form {
+  width: 100%;
+  position: relative;
+  display: flex;
+
+  border: 1px solid green;
+
+
+
+  @media #{$tablet-widths} {
+
+  }
+}
+
+
+
+.form::before {
+
+  @media #{$mobile-widths} {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 320px;
+    left: 0px;
+    height: 1px;
+    margin-top: -5px;
+    background-color: $grey-border;
+
+  }
+}
+
+.form__name:last-child{
+  margin-bottom: 22px;
+}
+
+.form__inside-header{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+  margin-left: -10px;
+  margin-top: 16px;
+
+  @media #{$tablet-widths} {
+    margin-top: 35px;
+    margin-bottom: 57px;
+    font-size: 20px;
+    margin-left:0px;
+  }
+
+}
+
+.form__name {
+  margin-top: 20px;
+  display: flex;
+
+  align-items:center;
+
+}
+
+.form__name-label {
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.form__name-input {
+
+  border: none;
+  background-color: $ligthgrey;
+
+  flex-grow: 1;
+  margin-left: 10px;
+
+  padding: 18px;
+  font-weight: bold;
+
+  @media #{$tablet-widths} {
+
+  }
+}
+
+.form__contact {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: flex-start;
+  }
+
+
+.form__phone-label {
+  font-size: 14px;
+  margin-top: 5px;
+  margin-left: 30px;
+  text-transform: uppercase;
+}
+
+.form__phone-input {
+
+  border: none;
+  background-color: $ligthgrey;
+
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: -10px;
+  margin-bottom: 5px;
+  padding: 18px;
+  font-weight: bold;
+}
+
+.form__textarea{
+  border: none;
+  resize: none;
+  background: $ligthgrey;
+  margin-left: 10px;
+
+  width: 93%;
+  min-height: 155px;
+
+  margin-bottom: 10px;
+}
+
+.form--tablet {
+  @media #{$tablet-widths} {
+    box-sizing: border-box;
+    width: 48%;
+  }
+}
+
+.form--order-1 {
+  @media #{$tablet-widths} {
+    order: -1;
+    text-align: left;
+
+  }
+}
+
+
+.form-icon {
+  margin-top: 5px;
+  width: 60px;
+  height: 40px;
+  padding-top: 20px;
+  text-align: center;
+  align-self: center;
+  background-color: $grey;
+}
+
+.form__bad-input{
+  color: red;
+  font-size: 14px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+.form-submit {
+  margin: 30px;
+  width: 300px;
+  height: 50px;
+  color: white;
+  background-color: $someblue;
+  text-transform: uppercase;
+  border: none;
+
+}
