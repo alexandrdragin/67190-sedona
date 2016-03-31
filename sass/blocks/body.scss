@@ -39,7 +39,7 @@ body{
   color: #333333;
   font-style: normal;
 
- background: $bg-ligthtgrey url('/img/sedona-form-mobile.png') no-repeat center top / 320px auto;
+/* background: $bg-ligthtgrey url('/img/sedona-form-mobile.png') no-repeat center top / 320px auto;
     min-height: 2555px;
 
 
@@ -51,7 +51,7 @@ body{
   @media #{$desktop-widths} {
     background: $bg-ligthtgrey url('/img/sedona-form-desktop.png') no-repeat center top / 1280px auto;
     min-height: 3250px;
-  }
+  }*/
 }
 
 fieldset{

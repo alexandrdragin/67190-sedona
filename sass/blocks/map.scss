@@ -2,8 +2,6 @@
   text-align: center;
   text-transform: uppercase;
 
-
-
   @media #{$desktop-widths} {
     height: 500px;
   }
@@ -49,7 +47,6 @@
 .map__button{
   height: 60px;
   width: 280px;
-  border: 1px dashed green;
   background-color: $someblue;
   color: white;
   border: none;
