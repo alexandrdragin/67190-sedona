@@ -5,10 +5,10 @@
   @media #{$tablet-widths} {
     width: 648px;
     margin: auto;
-
   }
 
   @media #{$desktop-widths} {
+    width: 1200px;
 
   }
 }
@@ -23,11 +23,8 @@
 
   @media #{$tablet-widths} {
 
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    align-items: flex-start;
-    align-content:space-between;
+    align-items: stretch;
+    align-content: space-between;
   }
 
   @media #{$desktop-widths} {
@@ -44,12 +41,11 @@
   @media #{$tablet-widths} {
     margin-top: 75px;
     font-size: 30px;
-    
   }
 
   @media #{$desktop-widths} {
-    margin-top: 80px;
-    font-size: 22px;
+    margin-top:110px;
+    font-size: 30px;
   }
 
 }
@@ -70,7 +66,10 @@
   }
 
   @media #{$desktop-widths} {
-    margin-bottom: 0px;
+    margin-top: 33px;
+    margin-bottom: 20px;
+    margin-left: 380px;
+    margin-right: 380px;
   }
 
 }

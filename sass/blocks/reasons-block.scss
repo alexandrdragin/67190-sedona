@@ -81,13 +81,14 @@
 }
 
 .reasons--blue {
-background-color: $someblue;
+  background-color: $someblue;
   color: white;
   height: 200px;
 
     @media #{$tablet-widths} {
       height: 255px;
-      width: 33.5%;
+      width: 33%;
+      flex-grow: 1;
 
     }
 
@@ -213,16 +214,16 @@ background-color: $someblue;
 
 .reasons--close {
   background-color: #EEEEEE;
-
-  order:5;
+  order: 5;
 
   @media #{$tablet-widths} {
-
-    margin-bottom: 35px;
+      margin-bottom: 35px;
+      flex-grow: 1;
     }
 
    @media #{$desktop-widths} {
      padding-bottom: 40px;
+
    }
 }
 

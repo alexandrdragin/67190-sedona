@@ -36,7 +36,8 @@
         <div class="form-block__wrapper">
 
           <fieldset class="form form--tablet">
-            <h2 class="form__inside-header">Представьтесь, пожалуйста:</h2>
+            <h2 class="form__inside-header form__inside-header--mobileanddesktop">Представьтесь, пожалуйста:</h2>
+            <h2 class="form__inside-header form__inside-header--tablet">Представьтесь:</h2>
 
             <div class="form__name">
               <label class="form__name-label" for="first-name">ИМЯ:</label>
@@ -55,53 +56,74 @@
           <fieldset class="form">
             <h2 class="form__inside-header">Контактная информация:</h2>
 
+            <div class="form__contact-wrapper">
+
             <div class="form__contact">
               <label class="form__phone-label" for="tel">Контактный телефон:</label>
               <input class="form__phone-input" id="tel" type="tel" value="Введите телефон" name="tel" required></input>
-              <div class="form-icon">
+              <div class="form__icon">
                 <img src="../img/icon-phone.svg">
-
               </div>
-              <div class="form__bad-input">Ошибка, перепроверьте номер</div>
+
+              <div class="form__bad-input">
+                Ошибка, перепроверьте номер
+              </div>
             </div>
             <div class="form__contact">
               <label class="form__phone-label" for="email">Электронная почта:</label>
               <input class="form__phone-input" id="email" type="text" value="Введите e-mail" name="email"></input>
-              <div class="form-icon">
+              <div class="form__icon">
                 <img src="../img/icon-mail.svg">
               </div>
             </div>
+
+          </div>
           </fieldset>
 
           <fieldset class="form form--tablet form--order-1">
 
-            <h2 class="form__inside-header form--order-1">Вaше Общее впечатление:</h2>
+            <h2 class="form__inside-header form__inside-header--margin">Вaше Общее впечатление:</h2>
 
-            <div class="form__inside-header--margin-bottom">
-              <input class="form__radio-input" type="radio" name="impess" value="nice" id="radio" checked/>
-              <label class="form__radio-label" for="radio">Скорее положительное</label>
-
-              <input class="form__radio-input" type="radio" name="impess" value="notnice" id="radio" />
-              <label class="form__radio-label" for="radio">Скорее отрицательное</label>
-
-              <input class="form__radio-input" type="radio" name="impess" value="dunno" id="radio" />
-              <label class="form__radio-label" for="radio">Затрудняюсь ответить</label>
+            <div class="form__radio">
+              <input class="form__radio-input" type="radio" name="impess" value="nice" id="Good" checked/>
+              <label class="form__radio-label" for="Good">Скорее положительное</label>
             </div>
+
+            <div class="form__radio">
+              <input class="form__radio-input" type="radio" name="impess" value="notnice" id="Bad" />
+              <label class="form__radio-label" for="Bad">Скорее отрицательное</label>
+            </div>
+
+            <div class="form__radio">
+              <input class="form__radio-input" type="radio" name="impess" value="dunno" id="Dunno" />
+              <label class="form__radio-label" for="Dunno">Затрудняюсь ответить</label>
+            </div>
+
           </fieldset>
 
           <fieldset class="form">
-            <h2 class="form__inside-header">Посещенные достопримечательности:</h2>
+            <h2 class="form__inside-header form__inside-header--border">Посещенные достопримечательности:</h2>
 
-            <div class="form__inside-header--margin-bottom2">
+            <div class="form__checkbox">
               <input class="form__checkbox-input" type="checkbox" value="Мост Дьявола" name="locals" checked/>
               <label class="form__checkbox-label" for="checkbox">Мост Дьявола</label>
+            </div>
+
+            <div class="form__checkbox">
               <input class="form__checkbox-input" type="checkbox" value="Слайд-парк" name="locals" checked/>
               <label class="form__checkbox-label" for="checkbox">Слайд-парк</label>
+            </div>
+
+            <div class="form__checkbox">
               <input class="form__checkbox-input" type="checkbox" value="Гора-Колокол" name="locals" />
               <label class="form__checkbox-label" for="checkbox">Гора-Колокол</label>
+            </div>
+
+            <div class="form__checkbox">
               <input class="form__checkbox-input" type="checkbox" value="Красные скалы" name="locals" checked/>
               <label class="form__checkbox-label" for="checkbox">Красные скалы</label>
-            </div>
+              </div>
+
           </fieldset>
 
           <fieldset class="form">
@@ -111,7 +133,9 @@
 
           </fieldset>
 
-          <button class="form-submit" type="submit">Отправить отзыв</button>
+          <button class="form__submit" type="submit">Отправить отзыв</button>
+
+          <div class="form__checker">* — обязательные поля</div>
 
         </div>
       </form>
