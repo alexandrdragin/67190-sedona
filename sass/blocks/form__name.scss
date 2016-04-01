@@ -12,7 +12,7 @@
   }
 
   @media #{$desktop-widths} {
-   margin-left: 35px;
+   margin-left: 0px;
   }
 }
 
@@ -76,6 +76,8 @@
 
 .form__inside-header--mobileanddesktop {
 
+  margin-top: 15px;
+
   @media #{$tablet-widths} {
    display: none;
   }
@@ -102,7 +104,7 @@
 
     margin-top: 0px;
     background-color: $grey-border;
-  
+
   }
 }
 

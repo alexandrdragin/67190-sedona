@@ -2,7 +2,7 @@
 
 var gulp = require("gulp");
 var sass = require("gulp-sass");
-var plumber = require("gulp-plumber");
+var plumber = require("gulp-plumber"); /* продолдает сборку с ошибками */
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync");

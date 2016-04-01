@@ -11,6 +11,12 @@
       flex-direction: row;
       flex-wrap: nowrap;
   }
+
+  @media #{$desktop-widths} {
+  
+    margin-left:120px;
+    margin-right:120px;
+  }
 }
 
 .form::before {
@@ -66,7 +72,6 @@
       background-color: $grey-border;
     }
     @media #{$desktop-widths} {
-      left: 125px;
       width: 280px;
     }
 }
@@ -84,7 +89,6 @@
     background-color: $grey-border;
   }
   @media #{$desktop-widths} {
-    right: 125px;
     width: 280px;
   }
 }
@@ -122,8 +126,8 @@
 .form__submit {
 
   margin: 18px;
-  margin-top: 28px;
-  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 25px;
   width: 89%;
   height: 58px;
   color: white;
@@ -136,6 +140,11 @@
     margin-top: 28px;
     width: 50%;
     margin-bottom: 70px;
+  }
+  @media #{$desktop-widths} {
+    margin-left: 120px;
+    width: 40%;
+    margin-bottom: -60px;
   }
 
 }
@@ -151,5 +160,8 @@
     font-size: 14px;
     right: 0;
     margin-top: 46px;
+ }
+ @media #{$desktop-widths} {
+   margin-right: 120px;
  }
 }

@@ -2,14 +2,19 @@
   @media #{$desktop-widths} {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+
 
     justify-content: space-between;
-    margin: 70px;
-    margin-right: 120px;
 
-    margin-bottom: -5px;
+
+
+
+    margin-top: 70px;
+    margin-bottom: 13px;
   }
-  }
+
+}
 
 
 
@@ -30,7 +35,8 @@
   }
 
   @media #{$desktop-widths} {
-
+    flex-wrap: nowrap;
+    width: 50%;
   }
 
 }
@@ -47,9 +53,19 @@
   }
 
   @media #{$desktop-widths} {
-    margin-left: 0px;
+      margin-left: 0px;
+      margin-right: 20px;
   }
 
+}
+
+  .form__contact:first-child {
+
+    @media #{$desktop-widths} {
+      margin-right: 20px;
+
+
+    }
 
 }
 
@@ -75,8 +91,9 @@
   }
 
   @media #{$desktop-widths} {
-    flex-grow: 1;
-    width: auto;
+
+    width:auto;
+    margin-bottom: 0px;
   }
 
 }
@@ -103,8 +120,9 @@
 
   @media #{$desktop-widths} {
     top: -30px;
-    right: 95px;
-    }
+    right: 60px;
+    width: 300px;
+  }
 }
 
 .form__icon {
@@ -118,5 +136,22 @@
 
   @media #{$tablet-widths} {
     margin-top: -20px;
+  }
+
+  @media #{$desktop-widths} {
+    margin-top: 0px;
+  }
+}
+
+.form__phone-label--tablet {
+  @media #{$desktop-widths} {
+    display:none;
+  }
+}
+
+.form__phone-label--desktop {
+  display:none;
+  @media #{$desktop-widths} {
+    display:block;
   }
 }
