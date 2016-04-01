@@ -92,7 +92,17 @@
 
 .form__inside-header--mobileanddesktop::before  {
   @media #{$desktop-widths} {
-    display: none;
+    content: "";
+    display: block;
+    position: absolute;
+    top:45px;
+    width: 1px;
+    left: 0px;
+    height: 80%;
+
+    margin-top: 0px;
+    background-color: $grey-border;
+  
   }
 }
 
@@ -117,7 +127,4 @@
     background-color: $grey-border;
   }
 
-  @media #{$desktop-widths} {
-   display: none;
-  }
 }

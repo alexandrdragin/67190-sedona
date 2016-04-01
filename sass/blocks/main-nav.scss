@@ -8,6 +8,7 @@
   @media #{$tablet-widths} {
     height: 55px;
     color: black;
+    display: flex;
     background-color:white;
     flex-direction: row;
 
@@ -116,4 +117,8 @@
   background: url("../img/icon-menu.svg") 50% 50% no-repeat;
 
   display: none;
+
+  @media #{$tablet-widths} {
+    display: none;
+    }
 }
