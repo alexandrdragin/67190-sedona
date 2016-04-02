@@ -41,7 +41,7 @@
 
 .form__radio-label{
     font-weight: bold;
-    padding-left: 85px;
+    padding-left: 5px;
     cursor: pointer;
 
     @media #{$tablet-widths} {
@@ -50,7 +50,7 @@
 
 }
 
-.form__radio-for-before::after {
+.form__radio-for-before {
   content: '';
 
   position: relative;
@@ -61,13 +61,16 @@
   width: 59px;
   height: 59px;
   border-radius: 40px;
-  margin-bottom: -29px;
+  margin-bottom: 0px;
   background: $ligthgrey;
 
-
   @media #{$tablet-widths} {
-    margin-right: 0px;
+    margin-right: 10px;
     top: 20px;
+  }
+
+  @media #{$desktop-widths} {
+    margin-right: 20px;
   }
 
 }
@@ -75,10 +78,10 @@
 .form__radio-input:checked + .form__radio-for-before::before {
   content: '';
 
-  position:relative;
+  position: relative;
   display: inline-block;
-  top: 5px;
-  left: -10px;
+  top: 15px;
+  left: 20px;
   width: 25px;
   height: 25px;
   border-radius: 40px;

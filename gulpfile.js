@@ -6,8 +6,8 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 
-var mqpacker = require("css-mqpacker");
 var minify = require("gulp-csso");
+var cmq = require('gulp-combine-media-queries');
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var svgstore = require("gulp-svgstore");
@@ -19,7 +19,7 @@ var clean = require('gulp-contrib-clean');
 var server = require("browser-sync");
 
 gulp.task("symbols", function() {
-    return gulp.src("img/*.svg")
+    gulp.src("img/*.svg")
     .pipe(svgmin())
     .pipe(svgstore({
       inlineSvg: true
@@ -49,9 +49,10 @@ gulp.task("style", function() {
         "last 2 Opera versions",
         "last 2 Edge versions"
       ]})
-        mqpacker({
-          sort: true })
     ]))
+    .pipe(cmq({
+      log: true
+    }))
     .pipe(gulp.dest("css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
@@ -66,7 +67,7 @@ gulp.task('clean', function() {
   });
 
 gulp.task('copy', ["clean"], function() {
-	gulp.src('./**/*.!(scss|less)')
+	gulp.src('./**/*.!(scss|sass|psd|log|md|json), !./node_modules')
 		.pipe(copy())
 	    .pipe(gulp.dest('build/'))
     });
@@ -83,5 +84,5 @@ gulp.task("serve", ["style"], function() {
   gulp.watch("*.html").on("change", server.reload);
 });
 
-gulp.task("build", ["clean", "copy", "style", "symbols", "images"], function() {
+gulp.task("build", ["clean", "style", "symbols", "images", "copy"], function() {
 });
