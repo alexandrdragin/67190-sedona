@@ -6,7 +6,6 @@
   margin-bottom: 35px;
 
   color: black;
-  text-align: left;
   margin-left: 70px;
 
   @media #{$tablet-widths} {
@@ -114,6 +113,7 @@
 
   @include sub-header;
   @include mobile-padding-right;
+  text-align: left;
 
   @media #{$tablet-widths} {
     margin-top: 4px;

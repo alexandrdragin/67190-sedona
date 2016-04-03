@@ -24,6 +24,7 @@
 
 .photo-text{
   @include sub-header;
+  @include mobile-padding;
 
   margin-top: 28px;
   margin-bottom: 26px;
@@ -133,9 +134,10 @@
 
 }
 
-.photo__like{
+.photo__like-button{
+    background-color: white;
 
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     font-size: 14px;
     font-weight: bold;
 
@@ -147,6 +149,7 @@
     margin-right: 25px;
     margin-bottom: 0px;
     margin-top: -25px;
+    background-color: rgba(0, 0, 0, 0);
   }
 
   @media #{$desktop-widths} {
@@ -156,22 +159,26 @@
   }
 }
 
-.photo__like::before {
-  content: "";
+.photo__like-icon{
   display: inline-block;
-  margin-bottom: -22px;
-  width: 40px;
-  height: 40px;
+  vertical-align: sub;
+  width: 22px;
+  height: 22px;
 
-  background: url("../img/icon-like.svg") 0% 0% no-repeat;
-  opacity: 0.5;
+  fill: #595959;
 
   @media #{$tablet-widths} {
-    margin-right: -10px
+    margin-right: 0px;
   }
 
-
+  @media #{$desktop-widths} {
+    fill: white;
+    margin-right: 5px;
+  }
 }
+ .photo__like-icon:active{
+   fill: $someblue;
+ }
 
 .photo--big-for-tablet{
   @media #{$tablet-widths} {
@@ -181,13 +188,9 @@
     display: block;
   }
 
-
-  @media #{$desktop-widths} {
-    height: 300px;
-  }
-
   @media #{$desktop-widths} {
     min-height: 400px;
+    width: 100%;
   }
 
 }
