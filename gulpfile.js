@@ -17,6 +17,10 @@ var clean = require('gulp-contrib-clean');
 
 var server = require("browser-sync");
 
+var reporter     = require('postcss-reporter');
+var syntax_scss  = require('postcss-scss');
+var stylelint    = require('stylelint');
+
 gulp.task("symbols", function() {
     gulp.src("img/*.svg")
     .pipe(svgmin())
@@ -36,7 +40,7 @@ gulp.task("images", function() {
     .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("style", function() {
+gulp.task("style", ["linter"], function() {
   gulp.src("sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
@@ -67,6 +71,18 @@ gulp.task('copy', ["clean"], function() {
 		.pipe(copy())
 	    .pipe(gulp.dest('build/'))
     });
+
+gulp.task("linter", function() {
+  var processors = [
+    stylelint(),
+    reporter({
+      throwError: true
+    })
+  ];
+  return gulp.src(['sass/**/*.scss'])
+    .pipe(plumber())
+    .pipe(postcss(processors, {syntax: syntax_scss}))
+});
 
 gulp.task("serve", ["style"], function() {
   server.init({
