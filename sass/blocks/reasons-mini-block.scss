@@ -1,0 +1,128 @@
+.reasons-mini-block {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: 10px;
+  margin-bottom: 35px;
+
+  color: black;
+  text-align: left;
+  margin-left: 70px;
+
+  @media #{$tablet-widths} {
+    flex-wrap:nowrap;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    margin-left: 0px;
+  }
+
+   @media #{$desktop-widths} {
+     justify-content: space-around;
+   }
+}
+
+.reasons-mini {
+  align-self: auto;
+
+  @media #{$tablet-widths} {
+
+    }
+
+   @media #{$desktop-widths} {
+     width: 30%;
+     }
+}
+
+.reasons-mini--gift {
+  @media #{$tablet-widths} {
+    order: 2;
+    flex-shrink: 0.9;
+  }
+}
+
+.mini-reasons__header {
+  margin-top: 24px;
+  text-transform: uppercase;
+  position: relative;
+
+  @media #{$tablet-widths} {
+    margin-top: 65px;
+  }
+
+  @media #{$desktop-widths} {
+    margin-top: 68px;
+    }
+}
+
+.mini-reasons__header::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+
+  left: -60px;
+  width: 60px;
+  height: 60px;
+
+  @media #{$tablet-widths} {
+    display: block;
+    position: relative;
+    left: 0px;
+    margin: auto;
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.mini-reasons--house::before{
+  top: -18px;
+  background: url("../img/icon-house.svg") 50% 50% no-repeat;
+  background-size: 40px;
+
+  @media #{$tablet-widths} {
+    background-size: 75px;
+  }
+
+}
+
+.mini-reasons--gift::before{
+  top: -18px;
+  background: url("../img/icon-gift.svg") 50% 50% no-repeat;
+  background-size: 30px;
+
+  @media #{$tablet-widths} {
+    top: -20px;
+    background-size: 65px;
+  }
+}
+
+.mini-reasons--burger::before{
+  top: -14px;
+  background: url("../img/icon-burger.svg") 50% 50% no-repeat;
+  background-size: 38px;
+
+  @media #{$tablet-widths} {
+    top: -18px;
+    background-size: 75px;
+  }
+}
+
+.mini-reasons__text {
+  margin-bottom: 0px;
+  line-height: 20px;
+  margin-top: -4px;
+
+  @include sub-header;
+  @include mobile-padding-right;
+
+  @media #{$tablet-widths} {
+    margin-top: 4px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 30px;
+    }
+
+  @media #{$desktop-widths} {
+      margin-bottom: 50px;
+    }
+}

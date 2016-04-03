@@ -10,97 +10,167 @@
 
     <header class="page-header">
 
-      <img href="index.html" class="page-header__logo" src="img/logo-sedona-mobile.svg" width="103" height="83" alt="City of Sedona(logo)">
-
       <nav class="main-nav">
-        <a class="main-nav__item" href="index.html" >Главная</a>
-        <a class="main-nav__item"  href="photo.html">Фото и видео</a>
+        <a class="main-nav__item" href="index.html">Главная</a>
+        <a class="main-nav__item" href="photo.html">Фото и видео</a>
+        <a class="main-nav__item" href="/"></a>
         <a class="main-nav__item">Форма отзыва</a>
-        <a class="main-nav__item" href="/" >HTML Academy</a>
-        <button class="main-nav__button top-nav__button--close"></button>
+        <a class="main-nav__item" href="playground.html">HTML Academy</a>
       </nav>
 
-      <div class="page-header__image">Sedona</div>
+      <div class="page-header__logo" href="#"></div>
 
+      <button class="main-nav__button main-nav__button--close"></button>
+      <button class="main-nav__button main-nav__button--open">
+        <svg class="icon">
+          <use xlink:href="#shape-icon-1" />
+        </svg>
+      </button>
+
+      <picture class="page-header__image-wrapper">
+        <img class="page-header__image" src="img/text-sedona.svg" alt="Wecome to Sedona">
+      </picture>
     </header>
 
     <main class="main">
       <form class="form-block">
+
+        <h1 class="form-header">Оставьте свой отзыв</h1>
+        <p class="form-text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+
         <div class="form-block__wrapper">
 
-          <h1 class="form-header">Оставьте свой отзыв</h1>
-          <p class="form-text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <fieldset class="form form--tablet">
+            <h2 class="form__inside-header form__inside-header--mobileanddesktop">Представьтесь, пожалуйста:</h2>
+            <h2 class="form__inside-header form__inside-header--tablet">Представьтесь:</h2>
 
-          <fieldset class="form">
-            <h2 class="form__header">Представьтесь, пожалуйста:</h2>
-
-            <div class="form__first-name">
-              <label for="first-name">ИМЯ:</label>
-              <input id="first-name" type="text" value="Петр" name="first-name" required></input>
+            <div class="form__name">
+              <label class="form__name-label" for="first-name">ИМЯ:</label>
+              <input class="form__name-input" id="first-name" type="text" value="Петр" name="first-name" required></input>
             </div>
-            <div class="form__last-name">
-              <label for="last-name">ФАМИЛИЯ:</label>
-              <input id="last-name" type="text" value="Иванов" name="last-name" required></input>
+            <div class="form__name">
+              <label class="form__name-label" for="last-name">ФАМИЛИЯ:</label>
+              <input class="form__name-input" id="last-name" type="text" value="Иванов" name="last-name" required></input>
             </div>
-            <div class="form__middle-name">
-              <label for="middle-name">ОТЧЕСТВО:</label>
-              <input id="middle-name" type="text" value="Александрович" name="middle-name"></input>
+            <div class="form__name">
+              <label class="form__name-label" for="middle-name">ОТЧЕСТВО:</label>
+              <input class="form__name-input" id="middle-name" type="text" value="Александрович" name="middle-name"></input>
             </div>
           </fieldset>
 
           <fieldset class="form">
-            <h2 class="form__header">Контактная информация:</h2>
+            <h2 class="form__inside-header">Контактная информация:</h2>
 
-            <div class="form__phone">
-              <label for="tel">Контактный телефон:</label>
-              <input id="tel" type="tel" value="Введите телефон" name="tel" required></input>
+            <div class="form__contact-wrapper">
+
+              <div class="form__contact">
+                <label class="form__phone-label form__phone-label--tablet" for="tel">Контактный телефон:</label>
+                <label class="form__phone-label  form__phone-label--desktop" for="tel">Tелефон:</label>
+                <input class="form__phone-input" id="tel" type="tel" value="Введите телефон" name="tel" required></input>
+                <div class="form__icon">
+                  <img src="../img/icon-phone.svg">
+                </div>
+
+                <div class="form__bad-input">
+                  Ошибка, перепроверьте номер
+                </div>
+              </div>
+
+              <div class="form__contact">
+                <label class="form__phone-label" for="email">Электронная почта:</label>
+                <input class="form__phone-input" id="email" type="text" value="Введите e-mail" name="email"></input>
+                <div class="form__icon">
+                  <img src="../img/icon-mail.svg">
+                </div>
+              </div>
+
+          </div>
+          </fieldset>
+
+          <fieldset class="form form--tablet form--order-1">
+
+            <h2 class="form__inside-header form__inside-header--margin">Вaше Общее впечатление:</h2>
+
+            <div class="form__radio">
+
+              <label class="form__radio-label" for="Good">
+                <input class="form__radio-input" type="radio" name="impess" value="nice" id="Good" checked/>
+                <div class="form__radio-for-before"></div>
+                Скорее положительное
+              </label>
             </div>
-            <div class="form__mail">
-              <label for="email">Электронная почта:</label>
-              <input id="email" type="text" value="Введите e-mail" name="email"></input>
+
+            <div class="form__radio">
+              <label class="form__radio-label" for="Bad">
+                <input class="form__radio-input" type="radio" name="impess" value="notnice" id="Bad" />
+                <div class="form__radio-for-before"></div>
+                Скорее отрицательное
+              </label>
             </div>
+
+            <div class="form__radio">
+              <label class="form__radio-label" for="Dunno">
+                <input class="form__radio-input" type="radio" name="impess" value="dunno" id="Dunno" />
+                <div class="form__radio-for-before"></div>
+                Затрудняюсь ответить
+              </label>
+            </div>
+
           </fieldset>
 
           <fieldset class="form">
-            <h2 class="form__header">Вaше Общее впечатление:</h2>
+            <h2 class="form__inside-header form__inside-header--border">Посещенные достопримечательности:</h2>
 
-            <input class="form__radio-button" type="radio" name="impess" value="nice" checked>Скорее положительное</input>
-            <input class="form__radio-button" type="radio" name="impess" value="notnice">Скорее отрицательное</input>
-            <input class="form__radio-button" type="radio" name="impess" value="dunno">Затрудняюсь ответить</input>
+            <div class="form__flexwrapper">
+              <div class="form__checkbox">
+                <input class="form__checkbox-input" type="checkbox" value="Мост Дьявола" name="locals" id="Devils" checked />
+                <label class="form__checkbox-label" for="Devils">Мост Дьявола</label>
+              </div>
+
+              <div class="form__checkbox">
+                <input class="form__checkbox-input" type="checkbox" value="Слайд-парк" name="locals" id="Park" checked/>
+                <label class="form__checkbox-label" for="Park">Слайд-парк</label>
+              </div>
+
+              <div class="form__checkbox">
+                <input class="form__checkbox-input" type="checkbox" value="Гора-Колокол" name="locals" id="Mountain" />
+                <label class="form__checkbox-label" for="Mountain">Гора-Колокол</label>
+              </div>
+
+              <div class="form__checkbox">
+                <input class="form__checkbox-input" type="checkbox" value="Красные скалы" name="locals" id="Rocks" checked/>
+                <label class="form__checkbox-label" for="Rocks">Красные скалы</label>
+              </div>
+            </div>
+
           </fieldset>
 
           <fieldset class="form">
-            <h2 class="form__header">Посещенные достопримечательности:</h2>
+            <h2 class="form__inside-header">Опишите свои эмоции:</h2>
 
-            <input class="form__checkbox-button" type="checkbox" value="Мост Дьявола" name="locals" checked>Мост Дьявола</input>
-            <input class="form__checkbox-button" type="checkbox" value="Слайд-парк" name="locals" checked>Слайд-парк</input>
-            <input class="form__checkbox-button" type="checkbox" value="Гора-Колокол" name="locals">Гора-Колокол</input>
-            <input class="form__checkbox-button" type="checkbox" value="Красные скалы" name="locals" checked>Красные скалы</input>
+            <textarea class="form__textarea" name="review" id="review" placeholder="Опишите подробно все свои восторги"></textarea>
+
           </fieldset>
 
-          <fieldset class="form">
-            <h2 class="form__header">Опишите свои эмоции:</h2>
+          <button class="form__submit" type="submit">Отправить отзыв</button>
 
-            <textarea name="review" id="review">Опишите подробно все свои восторги</textarea>
-          </fieldset>
-
-          <button class="form-submit" type="submit">Отправить отзыв</button>
+          <div class="form__checker">* — обязательные поля</div>
 
         </div>
       </form>
     </main>
-
     <footer class="social">
-      <div class="social__wrapper">
-        <div class="social__header">#visitSEDONA</div>
+      <div class="social__header">#visitSEDONA</div>
 
-        <a class="social__item social__item--tw" href="http://www.twitter.com "></a>
+      <div class="social__item-wrapper">
+        <a class="social__item social__item--tw" href="http://www.twitter.com"></a>
         <a class="social__item social__item--fb" href="http://www.facebook.com"></a>
         <a class="social__item social__item--yt" href="http://www.youtube.com" ></a>
-
-        <div class="social__copyrigth">Разработано</div>
       </div>
+
+      <div class="social__copyrigth">Друзья</div>
     </footer>
 
+  <script src="js/nav.js"></script>
   </body>
 </html>

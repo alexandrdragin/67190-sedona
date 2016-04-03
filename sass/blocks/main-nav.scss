@@ -1,49 +1,122 @@
-.main-nav{
-  height: 220px;
-  background-color: #84B2D5;
-  text-align: center;
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  background-color: $blue;
 
   @media #{$tablet-widths} {
-    height: 0px;
+    height: 55px;
     color: black;
-  }
+    display: flex;
+    background-color:white;
+    flex-direction: row;
 
-
-}
-
-.main-nav__item{
-
-  color: white;
-  text-transform: uppercase;
-  text-decoration: none;
-  list-style: none;
-  display: block;
-
-  margin-top: 20px;
-
-  border-top: 1px solid gray;
-
-  @media #{$tablet-widths} {
-    display: inline;
-
-    color: black;
-    font-size: 10px;
-    padding: 0px 30px 0px 50px;
   }
 
   @media #{$desktop-widths} {
-    padding: 0px 80px 0px 50px;
+
+  }
+}
+
+.main-nav__item {
+  text-align: center;
+  align-self: stretch;
+  margin: auto;
+  padding: 14px 0 14px 0;
+  color: white;
+  margin: auto;
+
+  text-transform: uppercase;
+  text-decoration: none;
+  list-style: none;
+
+  width: 100%;
+
+  @media #{$tablet-widths} {
+    border-top: none;
+    border-bottom:none;
+    padding:0;
+    color: black;
+    font-size: 10px;
+
+    font-family: "PT Sans";
+    font-weight: 700;
+  }
+
+  @media #{$desktop-widths} {
+
+  }
+}
+
+.main-nav__item:not(:last-of-type) {
+  border-bottom: 1px solid $border-menu-dark;
+
+  @media #{$tablet-widths} {
+    border-bottom:none;
+  }
+}
+
+.main-nav__item:not(:first-of-type) {
+  border-top: 1px solid $border-menu-light;
+
+  @media #{$tablet-widths} {
+    border-top: none;
+  }
+}
+
+.main-nav__item:last-of-type {
+  box-shadow: inset 0px -5px 12px -6px rgba(0, 0, 0, 0.5);
+
+  @media #{$tablet-widths} {
+    box-shadow: none;
   }
 
 }
 
-.main-nav__item:first-child{margin-top: 0px;}
+@media #{$mobile-widths} {
+  .main-nav__item:nth-child(3) {
+     display: none;
+   }
+}
 
 .main-nav__button {
   margin: 0;
   padding: 0;
 
   list-style: none;
+
+  cursor: pointer;
+
+  @media #{$tablet-widths} {
+    display: none;
+    }
+}
+
+.main-nav__button--close{
+  position: absolute;
+  top:0;
+  right: 0;
+
+  width: 55px;
+  height: 55px;
+
+  border: none;
+  background: url("../img/icon-cross.svg") 50% 50% no-repeat;
+}
+
+.main-nav__button--open {
+  position: absolute;
+  top:0;
+  right: 0;
+
+  width: 55px;
+  height: 55px;
+
+  border: none;
+  background: url("../img/icon-menu.svg") 50% 50% no-repeat;
+
+  display: none;
 
   @media #{$tablet-widths} {
     display: none;

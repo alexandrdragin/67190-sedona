@@ -1,0 +1,157 @@
+.form__contact-wrapper {
+  @media #{$desktop-widths} {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+
+    justify-content: space-between;
+
+
+
+
+    margin-top: 70px;
+    margin-bottom: 13px;
+  }
+
+}
+
+
+
+.form__contact {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: flex-start;
+  align-items: center;
+
+
+  @media #{$tablet-widths} {
+    position: relative;
+
+    justify-content:space-between;
+    align-content: flex-start;
+  }
+
+  @media #{$desktop-widths} {
+    flex-wrap: nowrap;
+    width: 50%;
+  }
+
+}
+
+
+.form__phone-label {
+  font-size: 14px;
+  margin-top: 5px;
+  margin-left: 30px;
+  text-transform: uppercase;
+
+  @media #{$tablet-widths} {
+    margin-left: 20px;
+  }
+
+  @media #{$desktop-widths} {
+      margin-left: 0px;
+      margin-right: 20px;
+  }
+
+}
+
+  .form__contact:first-child {
+
+    @media #{$desktop-widths} {
+      margin-right: 20px;
+
+
+    }
+
+}
+
+.form__phone-input {
+
+  border: none;
+  background-color: $ligthgrey;
+
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: -10px;
+  margin-bottom: 5px;
+  padding: 18px;
+  font-weight: bold;
+
+  @media #{$tablet-widths} {
+    width: 80%;
+    flex-grow: 1;
+      margin-top: 0;
+      margin-left: 0;
+      margin-right:0;
+      margin-bottom: 20px;
+  }
+
+  @media #{$desktop-widths} {
+
+    width:auto;
+    margin-bottom: 0px;
+  }
+
+}
+
+.form__contact:last-child{
+  margin-bottom: 22px;
+  @media #{$tablet-widths} {
+    margin-bottom:0;
+  }
+}
+
+.form__bad-input {
+  color: red;
+  font-size: 14px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+
+  @media #{$tablet-widths} {
+    position: absolute;
+    right: 0;
+    top: 0px;
+    font-size: 14px;
+  }
+
+  @media #{$desktop-widths} {
+    top: -30px;
+    right: 60px;
+    width: 300px;
+  }
+}
+
+.form__icon {
+  margin-top: 0px;
+  width: 60px;
+  height: 39px;
+  padding-top: 20px;
+  text-align: center;
+  align-self: center;
+  background-color: $grey;
+
+  @media #{$tablet-widths} {
+    margin-top: -20px;
+  }
+
+  @media #{$desktop-widths} {
+    margin-top: 0px;
+  }
+}
+
+.form__phone-label--tablet {
+  @media #{$desktop-widths} {
+    display:none;
+  }
+}
+
+.form__phone-label--desktop {
+  display:none;
+  @media #{$desktop-widths} {
+    display:block;
+  }
+}
