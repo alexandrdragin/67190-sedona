@@ -7,7 +7,6 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 
 var minify = require("gulp-csso");
-var cmq = require('gulp-combine-media-queries');
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var svgstore = require("gulp-svgstore");
@@ -50,9 +49,6 @@ gulp.task("style", function() {
         "last 2 Edge versions"
       ]})
     ]))
-    .pipe(cmq({
-      log: true
-    }))
     .pipe(gulp.dest("css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
