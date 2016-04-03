@@ -20,6 +20,8 @@ var server = require("browser-sync");
 var reporter     = require('postcss-reporter');
 var syntax_scss  = require('postcss-scss');
 var stylelint    = require('stylelint');
+var htmllint = require('gulp-htmllint');
+var gutil = require('gulp-util');
 
 gulp.task("symbols", function() {
     gulp.src("img/*.svg")
@@ -40,7 +42,7 @@ gulp.task("images", function() {
     .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("style", ["linter"], function() {
+gulp.task("style", ["style-linter"], function() {
   gulp.src("sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
@@ -72,7 +74,7 @@ gulp.task('copy', ["clean"], function() {
 	    .pipe(gulp.dest('build/'))
     });
 
-gulp.task("linter", function() {
+gulp.task("style-linter", function() {
   var processors = [
     stylelint(),
     reporter({
@@ -84,7 +86,22 @@ gulp.task("linter", function() {
     .pipe(postcss(processors, {syntax: syntax_scss}))
 });
 
-gulp.task("serve", ["style"], function() {
+gulp.task('html-linter', function() {
+  return gulp.src('*.html')
+    .pipe(htmllint({}, htmllintReporter));
+});
+
+function htmllintReporter(filepath, issues) {
+  if (issues.length > 0) {
+    issues.forEach(function(issue) {
+      gutil.log(gutil.colors.cyan('[gulp-htmllint] ') + gutil.colors.white(filepath + ' [' + issue.line + ',' + issue.column + ']: ') + gutil.colors.red('(' + issue.code + ') ' + issue.msg));
+    });
+
+    process.exitCode = 1;
+  }
+}
+
+gulp.task("serve", ["style", "html-linter"], function() {
   server.init({
     server: ".",
     notify: false,
