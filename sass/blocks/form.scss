@@ -13,7 +13,7 @@
   }
 
   @media #{$desktop-widths} {
-  
+
     margin-left:120px;
     margin-right:120px;
   }
@@ -31,11 +31,7 @@
     margin-top: -5px;
     background-color: $grey-border;
   }
-
-
 }
-
-
 
 .form__inside-header {
   text-transform: uppercase;
@@ -93,6 +89,13 @@
   }
 }
 
+.form__inside-header--margin::before{
+  display: none;
+  &::after{
+    display: none;
+  }
+}
+
 .form__inside-header--border::after {
     @media #{$tablet-widths} {
       top: 64px;
@@ -115,12 +118,14 @@
   display: none;
 }
 
-.form__inside-header--margin::after {
-  display: none;
-}
+@media (min-width: 768px) {
+  .form__inside-header--margin::before{
+    display: none;
+  }
+  .form__inside-header--margin::after{
+    display: none;
 
-.form__inside-header--margin::before {
-  display: none;
+  }
 }
 
 .form__submit {

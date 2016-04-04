@@ -28,15 +28,6 @@ gulp.task("symbols", function() {
     .pipe(gulp.dest("img"));
 });
 
-gulp.task("images", function() {
-    return gulp.src("img/**/*.{png,jpg,gif}")
-      .pipe(imagemin({
-      optimizationLevel: 3,
-      progressive: true
-    }))
-    .pipe(gulp.dest("build/img"));
-});
-
 gulp.task("style", function() {
   gulp.src("sass/style.scss")
     .pipe(plumber())
@@ -57,6 +48,15 @@ gulp.task("style", function() {
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(server.reload({stream: true}));
+});
+
+gulp.task("images", function() {
+    return gulp.src("img/**/*.{png,jpg,gif}")
+      .pipe(imagemin({
+      optimizationLevel: 3,
+      progressive: true
+    }))
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task('clean', function() {

@@ -130,3 +130,11 @@
   }
 
 }
+
+.form__inside-header--tablet::after {
+
+  @media #{$tablet-widths} {
+    display: none;
+  }
+
+}
