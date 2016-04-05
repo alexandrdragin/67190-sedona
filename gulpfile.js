@@ -65,11 +65,12 @@ gulp.task('clean', function() {
 		.pipe(clean())
   });
 
-gulp.task('copy', ["clean"], function() {
-	gulp.src('./**/*.!(scss|sass|psd|log|md|json), !./node_modules')
-		.pipe(copy())
-	    .pipe(gulp.dest('build/'))
-    });
+gulp.task('copy', function() {
+  gulp.src("*.html").pipe(gulp.dest("build"));
+  gulp.src("fonts/**/*.{woff,woff2}").pipe(gulp.dest("build/fonts"));
+  gulp.src("img/**.{png,jpg,gif,svg}").pipe(gulp.dest("build/img"));
+  gulp.src("js/**.js").pipe(gulp.dest("build/js"));
+});
 
 gulp.task("serve", ["style"], function() {
   server.init({
@@ -78,11 +79,11 @@ gulp.task("serve", ["style"], function() {
     open: true,
     ui: false
   });
-
+  
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
   gulp.watch("*.html").on("change", server.reload);
   gulp.watch("css/*.css").on("change", server.reload);
 });
 
-gulp.task("build", ["style", "symbols", "images", "copy"], function() {
+gulp.task("build", ["clean", "style", "images", "copy"], function() {
 });
