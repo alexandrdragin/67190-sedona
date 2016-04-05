@@ -143,10 +143,7 @@
   }
 }
 
-.video__icon-button{
-  width: 22px;
-  height: 22px;
-
+.video__icon-button {
   fill: #595959;
 
   @media #{$tablet-widths} {
@@ -158,7 +155,6 @@
  @media #{$desktop-widths} {
    margin-top: 5px;
  }
-
 }
 
 .video__replay-button{

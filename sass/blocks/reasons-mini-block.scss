@@ -112,7 +112,7 @@
   margin-top: -4px;
 
   @include sub-header;
-  @include mobile-padding-right;
+  padding-right: 20px;
   text-align: left;
 
   @media #{$tablet-widths} {

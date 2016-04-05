@@ -19,17 +19,25 @@
         <a class="main-nav__item" href="/">HTML Academy</a>
       </nav>
 
-      <div class="page-header__logo" href="#"></div>
+      <picture>
+        <source class="page-header__logo" media="(min-width:1200px)" srcset="../img/logo-sedona-desktop.svg" height="100" width="200" alt="Седона">
+        <source class="page-header__logo" media="(min-width:768px)" srcset="../img/logo-sedona-tablet.svg" height="100" width="200" alt="Седона">
+        <img class="page-header__logo" src="../img/logo-sedona-mobile.svg" height="100" width="200" alt="Седона">
+      </picture>
 
-      <button class="main-nav__button main-nav__button--close"></button>
+      <button class="main-nav__button main-nav__button--close">
+        <svg class="main-nav__icon-menu" height="25" width="25">
+          <use xlink:href="#icon-cross" />
+        </svg>
+      </button>
       <button class="main-nav__button main-nav__button--open">
-        <svg class="main-nav__icon-menu">
+        <svg class="main-nav__icon-menu" height="25" width="25">
           <use xlink:href="#icon-menu" />
         </svg>
       </button>
 
       <div class="page-header__image-wrapper">
-        <img class="page-header__image" src="img/text-sedona.svg" alt="Wecome to Sedona">
+        <img class="page-header__image" src="img/text-sedona.svg" height="auto" width="230" alt="Wecome to Sedona">
       </div>
     </header>
 
@@ -43,16 +51,16 @@
 
           <div class="photo photo--big-for-tablet">
             <picture class="photo__image photo__image--big-for-tablet">
-              <source class="photo__image-image" media="(min-width:1200px)" srcset="../img/photo-1-desktop.jpg 1x, ../img/photo-1-desktop@2x.jpg 2x">
-              <source class="photo__image-image" media="(min-width:768px)" srcset="../img/photo-1-tablet.jpg 1x, ../img/photo-1-tablet@2x.jpg 2x">
-              <img class="photo__image-image" src="../img/photo-1-mobile.jpg" srcset="../img/photo-1-mobile@2x.jpg 2x" alt="Неродные просторы">
+              <source class="photo__image-image" media="(min-width:1200px)" srcset="../img/photo-1-desktop.jpg 1x, ../img/photo-1-desktop@2x.jpg 2x" height="auto" width="auto" alt="Неродные просторы">
+              <source class="photo__image-image" media="(min-width:768px)" srcset="../img/photo-1-tablet.jpg 1x, ../img/photo-1-tablet@2x.jpg 2x" height="auto" width="auto" alt="Неродные просторы">
+              <img class="photo__image-image" src="../img/photo-1-mobile.jpg" srcset="../img/photo-1-mobile@2x.jpg 2x" height="auto" width="auto" alt="Неродные просторы">
             </picture>
 
             <div class="photo__about">
               <div class="photo__header">Неродные просторы</div>
               <div class="photo__author">Автор фото: Борис</div>
               <button class="photo__like-button">
-                <svg class="photo__like-icon">
+                <svg class="photo__like-icon" height="22" width="22">
                   <use xlink:href="#icon-like" />
                 </svg>
                 1350
@@ -62,16 +70,16 @@
 
           <div class="photo">
             <picture class="photo__image">
-              <source class="photo__image-image" media="(min-width:1200px)" srcset="../img/photo-2-desktop.jpg 1x, ../img/photo-2-desktop@2x.jpg 2x">
-              <source class="photo__image-image" media="(min-width:768px)" srcset="../img/photo-2-tablet.jpg 1x, ../img/photo-2-tablet@2x.jpg 2x">
-              <img class="photo__image-image" src="../img/photo-2-mobile.jpg" srcset="../img/photo-2-mobile@2x.jpg 2x" alt="Местная растительность">
+              <source class="photo__image-image" media="(min-width:1200px)" srcset="../img/photo-2-desktop.jpg 1x, ../img/photo-2-desktop@2x.jpg 2x" height="auto" width="auto" alt="Местная растительность">
+              <source class="photo__image-image" media="(min-width:768px)" srcset="../img/photo-2-tablet.jpg 1x, ../img/photo-2-tablet@2x.jpg 2x" height="auto" width="auto" alt="Местная растительность">
+              <img class="photo__image-image" src="../img/photo-2-mobile.jpg" srcset="../img/photo-2-mobile@2x.jpg 2x" height="auto" width="auto" alt="Местная растительность">
             </picture>
 
             <div class="photo__about">
               <div class="photo__header">Местная растительность</div>
               <div class="photo__author">Автор фото: Сергей</div>
               <button class="photo__like-button">
-                <svg class="photo__like-icon">
+                <svg class="photo__like-icon" height="22" width="22">
                   <use xlink:href="#icon-like" />
                 </svg>
                 143
@@ -83,14 +91,14 @@
             <picture class="photo__image">
               <source class="photo__image-image" media="(min-width:1200px)" srcset="../img/photo-3-desktop.jpg 1x, ../img/photo-3-desktop@2x.jpg 2x">
               <source class="photo__image-image" media="(min-width:768px)" srcset="../img/photo-3-tablet.jpg 1x, ../img/photo-3-tablet@2x.jpg 2x">
-              <img class="photo__image-image" src="../img/photo-3-mobile.jpg" srcset="../img/photo-3-mobile@2x.jpg 2x" alt="Дорога на север">
+              <img class="photo__image-image" src="../img/photo-3-mobile.jpg" srcset="../img/photo-3-mobile@2x.jpg 2x" height="auto" width="auto" alt="Дорога на север">
             </picture>
 
             <div class="photo__about">
               <div class="photo__header">Дорога на север</div>
               <div class="photo__author">Автор фото: Петр</div>
               <button class="photo__like-button">
-                <svg class="photo__like-icon">
+                <svg class="photo__like-icon" height="22" width="22">
                   <use xlink:href="#icon-like" />
                 </svg>
                 96
@@ -102,14 +110,14 @@
             <picture class="photo__image">
               <source class="photo__image-image" media="(min-width:1200px)" srcset="../img/photo-4-desktop.jpg 1x, ../img/photo-4-desktop@2x.jpg 2x">
               <source class="photo__image-image" media="(min-width:768px)" srcset="../img/photo-4-tablet.jpg 1x, ../img/photo-4-tablet@2x.jpg 2x">
-              <img class="photo__image-image" src="../img/photo-4-mobile.jpg" srcset="../img/photo-4-mobile@2x.jpg 2x" alt="Мост дьявола">
+              <img class="photo__image-image" src="../img/photo-4-mobile.jpg" srcset="../img/photo-4-mobile@2x.jpg 2x" height="auto" width="auto" alt="Мост дьявола">
             </picture>
 
             <div class="photo__about">
               <div class="photo__header">Мост дьявола</div>
               <div class="photo__author">Автор фото: Антон</div>
               <button class="photo__like-button">
-                <svg class="photo__like-icon">
+                <svg class="photo__like-icon" height="22" width="22">
                   <use xlink:href="#icon-like" />
                 </svg>
                 254
@@ -129,24 +137,24 @@
           <picture class="video__image">
             <source class="video__image-image" media="(min-width:1200px)" srcset="../img/video-desktop.jpg 1x, ../img/video-desktop@2x.jpg 2x">
             <source class="video__image-image" media="(min-width:768px)" srcset="../img/video-tablet.jpg 1x, ../img/video-tablet@2x.jpg 2x">
-            <img class="video__image-image" src="../img/video-mobile.jpg" srcset="../img/video-mobile@2x.jpg 2x" alt="Фейковое видео">
+            <img class="video__image-image" src="../img/video-mobile.jpg" srcset="../img/video-mobile@2x.jpg 2x" height="auto" width="auto" alt="Фейковое видео">
           </picture>
 
           <div class="video__box-controls">
               <input class="video__time" type="range" min="0" max="100" />
 
               <button class="video__replay-button">
-                <svg class="video__icon-button">
+                <svg class="video__icon-button" height="22" width="22">
                   <use xlink:href="#icon-video-replay" />
                 </svg>
               </button>
               <button class="video__sub">
-                <svg class="video__icon-button">
+                <svg class="video__icon-button" height="22" width="22">
                   <use xlink:href="#icon-video-subtitles" />
                 </svg>
               </button>
               <button class="video__full-screen">
-                <svg class="video__icon-button">
+                <svg class="video__icon-button" height="22" width="22">
                   <use xlink:href="#icon-video-fullscreen" />
                 </svg>
               </button>
@@ -163,22 +171,22 @@
 
         <div class="social__item-wrapper">
           <a class="social__item" href="http://www.twitter.com">
-            <svg class="social__icon">
+            <svg class="social__icon" height="40%" width="40%">
               <use xlink:href="#icon-twitter" />
             </svg>
           </a>
           <a class="social__item" href="http://www.facebook.com">
-            <svg class="social__icon">
+            <svg class="social__icon" height="40%" width="40%">
               <use xlink:href="#icon-facebook" />
             </svg></a>
           <a class="social__item" href="http://www.youtube.com" >
-            <svg class="social__icon">
+            <svg class="social__icon" height="40%" width="40%">
               <use xlink:href="#icon-youtube" />
             </svg></a>
         </div>
 
         <div class="social__copyrigth">Pазработано
-          <svg class="social__copyrigth-icon">
+          <svg class="social__copyrigth-icon" height="40" width="40">
             <use class="social__htmlacademy" xlink:href="#htmlacademy" />
           </svg>
         </div>

@@ -3,20 +3,20 @@
 }
 
 .reasons-block__wrapper{
-   display: flex;
-   flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 
-   align-items:stretch;
-   align-content:stretch;
-   justify-content:space-between;
+  align-items:stretch;
+  align-content:stretch;
+  justify-content:space-between;
 
-   @media #{$tablet-widths} {
-     min-height: 1100px;
-   }
+  @media #{$tablet-widths} {
+   min-height: 1100px;
+  }
 
-   @media #{$desktop-widths} {
+  @media #{$desktop-widths} {
 
-   }
+  }
 }
 
 .reasons-main-header__header {
@@ -30,17 +30,17 @@
   @media #{$tablet-widths} {
     text-align: center;
     font-size: 20px;
-    margin-top: 50px;
+    margin-top: 60px;
     margin-bottom: 25px;
     margin-left: 170px;
     margin-right: 170px;
     }
 
-   @media #{$desktop-widths} {
-     margin-left: 320px;
-     margin-right: 320px;
-     margin-top: 50px;
-     }
+  @media #{$desktop-widths} {
+    margin-left: 320px;
+    margin-right: 320px;
+
+  }
 }
 
 .reasons-main-header__text {
@@ -49,7 +49,7 @@
   font-size: 12px;
   margin: 14px;
   margin-top: 25px;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
   color: #333333;
 
   @media #{$tablet-widths} {
@@ -83,13 +83,10 @@
 .reasons--blue {
   background-color: $someblue;
   color: white;
-  height: 200px;
 
     @media #{$tablet-widths} {
-      height: 255px;
       width: 33%;
       flex-grow: 1;
-
     }
 
      @media #{$desktop-widths} {
@@ -122,36 +119,39 @@
 
 .reasons__header--blue {
 
-    @media #{$tablet-widths} {
-      padding: 12px;
-      padding-bottom: 0;
-      margin-left: 20px;
-      margin-right: 20px;
-      font-size: 20px;
-      font-weight: 100;
+  @media #{$tablet-widths} {
+    padding: 12px;
+    padding-bottom: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: 100;
+  }
 
-    }
+   @media #{$desktop-widths} {
+     margin-top: 40px;
+     margin-left: 90px;
+     margin-right: 90px;
+  }
+}
 
-     @media #{$desktop-widths} {
-       margin-top: 40px;
-       margin-left: 90px;
-       margin-right: 90px;
-    }
+.reasons__text {
+  margin: 20px;
+  margin-top: -10px;
 }
 
 .reasons__text--blue {
   padding-left: 25px;
   padding-right: 25px;
+  margin-bottom: 27px;
 
+  @media #{$tablet-widths} {
+    font-size: 14px;
+  }
 
-    @media #{$tablet-widths} {
-      font-size: 14px;
+   @media #{$desktop-widths} {
 
-    }
-
-     @media #{$desktop-widths} {
-
-    }
+  }
 }
 
 .reasons--triangle::before {
@@ -162,14 +162,9 @@
     width: 100%;
     height: 40px;
     position: absolute;
-    top: -15px;
+    top: -20px;
     background: url("../img/bg-triangle.svg") 0% 50% no-repeat;
   }
-}
-
-.reasons__text {
-  margin: 20px;
-  margin-top: -10px;
 }
 
 .reasons__image{
@@ -190,26 +185,24 @@
 }
 
 .reasons__image--sity {
-    background: url("../img/photo-city.jpg" ) 50% 50% no-repeat;
+  background: url("../img/photo-city.jpg" ) 50% 50% no-repeat;
+  background-size: cover;
+
+
+  @media (min-resolution: 1.5dppx) {
+    background: url("../img/photo-city@2x.jpg") 50% 100% no-repeat;
     background-size: cover;
-
-
-    @media (min-resolution: 1.5dppx) {
-      background: url("../img/photo-city@2x.jpg") 50% 100% no-repeat;
-      background-size: cover;
-
-
-    }
+  }
 }
 
 .reasons__image--bridge {
-    background: url("../img/photo-bridge.jpg" ) 50% 50% no-repeat;
-    background-size: cover;
+  background: url("../img/photo-bridge.jpg" ) 50% 50% no-repeat;
+  background-size: cover;
 
-    @media (min-resolution: 1.5dppx) {
-      background: url("../img/photo-bridge@2x.jpg") 50% 100% no-repeat;
-      background-size: cover;
-    }
+  @media (min-resolution: 1.5dppx) {
+    background: url("../img/photo-bridge@2x.jpg") 50% 100% no-repeat;
+    background-size: cover;
+  }
 }
 
 .reasons--close {

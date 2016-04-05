@@ -20,17 +20,9 @@
   }
 }
 
-@mixin mobile-padding-right {
-  padding-right: 20px;
-}
-
-@mixin mobile-padding-left {
-  padding-left: 20px;
-}
-
 @mixin mobile-padding {
-  @include mobile-padding-right;
-  @include mobile-padding-left;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 @mixin sub-header {
