@@ -18,6 +18,12 @@ var clean = require('gulp-contrib-clean');
 
 var server = require("browser-sync");
 
+var reporter     = require('postcss-reporter');
+var syntax_scss  = require('postcss-scss');
+var stylelint    = require('stylelint');
+var htmllint = require('gulp-htmllint');
+var gutil = require('gulp-util');
+
 gulp.task("symbols", function() {
     gulp.src("img/*.svg")
     .pipe(svgmin())
@@ -28,7 +34,20 @@ gulp.task("symbols", function() {
     .pipe(gulp.dest("img"));
 });
 
+<<<<<<< HEAD
 gulp.task("style", function() {
+=======
+gulp.task("images", function() {
+    return gulp.src("img/**/*.{png,jpg,gif}")
+      .pipe(imagemin({
+      optimizationLevel: 3,
+      progressive: true
+    }))
+    .pipe(gulp.dest("build/img"));
+});
+
+gulp.task("style", ["style-linter"], function() {
+>>>>>>> htmlacademy-adaptive/master
   gulp.src("sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
@@ -71,7 +90,34 @@ gulp.task('copy', function() {
   gulp.src("js/**.js").pipe(gulp.dest("build/js"));
 });
 
-gulp.task("serve", ["style"], function() {
+gulp.task("style-linter", function() {
+  var processors = [
+    stylelint(),
+    reporter({
+      throwError: true
+    })
+  ];
+  return gulp.src(['sass/**/*.scss'])
+    .pipe(plumber())
+    .pipe(postcss(processors, {syntax: syntax_scss}))
+});
+
+gulp.task('html-linter', function() {
+  return gulp.src('*.html')
+    .pipe(htmllint({}, htmllintReporter));
+});
+
+function htmllintReporter(filepath, issues) {
+  if (issues.length > 0) {
+    issues.forEach(function(issue) {
+      gutil.log(gutil.colors.cyan('[gulp-htmllint] ') + gutil.colors.white(filepath + ' [' + issue.line + ',' + issue.column + ']: ') + gutil.colors.red('(' + issue.code + ') ' + issue.msg));
+    });
+
+    process.exitCode = 1;
+  }
+}
+
+gulp.task("serve", ["style", "html-linter"], function() {
   server.init({
     server: ".",
     notify: false,
