@@ -34,9 +34,6 @@ gulp.task("symbols", function() {
     .pipe(gulp.dest("img"));
 });
 
-<<<<<<< HEAD
-gulp.task("style", function() {
-=======
 gulp.task("images", function() {
     return gulp.src("img/**/*.{png,jpg,gif}")
       .pipe(imagemin({
@@ -47,7 +44,6 @@ gulp.task("images", function() {
 });
 
 gulp.task("style", ["style-linter"], function() {
->>>>>>> htmlacademy-adaptive/master
   gulp.src("sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
