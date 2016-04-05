@@ -34,6 +34,8 @@
   text-decoration: none;
   list-style: none;
 
+  line-height: 12px;
+
   width: 100%;
 
   @media #{$tablet-widths} {
@@ -43,7 +45,6 @@
     color: black;
     font-size: 14px;
 
-    font-family: "PT Sans";
     font-weight: 700;
   }
 
@@ -86,6 +87,7 @@
 .main-nav__button {
   margin: 0;
   padding: 0;
+  position: absolute;
   background: rgba(0, 0, 0, 0);
 
   list-style: none;
@@ -100,13 +102,10 @@
 .main-nav__button--close{
   position: absolute;
   display: none;
-  top:0;
-  right: 0;
-
-  width: 55px;
-  height: 55px;
-
   border: none;
+
+  top: -158px;
+  left: 25px;
 
   fill: white;
 }
@@ -114,6 +113,9 @@
 .main-nav__button--open {
   border: none;
   display: block;
+  position: absolute;
+  top: 15px;
+  left: 20px;
 
   @media #{$tablet-widths} {
     display: none;
@@ -122,8 +124,5 @@
 
 .main-nav__icon-menu{
   fill: $someblue;
-  position: absolute;
 
-  top: 15px;
-  right: 15px;
 }
