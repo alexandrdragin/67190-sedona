@@ -1,5 +1,6 @@
 .main-nav {
-  display: flex;
+  display: none;
+
   flex-direction: column;
   align-items: stretch;
 
@@ -9,9 +10,10 @@
     height: 55px;
     color: black;
     display: flex;
-    background-color:white;
-    flex-direction: row;
 
+    background-color: white;
+
+    flex-direction: row;
   }
 
   @media #{$desktop-widths} {
@@ -22,8 +24,7 @@
 .main-nav__item {
   text-align: center;
   align-self: stretch;
-  margin: auto;
-  padding: 14px 0 14px 0;
+  padding: 20px 0 8px 0;
   color: white;
   margin: auto;
 
@@ -31,17 +32,39 @@
   text-decoration: none;
   list-style: none;
 
+  line-height: 12px;
+
+  min-height: 26px;
+
   width: 100%;
+
+  &:hover {
+    background-color: $hoverblue;
+  }
+
+  &:active {
+    background-color: $downblue;
+    color: #94B9D2;
+  }
 
   @media #{$tablet-widths} {
     border-top: none;
-    border-bottom:none;
+    border-bottom: none;
     padding:0;
     color: black;
-    font-size: 10px;
+    font-size: 14px;
+    line-height: 20px;
 
-    font-family: "PT Sans";
     font-weight: 700;
+
+    &:hover {
+      background-color: white;
+      color: $hoverblue;
+    }
+
+    &:active {
+      color: $grey;
+    }
   }
 
   @media #{$desktop-widths} {
@@ -83,6 +106,8 @@
 .main-nav__button {
   margin: 0;
   padding: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0);
 
   list-style: none;
 
@@ -95,30 +120,28 @@
 
 .main-nav__button--close{
   position: absolute;
-  top:0;
-  right: 0;
-
-  width: 55px;
-  height: 55px;
-
+  display: none;
   border: none;
-  background: url("../img/icon-cross.svg") 50% 50% no-repeat;
+
+  top: -207px;
+  left: 10px;
+
+  fill: white;
 }
 
 .main-nav__button--open {
-  position: absolute;
-  top:0;
-  right: 0;
-
-  width: 55px;
-  height: 55px;
-
   border: none;
-  background: url("../img/icon-menu.svg") 50% 50% no-repeat;
-
-  display: none;
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: 10px;
 
   @media #{$tablet-widths} {
     display: none;
     }
+}
+
+.main-nav__icon-menu{
+  fill: $someblue;
+
 }

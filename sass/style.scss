@@ -1,11 +1,9 @@
-
 @import "global/normalize.scss";
 
 @import "variables.scss";
 @import "mixins.scss";
 @import "blocks/body.scss";
 @import "blocks/main.scss";
-
 
 @import "blocks/main-nav.scss";
 @import "blocks/page-header.scss";
@@ -19,12 +17,12 @@
 @import "blocks/photo-block.scss";
 @import "blocks/video-block.scss";
 
-@import "blocks/form-block.scss";
-@import "blocks/form.scss";
-@import "blocks/form__name.scss";
-@import "blocks/form__contact.scss";
-@import "blocks/form__radio.scss";
-@import "blocks/form__checkbox.scss";
-@import "blocks/form__textarea.scss";
+@import "blocks/form/form-block.scss";
+@import "blocks/form/form.scss";
+@import "blocks/form/name.scss";
+@import "blocks/form/contact.scss";
+@import "blocks/form/checkbox.scss";
+@import "blocks/form/textarea.scss";
+@import "blocks/form/radio.scss";
 
-@import "blocks/play.scss";
+@import "blocks/form/modal-overlay.scss";

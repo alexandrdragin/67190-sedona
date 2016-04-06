@@ -5,81 +5,90 @@
   @media #{$desktop-widths} {
     height: 500px;
   }
-}
 
-.map__header{
-  @include mobile-padding;
-  margin-top:28px;
-
-  @media #{$tablet-widths} {
-    margin-top:22px;
-    font-size: 30px;
-  }
-
-   @media #{$desktop-widths} {
-
-    }
-}
-
-.map__text{
-  @include mobile-padding;
-  @include sub-header;
-
-  margin-bottom: 38px;
-
-  line-height: 22px;
-
-  @media #{$tablet-widths} {
-    margin-left: 160px;
-    margin-right: 160px;
-    margin-bottom: 43px;
-  }
-
-  @media #{$desktop-widths} {
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-bottom: 47px;
-   }
-
-}
-
-
-.map__button{
-  height: 60px;
-  width: 280px;
-  background-color: $someblue;
-  color: white;
-  border: none;
-
-  @media #{$tablet-widths} {
-    width: 460px;
-    margin-bottom: 43px;
-  }
-
-}
-
-.map__picture-map{
-
-  @media #{$tablet-widths} {
+  &__header{
+    @include mobile-padding;
     margin-top: 40px;
-    height: 290px;
-    width: 100%;
+
+    @media #{$tablet-widths} {
+      margin-top:22px;
+      font-size: 30px;
+    }
+
+     @media #{$desktop-widths} {
+
+      }
   }
 
-   @media #{$desktop-widths} {
+  &__text{
+    @include mobile-padding;
+    @include sub-header;
 
+    margin-bottom: 38px;
+
+    line-height: 22px;
+
+    @media #{$tablet-widths} {
+      margin-top: 35px;
+      margin-left: 165px;
+      margin-right: 165px;
+      margin-bottom: 43px;
     }
-}
 
-.map__map-image {
-  margin-top: 50px;
+    @media #{$desktop-widths} {
+      margin-top: 30px;
+      margin-left: 31%;
+      margin-right: 31%;
+      margin-bottom: 47px;
+    }
+  }
 
-  @media #{$tablet-widths} {
-    margin-top: 15px;
-    height: 350px;
+  &__button {
+    height: 60px;
+    width: 280px;
+    background-color: $someblue;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    outline: none;
+
+    @media #{$tablet-widths} {
+      width: 460px;
+      margin-bottom: 43px;
     }
 
-   @media #{$desktop-widths} {
-     margin-top: 25px;
-     }
+    &:hover {
+      background-color: $hoverblue;
+    }
+
+    &:active {
+      background-color: $downblue;
+      color: #94B9D2;
+      font-weight: 700;
+    }
+  }
+
+  &__picture-map{
+
+    @media #{$tablet-widths} {
+      margin-top: 40px;
+    }
+
+  }
+
+  &__map-image {
+    margin-top: 55px;
+
+    @media #{$tablet-widths} {
+      margin-top: 15px;
+      height: 350px;
+      width: 768px;
+      }
+
+    @media #{$desktop-widths} {
+      margin-top: 25px;
+      width: 1200px;
+    }
+  }
+
 }

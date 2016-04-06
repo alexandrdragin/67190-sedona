@@ -1,0 +1,172 @@
+.contact-wrapper {
+  @media #{$desktop-widths} {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: space-between;
+
+    margin-top: 70px;
+    margin-bottom: 13px;
+  }
+
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: flex-start;
+  align-items: center;
+
+  @media #{$tablet-widths} {
+    position: relative;
+
+    justify-content:space-between;
+
+  }
+
+  @media #{$desktop-widths} {
+    flex-wrap: nowrap;
+    width: 50%;
+
+
+  }
+
+  &:first-child {
+
+    @media #{$desktop-widths} {
+      margin-right: 20px;
+    }
+  }
+
+  &:last-child{
+    margin-bottom: 22px;
+
+    @media #{$tablet-widths} {
+      margin-bottom:0;
+    }
+  }
+
+  &__label {
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: 30px;
+    text-transform: uppercase;
+
+    @media #{$tablet-widths} {
+      margin-left: 20px;
+    }
+
+    @media #{$desktop-widths} {
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+
+    &--tablet {
+      @media #{$desktop-widths} {
+        display:none;
+      }
+    }
+
+    &--desktop {
+      display:none;
+      @media #{$desktop-widths} {
+        display:block;
+      }
+    }
+  }
+
+  &__input {
+
+    border: none;
+    background-color: $ligthgrey;
+
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: -10px;
+    margin-bottom: 5px;
+    padding: 18px;
+    font-weight: bold;
+
+    @media #{$tablet-widths} {
+      width: 80%;
+      flex-grow: 1;
+        margin-top: 0;
+        margin-left: 0;
+        margin-right:0;
+        margin-bottom: 20px;
+    }
+
+    @media #{$desktop-widths} {
+
+      width:auto;
+      margin-bottom: 0px;
+    }
+
+    &::-webkit-input-placeholder {
+      color: black;
+    }
+
+    &::-moz-placeholder {
+      color: black;
+    }
+
+    &:-ms-input-placeholder {
+      color: black;
+    }
+
+    &:hover {
+      background-color: $grey;
+      color:black;
+    }
+
+    &:active {
+      background-color: white;
+    }
+  }
+
+  &__bad-input {
+    color: red;
+    font-size: 14px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+
+    @media #{$tablet-widths} {
+      position: absolute;
+      right: 0;
+      top: 0px;
+      font-size: 14px;
+    }
+
+    @media #{$desktop-widths} {
+      top: -30px;
+      right: 60px;
+      width: 300px;
+    }
+  }
+
+  &__icon-box {
+    margin-top: 0px;
+    width: 60px;
+    height: 59px;
+
+    background-color: $grey;
+
+
+    @media #{$tablet-widths} {
+      margin-top: -20px;
+    }
+
+    @media #{$desktop-widths} {
+      margin-top: 0px;
+    }
+  }
+
+  &__icon {
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+
+}

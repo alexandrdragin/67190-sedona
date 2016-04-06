@@ -1,7 +1,7 @@
 .video-block {
  min-height: 500px;
  margin-bottom: -20px;
- margin-top: 35px;
+ margin-top: 30px;
  position: relative;
 
  @media #{$tablet-widths} {
@@ -35,7 +35,7 @@
   margin-top: 25px;
 
   @media #{$tablet-widths} {
-    margin-top: 65px;
+    margin-top: 60px;
     font-size: 30px;
     }
 
@@ -81,16 +81,19 @@
   margin-top: 8px;
 
   @media #{$tablet-widths} {
-
     margin-top: 45px;
     text-align: center;
     align-self: center;
     z-index: -2;
+    width: 648px;
+    height: 500px;
   }
 
-   @media #{$desktop-widths} {
-     margin-top: 40px;
-    }
+  @media #{$desktop-widths} {
+    margin-top: 40px;
+    width: 800px;
+    height: 500px;
+  }
 
 }
 
@@ -117,7 +120,7 @@
     width: 100%;
     z-index: 2;
     left: 0px;
-    top: -102px;
+    top: -101px;
   }
 
    @media #{$desktop-widths} {
@@ -143,11 +146,32 @@
   }
 }
 
+.video__icon-button {
+  fill: #595959;
 
+  &:hover {
+    fill: #333333;
+  }
 
-.video__replay {
+  &:active {
+    fill: $grey;
+  }
+
+  @media #{$tablet-widths} {
+  fill: white;
+  width: 26px;
+  height: 26px;
+ }
+
+ @media #{$desktop-widths} {
+   margin-top: 5px;
+ }
+}
+
+.video__replay-button{
   margin-right: 80px;
   z-index: 3;
+  background-color: rgba(0, 0, 0, 0);
 
   @media #{$tablet-widths} {
     order: -1;
@@ -163,11 +187,12 @@
 
 .video__sub {
   z-index: 3;
-
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .video__full-screen {
     z-index: 3;
+    background-color: rgba(0, 0, 0, 0);
 
     @media #{$tablet-widths} {
       margin: 35px;
@@ -216,6 +241,6 @@
 
 .video__time[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
-    background-color: #666;
-    opacity: 1;
+  background-color: #666;
+  opacity: 1;
 }
