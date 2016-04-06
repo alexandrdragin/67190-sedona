@@ -109,6 +109,14 @@
       color: black;
     }
 
+    &::-moz-placeholder {
+      color: black;
+    }
+
+    &:-ms-input-placeholder {
+      color: black;
+    }
+
     &:hover {
       background-color: $grey;
       color:black;

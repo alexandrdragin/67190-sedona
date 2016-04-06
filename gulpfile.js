@@ -61,8 +61,8 @@ gulp.task("style", function() {
 });
 
 gulp.task('clean', function() {
-	gulp.src('build', {read: false})
-		.pipe(clean())
+  gulp.src('build', {read: false})
+    .pipe(clean())
   });
 
 gulp.task('copy', function() {
@@ -79,7 +79,7 @@ gulp.task("serve", ["style"], function() {
     open: true,
     ui: false
   });
-  
+
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
   gulp.watch("*.html").on("change", server.reload);
   gulp.watch("css/*.css").on("change", server.reload);

@@ -17,13 +17,21 @@
     margin-left: 0px;
     margin-bottom: 40px;
   }
-  
+
   @media #{$desktop-widths}{
     margin-bottom: 50px;
     width: 98%;
   }
 
   &::-webkit-input-placeholder {
+    color: black;
+  }
+
+  &::-moz-placeholder {
+    color: black;
+  }
+
+  &:-ms-input-placeholder {
     color: black;
   }
 
