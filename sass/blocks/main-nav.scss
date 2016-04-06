@@ -49,10 +49,11 @@
 
   @media #{$tablet-widths} {
     border-top: none;
-    border-bottom:none;
+    border-bottom: none;
     padding:0;
     color: black;
     font-size: 14px;
+    line-height: 20px;
 
     font-weight: 700;
 
@@ -122,7 +123,7 @@
   display: none;
   border: none;
 
-  top: -205px;
+  top: -207px;
   left: 10px;
 
   fill: white;

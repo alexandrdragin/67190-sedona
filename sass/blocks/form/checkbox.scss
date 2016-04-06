@@ -68,8 +68,7 @@
     &:active {
       background-color: #D5D5D5;
     }
-
-  }
+}
 
   &__input:checked + .checkbox__label::after {
     content: '';
@@ -82,14 +81,6 @@
 
     background: url("../img/icon-tick.svg") 50% 50% no-repeat;
     background-color: $ligthgrey;
-
-    &:hover {
-      background-color: #E4E4E4;
-    }
-
-    &:active {
-      background-color: #D5D5D5;
-    }
 
   }
 
@@ -107,5 +98,13 @@
       margin-bottom: 0px;
       margin-top: 0px;
     }
+  }
+
+  &:hover &__input + &__label::after{
+    background-color: #E4E4E4;
+  }
+
+  &:active &__input + &__label::after{
+    background-color: #D5D5D5;
   }
 }

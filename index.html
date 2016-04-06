@@ -19,11 +19,13 @@
         <a class="main-nav__item" href="playground.html">HTML Academy</a>
       </nav>
 
-      <picture>
-        <source class="page-header__logo" media="(min-width:1200px)" srcset="../img/logo-sedona-desktop.svg">
-        <source class="page-header__logo" media="(min-width:768px)" srcset="../img/logo-sedona-tablet.svg">
-        <img class="page-header__logo" src="../img/logo-sedona-mobile.svg" height="90" width="210" alt="Седона">
-      </picture>
+      <a href="index.html">
+        <picture>
+          <source class="page-header__logo" media="(min-width:1200px)" srcset="../img/logo-sedona-desktop.svg">
+          <source class="page-header__logo" media="(min-width:768px)" srcset="../img/logo-sedona-tablet.svg">
+          <img class="page-header__logo" src="../img/logo-sedona-mobile.svg" height="90" width="210" alt="Седона">
+        </picture>
+      <a>
 
       <button class="main-nav__button">
         <svg class="main-nav__icon-menu main-nav__button--close" height="25" width="25">
@@ -35,7 +37,7 @@
       </button>
 
       <div class="page-header__image-wrapper page-header__image-wrapper--big">
-        <img class="page-header__image page-header__image--big" src="img/text-sedona-index.svg" width="280" alt="Wecome to Sedona">
+        <img class="page-header__image page-header__image--big" src="img/text-sedona-index.svg" width="280" height="350" alt="Wecome to Sedona">
       </div>
 
     </header>
@@ -113,7 +115,7 @@
           <picture class="map__picture-map">
             <source class="map__map-image" media="(min-width:1200px)" srcset="../img/bg-map-desktop.jpg">
             <source class="map__map-image" media="(min-width:768px)" srcset="../img/bg-map-tablet.jpg">
-            <img class="map__map-image" src="../img/bg-map-mobile.jpg" height="350" alt="Фейковая карта">
+            <img class="map__map-image" src="../img/bg-map-mobile.jpg" height="350" width="320" alt="Фейковая карта">
           </picture>
 
         </div>
@@ -125,26 +127,26 @@
       <div class="social__header">#visitSEDONA</div>
 
       <div class="social__item-wrapper">
-        <a class="social__item" href="http://www.twitter.com">
+        <a class="social__item" href="http://www.twitter.com" target="_blank">
           <svg class="social__icon" height="40%" width="40%">
             <use xlink:href="#icon-twitter" />
           </svg>
         </a>
-        <a class="social__item" href="http://www.facebook.com">
+        <a class="social__item" href="http://www.facebook.com" target="_blank">
           <svg class="social__icon" height="40%" width="40%">
             <use xlink:href="#icon-facebook" />
           </svg></a>
-        <a class="social__item" href="http://www.youtube.com" >
+        <a class="social__item" href="http://www.youtube.com" target="_blank">
           <svg class="social__icon" height="40%" width="40%">
             <use xlink:href="#icon-youtube" />
           </svg></a>
       </div>
 
-      <div class="social__copyrigth">Pазработано
+      <a class="social__copyrigth" href="https://htmlacademy.ru/" target="_blank">Pазработано
         <svg class="social__copyrigth-icon" height="40" width="40">
           <use class="social__htmlacademy" xlink:href="#htmlacademy" />
         </svg>
-      </div>
+      </a>
     </footer>
 
     <script src="js/picturefill.min.js"></script>

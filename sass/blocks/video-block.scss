@@ -81,16 +81,19 @@
   margin-top: 8px;
 
   @media #{$tablet-widths} {
-
     margin-top: 45px;
     text-align: center;
     align-self: center;
     z-index: -2;
+    width: 648px;
+    height: 500px;
   }
 
-   @media #{$desktop-widths} {
-     margin-top: 40px;
-    }
+  @media #{$desktop-widths} {
+    margin-top: 40px;
+    width: 800px;
+    height: 500px;
+  }
 
 }
 

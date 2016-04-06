@@ -50,7 +50,7 @@
     color: white;
     border: none;
     text-transform: uppercase;
-
+    outline: none;
 
     @media #{$tablet-widths} {
       width: 460px;
@@ -81,10 +81,13 @@
 
     @media #{$tablet-widths} {
       margin-top: 15px;
+      height: 350px;
+      width: 768px;
       }
 
     @media #{$desktop-widths} {
       margin-top: 25px;
+      width: 1200px;
     }
   }
 

@@ -32,8 +32,6 @@
   }
 
   &__before {
-    content: '';
-
     position: relative;
     display: inline-block;
     top: 25px;
@@ -47,7 +45,7 @@
 
     @media #{$tablet-widths} {
       margin-right: 10px;
-      top: 20px;
+      top: 24px;
     }
 
     @media #{$desktop-widths} {
@@ -56,10 +54,6 @@
 
     &:hover {
       background-color: #E4E4E4;
-    }
-
-    &:active {
-      background-color: #D5D5D5;
     }
 
   }
@@ -75,11 +69,10 @@
     height: 25px;
     border-radius: 40px;
     background: black;
-
-    &:active {
-      background: #A4A4A4;
-    }
   }
 
+  &:active &__input + &__before::before{
+    background-color: #A4A4A4;
+  }
 
 }

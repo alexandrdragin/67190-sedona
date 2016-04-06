@@ -19,11 +19,13 @@
         <a class="main-nav__item" href="/">HTML Academy</a>
       </nav>
 
-      <picture>
-        <source class="page-header__logo" media="(min-width:1200px)" srcset="../img/logo-sedona-desktop.svg">
-        <source class="page-header__logo" media="(min-width:768px)" srcset="../img/logo-sedona-tablet.svg">
-        <img class="page-header__logo" src="../img/logo-sedona-mobile.svg" height="90" width="210" alt="Седона">
-      </picture>
+      <a href="index.html">
+        <picture>
+          <source class="page-header__logo" media="(min-width:1200px)" srcset="../img/logo-sedona-desktop.svg">
+          <source class="page-header__logo" media="(min-width:768px)" srcset="../img/logo-sedona-tablet.svg">
+          <img class="page-header__logo" src="../img/logo-sedona-mobile.svg" height="90" width="210" alt="Седона">
+        </picture>
+      </a>
 
       <button class="main-nav__button">
         <svg class="main-nav__icon-menu main-nav__button--close" height="22" width="22">
@@ -35,7 +37,7 @@
       </button>
 
       <div class="page-header__image-wrapper">
-        <img class="page-header__image" src="img/text-sedona.svg" width="230" alt="Wecome to Sedona">
+        <img class="page-header__image" src="img/text-sedona.svg" width="230" height="150" alt="Wecome to Sedona">
       </div>
     </header>
 
@@ -105,7 +107,7 @@
             <div class="radio">
               <label class="radio__label" for="Good">
                 <input class="radio__input" type="radio" name="impess" value="nice" id="Good" checked/>
-                <div class="radio__before"></div>
+                <span class="radio__before"></span>
                 Скорее положительное
               </label>
             </div>
@@ -113,7 +115,7 @@
             <div class="radio">
               <label class="radio__label" for="Bad">
                 <input class="radio__input" type="radio" name="impess" value="notnice" id="Bad" />
-                <div class="radio__before"></div>
+                <span class="radio__before"></span>
                 Скорее отрицательное
               </label>
             </div>
@@ -121,7 +123,7 @@
             <div class="radio">
               <label class="radio__label" for="Dunno">
                 <input class="radio__input" type="radio" name="impess" value="dunno" id="Dunno" />
-                <div class="radio__before"></div>
+                <span class="radio__before"></span>
                 Затрудняюсь ответить
               </label>
             </div>
@@ -174,26 +176,26 @@
       <div class="social__header">#visitSEDONA</div>
 
       <div class="social__item-wrapper">
-        <a class="social__item" href="http://www.twitter.com">
+        <a class="social__item" href="http://www.twitter.com" target="_blank">
           <svg class="social__icon" height="40%" width="40%">
             <use xlink:href="#icon-twitter" />
           </svg>
         </a>
-        <a class="social__item" href="http://www.facebook.com">
+        <a class="social__item" href="http://www.facebook.com" target="_blank">
           <svg class="social__icon" height="40%" width="40%">
             <use xlink:href="#icon-facebook" />
           </svg></a>
-        <a class="social__item" href="http://www.youtube.com" >
+        <a class="social__item" href="http://www.youtube.com" target="_blank">
           <svg class="social__icon" height="40%" width="40%">
             <use xlink:href="#icon-youtube" />
           </svg></a>
       </div>
 
-      <div class="social__copyrigth">Pазработано
+      <a class="social__copyrigth" href="https://htmlacademy.ru/" target="_blank">Pазработано
         <svg class="social__copyrigth-icon" height="40" width="40">
           <use class="social__htmlacademy" xlink:href="#htmlacademy" />
         </svg>
-      </div>
+      </a>
     </footer>
 
     <div class="modal-overlay__do modal-overlay--hidden">
@@ -228,7 +230,7 @@
         </button>
       </div>
     </div>
-    
+
     <script src="js/picturefill.min.js"></script>
     <script src="js/nav.js"></script>
   </body>

@@ -34,14 +34,13 @@ $border-menu-light: #9ac2db;
 }
 
 
-body{
+body {
   font-size: 18px;
   font-family: "PT Sans", Arial, sans-serif;
   line-height: 27px;
   color: #333333;
   font-style: normal;
-    box-sizing: border-box;
-
+  box-sizing: border-box;
 
   /*background: $bg-ligthtgrey url('/img/sedona-index-mobile.png') no-repeat center top / 320px auto;
     min-height: 2555px;
@@ -57,11 +56,15 @@ body{
   }*/
 }
 
-fieldset{
+fieldset {
   border: none;
   margin: 0;
 }
 
-button{
-    border: none;
+button {
+  border: none;
+}
+
+a {
+  text-decoration: none;
 }
