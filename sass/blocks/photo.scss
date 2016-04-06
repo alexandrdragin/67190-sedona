@@ -58,3 +58,14 @@
     background-color: $grey-border;
   }
 }
+
+.photo__image--big-for-tablet {
+  @media #{$tablet-widths} {
+    width: 100%;
+
+  }
+
+  @media #{$desktop-widths} {
+    height: 400px;
+  }
+}

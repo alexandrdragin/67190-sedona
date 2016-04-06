@@ -85,9 +85,6 @@ gulp.task("serve", ["style"], function() {
   gulp.watch("css/*.css").on("change", server.reload);
 });
 
-<<<<<<< HEAD
-gulp.task("build", ["style", "symbols", "images", "copy"], function() {
-=======
+
 gulp.task("build", ["clean", "style", "images", "copy"], function() {
->>>>>>> htmlacademy-adaptive/master
 });

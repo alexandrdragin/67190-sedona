@@ -52,11 +52,13 @@
   z-index: -1;
 
   @media #{$tablet-widths} {
-
+    width: 324px;
+    height: 267px;
   }
 
   @media #{$desktop-widths} {
-
+    width: 400px;
+    height: 267px;
   }
 }
 
@@ -71,7 +73,7 @@
   }
 
   @media #{$desktop-widths} {
-
+  
   }
 }
 
@@ -91,7 +93,8 @@
 
   @media #{$desktop-widths} {
     position: absolute;
-    bottom: 0px;
+    margin: 0;
+    bottom: 0;
     background-color: rgba(0, 0, 0, .4);
   }
 }
@@ -195,7 +198,4 @@
     width: 100%;
   }
 
-  @media #{$desktop-widths} {
-
-      }
 }
