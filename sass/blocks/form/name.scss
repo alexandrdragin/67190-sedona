@@ -3,19 +3,19 @@
   margin-top: 20px;
   display: flex;
 
-  align-items:center;
+  align-items: center;
   margin-right: 20px;
 
   @media #{$tablet-widths} {
-    margin-right:0;
+    margin-right: 0;
     padding-left: 45px;
   }
 
   @media #{$desktop-widths} {
-   margin-left: 0px;
+    margin-left: 0;
   }
 
-  &:last-child{
+  &:last-child {
     margin-bottom: 22px;
   }
 
@@ -24,7 +24,7 @@
     margin-left: 10px;
 
     @media #{$desktop-widths} {
-     margin-left: 35px;
+      margin-left: 35px;
     }
   }
 
@@ -39,12 +39,8 @@
     padding: 18px;
     font-weight: bold;
 
-    @media #{$tablet-widths} {
-
-    }
-
     @media #{$desktop-widths} {
-     margin-right:120px;
+      margin-right: 120px;
     }
 
     &::-webkit-input-placeholder {
@@ -61,12 +57,11 @@
 
     &:hover {
       background-color: $grey;
-      color:black;
+      color: black;
     }
 
     &:active {
       background-color: white;
     }
   }
-
 }

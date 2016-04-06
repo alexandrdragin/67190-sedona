@@ -9,28 +9,24 @@
   margin-left: 70px;
 
   @media #{$tablet-widths} {
-    flex-wrap:nowrap;
+    flex-wrap: nowrap;
     text-align: center;
     padding: 0;
     width: 100%;
-    margin-left: 0px;
+    margin-left: 0;
   }
 
-   @media #{$desktop-widths} {
-     justify-content: space-around;
-   }
+  @media #{$desktop-widths} {
+    justify-content: space-around;
+  }
 }
 
 .reasons-mini {
   align-self: auto;
 
-  @media #{$tablet-widths} {
-
-    }
-
-   @media #{$desktop-widths} {
-     width: 30%;
-     }
+  @media #{$desktop-widths} {
+    width: 30%;
+  }
 }
 
 .reasons-mini--gift {
@@ -51,7 +47,7 @@
 
   @media #{$desktop-widths} {
     margin-top: 68px;
-    }
+  }
 }
 
 .mini-reasons__header::before {
@@ -66,14 +62,14 @@
   @media #{$tablet-widths} {
     display: block;
     position: relative;
-    left: 0px;
+    left: 0;
     margin: auto;
     width: 80px;
     height: 80px;
   }
 }
 
-.mini-reasons--house::before{
+.mini-reasons--house::before {
   top: -18px;
   background: url("../img/icon-house.svg") 50% 50% no-repeat;
   background-size: 40px;
@@ -81,10 +77,9 @@
   @media #{$tablet-widths} {
     background-size: 75px;
   }
-
 }
 
-.mini-reasons--gift::before{
+.mini-reasons--gift::before {
   top: -18px;
   background: url("../img/icon-gift.svg") 50% 50% no-repeat;
   background-size: 30px;
@@ -95,7 +90,7 @@
   }
 }
 
-.mini-reasons--burger::before{
+.mini-reasons--burger::before {
   top: -14px;
   background: url("../img/icon-burger.svg") 50% 50% no-repeat;
   background-size: 38px;
@@ -107,7 +102,7 @@
 }
 
 .mini-reasons__text {
-  margin-bottom: 0px;
+  margin-bottom: 0;
   line-height: 20px;
   margin-top: -4px;
 
@@ -120,9 +115,9 @@
     margin-left: 25px;
     margin-right: 25px;
     margin-bottom: 30px;
-    }
+  }
 
   @media #{$desktop-widths} {
-      margin-bottom: 50px;
-    }
+    margin-bottom: 50px;
+  }
 }

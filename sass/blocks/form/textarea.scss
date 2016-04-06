@@ -1,4 +1,4 @@
-.textarea{
+.textarea {
   border: none;
   resize: none;
   background: $ligthgrey;
@@ -14,11 +14,11 @@
   @media #{$tablet-widths} {
     margin-top: 55px;
     width: 97%;
-    margin-left: 0px;
+    margin-left: 0;
     margin-bottom: 40px;
   }
 
-  @media #{$desktop-widths}{
+  @media #{$desktop-widths} {
     margin-bottom: 50px;
     width: 98%;
   }
@@ -37,7 +37,7 @@
 
   &:hover {
     background-color: $grey;
-    color:black;
+    color: black;
   }
 
   &:active {

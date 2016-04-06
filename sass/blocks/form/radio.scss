@@ -6,9 +6,9 @@
     margin-bottom: 15px;
   }
 
-  @media #{$desktop-widths}{
+  @media #{$desktop-widths} {
     margin-bottom: 12px;
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   &:last-child {
@@ -21,14 +21,14 @@
   }
 
   &__label {
-      display: block;
-      font-weight: bold;
-      padding-left: 5px;
-      cursor: pointer;
+    display: block;
+    font-weight: bold;
+    padding-left: 5px;
+    cursor: pointer;
 
-      @media #{$tablet-widths} {
-        margin-left: -5px;
-      }
+    @media #{$tablet-widths} {
+      margin-left: -5px;
+    }
   }
 
   &__before {
@@ -40,7 +40,7 @@
     width: 59px;
     height: 59px;
     border-radius: 40px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     background: $ligthgrey;
 
     @media #{$tablet-widths} {
@@ -53,14 +53,12 @@
     }
 
     &:hover {
-      background-color: #E4E4E4;
+      background-color: #e4e4e4;
     }
-
   }
 
   &__input:checked + .radio__before::before {
-    content: '';
-
+    content: "";
     position: absolute;
     display: inline-block;
     top: 16px;
@@ -71,8 +69,8 @@
     background: black;
   }
 
-  &:active &__input + &__before::before{
-    background-color: #A4A4A4;
+  &:active &__input + &__before::before {
+    background-color: #a4a4a4;
   }
 
 }

@@ -13,7 +13,7 @@
   }
 }
 
-.form-block__wrapper{
+.form-block__wrapper {
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -44,7 +44,7 @@
   }
 
   @media #{$desktop-widths} {
-    margin-top:110px;
+    margin-top: 110px;
     font-size: 30px;
   }
 
