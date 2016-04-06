@@ -23,29 +23,26 @@
   @media #{$tablet-widths} {
     position: relative;
 
-    justify-content:space-between;
+    justify-content: space-between;
 
   }
 
   @media #{$desktop-widths} {
     flex-wrap: nowrap;
     width: 50%;
-
-
   }
 
   &:first-child {
-
     @media #{$desktop-widths} {
       margin-right: 20px;
     }
   }
 
-  &:last-child{
+  &:last-child {
     margin-bottom: 22px;
 
     @media #{$tablet-widths} {
-      margin-bottom:0;
+      margin-bottom: 0;
     }
   }
 
@@ -60,20 +57,20 @@
     }
 
     @media #{$desktop-widths} {
-        margin-left: 0px;
-        margin-right: 20px;
+      margin-left: 0;
+      margin-right: 20px;
     }
 
     &--tablet {
       @media #{$desktop-widths} {
-        display:none;
+        display: none;
       }
     }
 
     &--desktop {
-      display:none;
+      display: none;
       @media #{$desktop-widths} {
-        display:block;
+        display: block;
       }
     }
   }
@@ -93,16 +90,15 @@
     @media #{$tablet-widths} {
       width: 80%;
       flex-grow: 1;
-        margin-top: 0;
-        margin-left: 0;
-        margin-right:0;
-        margin-bottom: 20px;
+      margin-top: 0;
+      margin-left: 0;
+      margin-right:0;
+      margin-bottom: 20px;
     }
 
     @media #{$desktop-widths} {
-
-      width:auto;
-      margin-bottom: 0px;
+      width: auto;
+      margin-bottom: 0;
     }
 
     &::-webkit-input-placeholder {
@@ -119,7 +115,7 @@
 
     &:hover {
       background-color: $grey;
-      color:black;
+      color: black;
     }
 
     &:active {
@@ -136,7 +132,7 @@
     @media #{$tablet-widths} {
       position: absolute;
       right: 0;
-      top: 0px;
+      top: 0;
       font-size: 14px;
     }
 
@@ -148,7 +144,7 @@
   }
 
   &__icon-box {
-    margin-top: 0px;
+    margin-top: 0;
     width: 60px;
     height: 59px;
 
@@ -160,7 +156,7 @@
     }
 
     @media #{$desktop-widths} {
-      margin-top: 0px;
+      margin-top: 0;
     }
   }
 

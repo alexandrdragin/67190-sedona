@@ -13,7 +13,7 @@
 
   @media #{$desktop-widths} {
     margin: 0;
-    flex-wrap:nowrap;
+    flex-wrap: nowrap;
     justify-content: flex-end;
 
     width: 104%;
@@ -24,10 +24,10 @@
 }
 
 .checkbox {
-  position:relative;
+  position: relative;
 
   @media #{$tablet-widths} {
-    width:48%;
+    width: 48%;
 
     margin-top: 35px;
     margin-bottom: 25px;
@@ -51,7 +51,7 @@
   }
 
   &__input:not(checked) + .checkbox__label::after {
-    content: '';
+    content: " ";
 
     position: absolute;
     top: -15px;
@@ -62,16 +62,16 @@
     background-color: $ligthgrey;
 
     &:hover {
-      background-color: #E4E4E4;
+      background-color: #e4e4e4;
     }
 
     &:active {
-      background-color: #D5D5D5;
+      background-color: #d5d5d5;
     }
-}
+  }
 
   &__input:checked + .checkbox__label::after {
-    content: '';
+    content: "";
 
     position: absolute;
     top: -15px;
@@ -84,7 +84,7 @@
 
   }
 
-  &__label{
+  &__label {
     margin-top: 30px;
     display: block;
     margin-bottom: 53px;
@@ -95,16 +95,16 @@
     cursor: pointer;
 
     @media #{$tablet-widths} {
-      margin-bottom: 0px;
-      margin-top: 0px;
+      margin-bottom: 0;
+      margin-top: 0;
     }
   }
 
-  &:hover &__input + &__label::after{
-    background-color: #E4E4E4;
+  &:hover &__input + &__label::after {
+    background-color: #e4e4e4;
   }
 
-  &:active &__input + &__label::after{
-    background-color: #D5D5D5;
+  &:active &__input + &__label::after {
+    background-color: #d5d5d5;
   }
 }

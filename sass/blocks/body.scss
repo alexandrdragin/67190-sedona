@@ -1,10 +1,10 @@
-$bg-ligthtgrey: #FFFFFF;
-$someblue: #81B3D2;
-$hoverblue: #679EC0;
-$downblue: #5495BC;
-$grey-border: #D6D6D6;
-$ligthgrey: #F2F2F2;
-$grey: #E5E5E5;
+$bg-ligthtgrey: #fff;
+$someblue: #81b3d2;
+$hoverblue: #679ec0;
+$downblue: #5495bc;
+$grey-border: #d6d6d6;
+$ligthgrey: #f2f2f2;
+$grey: #e5e5e5;
 
 $mobile-widths: "(max-width:767px)";
 $tablet-widths: "(min-width:768px)";
@@ -19,8 +19,7 @@ $border-menu-light: #9ac2db;
   font-family: "PT Sans";
   font-style: normal;
 
-  src: url("../fonts/ptsans.woff2") format("woff2"),
-  url("fonts/ptsans.woff") format("woff");
+  src: url("../fonts/ptsans.woff2") format("woff2"), url("fonts/ptsans.woff") format("woff");
 }
 
 @font-face {
@@ -28,8 +27,7 @@ $border-menu-light: #9ac2db;
   font-family: "PT Sans";
   font-style: normal;
 
-  src: url("../fonts/ptsansbold.woff2") format("woff2"),
-  url("fonts/ptsansbold.woff") format("woff");
+  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("fonts/ptsansbold.woff") format("woff");
 }
 
 
@@ -37,22 +35,9 @@ body {
   font-size: 18px;
   font-family: "PT Sans", Arial, sans-serif;
   line-height: 27px;
-  color: #333333;
+  color: #333;
   font-style: normal;
   box-sizing: border-box;
-
-  /*background: $bg-ligthtgrey url('/img/sedona-index-mobile.png') no-repeat center top / 320px auto;
-    min-height: 2555px;
-
-  @media #{$tablet-widths} {
-    background: $bg-ligthtgrey url('/img/sedona-photo-tablet.png') no-repeat center top / 768px auto;
-    min-height: 2900px;
-  }
-
-  @media #{$desktop-widths} {
-    background: $bg-ligthtgrey url('/img/sedona-photo-desktop.png') no-repeat center top / 1280px auto;
-    min-height: 3250px;
-  }*/
 }
 
 fieldset {

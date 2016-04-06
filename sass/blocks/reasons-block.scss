@@ -2,20 +2,16 @@
 
 }
 
-.reasons-block__wrapper{
+.reasons-block__wrapper {
   display: flex;
   flex-wrap: wrap;
 
-  align-items:stretch;
-  align-content:stretch;
-  justify-content:space-between;
+  align-items: stretch;
+  align-content: stretch;
+  justify-content: space-between;
 
   @media #{$tablet-widths} {
-   min-height: 1100px;
-  }
-
-  @media #{$desktop-widths} {
-
+    min-height: 1100px;
   }
 }
 
@@ -25,7 +21,7 @@
   font-size: 18px;
   margin: 25px;
   margin-top: 40px;
-  color: #333333;
+  color: #333;
 
   @media #{$tablet-widths} {
     text-align: center;
@@ -34,7 +30,7 @@
     margin-bottom: 25px;
     margin-left: 170px;
     margin-right: 170px;
-    }
+  }
 
   @media #{$desktop-widths} {
     margin-left: 320px;
@@ -59,13 +55,12 @@
     font-size: 14px;
   }
 
-   @media #{$desktop-widths} {
-     margin-top: 10px;
-    }
+  @media #{$desktop-widths} {
+    margin-top: 10px;
+  }
 }
 
 .reasons {
-
   text-align: center;
   text-transform: uppercase;
   font-size: 12px;
@@ -74,46 +69,30 @@
   @media #{$tablet-widths} {
     width: 33%;
   }
-
-  @media #{$desktop-widths} {
-
-  }
 }
 
 .reasons--blue {
   background-color: $someblue;
   color: white;
 
-    @media #{$tablet-widths} {
-      width: 33%;
-      flex-grow: 1;
-    }
-
-     @media #{$desktop-widths} {
-
-    }
+  @media #{$tablet-widths} {
+    width: 33%;
+    flex-grow: 1;
+  }
 }
 
 .reasons--order {
 
-    @media #{$tablet-widths} {
-      order:2;
-    }
-
-     @media #{$desktop-widths} {
-
-    }
+  @media #{$tablet-widths} {
+    order:2;
+  }
 }
-
 
 .reasons__header {
   margin-top: 40px;
 
   @media #{$tablet-widths} {
     margin-top: 30px;
-  }
-
-   @media #{$desktop-widths} {
   }
 }
 
@@ -128,10 +107,10 @@
     font-weight: 100;
   }
 
-   @media #{$desktop-widths} {
-     margin-top: 40px;
-     margin-left: 90px;
-     margin-right: 90px;
+  @media #{$desktop-widths} {
+    margin-top: 40px;
+    margin-left: 90px;
+    margin-right: 90px;
   }
 }
 
@@ -148,10 +127,6 @@
   @media #{$tablet-widths} {
     font-size: 14px;
   }
-
-   @media #{$desktop-widths} {
-
-  }
 }
 
 .reasons--triangle::before {
@@ -167,7 +142,7 @@
   }
 }
 
-.reasons__image{
+.reasons__image {
   height: 255px;
   width: 320px;
   text-align: center;
@@ -177,17 +152,16 @@
   @media #{$tablet-widths} {
     height: 255px;
     width: 510px;
-    }
+  }
 
-   @media #{$desktop-widths} {
-       width: 798px;
-     }
+  @media #{$desktop-widths} {
+    width: 798px;
+  }
 }
 
 .reasons__image--sity {
   background: url("../img/photo-city.jpg" ) 50% 50% no-repeat;
   background-size: cover;
-
 
   @media (min-resolution: 1.5dppx) {
     background: url("../img/photo-city@2x.jpg") 50% 100% no-repeat;
@@ -210,14 +184,13 @@
   order: 5;
 
   @media #{$tablet-widths} {
-      margin-bottom: 35px;
-      flex-grow: 1;
-    }
+    margin-bottom: 35px;
+    flex-grow: 1;
+  }
 
-   @media #{$desktop-widths} {
-     padding-bottom: 40px;
-
-   }
+  @media #{$desktop-widths} {
+    padding-bottom: 40px;
+  }
 }
 
 .reasons--close:not(:last-of-type)::after {
@@ -236,7 +209,6 @@
   margin-top:25px;
   margin-bottom: 15px;
 
-
   @media #{$tablet-widths} {
     font-size: 20px;
     margin-top: 45px;
@@ -245,11 +217,10 @@
     margin-bottom: 10px;
   }
 
-   @media #{$desktop-widths} {
-     margin-left: 140px;
-     margin-right: 140px;
-     margin-bottom: 8px;
-
+  @media #{$desktop-widths} {
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-bottom: 8px;
   }
 }
 
@@ -265,10 +236,9 @@
     line-height: 19px;
   }
 
-   @media #{$desktop-widths} {
-     margin-left: 60px;
-     margin-right: 60px;
-     margin-bottom: 25px;
-
+  @media #{$desktop-widths} {
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 25px;
   }
 }

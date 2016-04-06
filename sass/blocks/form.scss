@@ -1,26 +1,24 @@
 .form {
-  width:100%;
+  width: 100%;
   position: relative;
 
   padding-left: 10px;
 
   @media #{$tablet-widths} {
-      padding:0px;
+    padding:0px;
 
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
 
   @media #{$desktop-widths} {
-
     margin-left:120px;
     margin-right:120px;
   }
 }
 
 .form::before {
-
   @media #{$mobile-widths} {
     content: "";
     display: block;
@@ -31,8 +29,6 @@
     margin-top: -5px;
     background-color: $grey-border;
   }
-
-
 }
 
 .form__inside-header {
@@ -58,20 +54,20 @@
 }
 
 .form__inside-header::before {
-    @media #{$tablet-widths} {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 125px;
-      left: 0px;
-      height: 1px;
-      top: 52px;
+  @media #{$tablet-widths} {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 125px;
+    left: 0px;
+    height: 1px;
+    top: 52px;
 
-      background-color: $grey-border;
-    }
-    @media #{$desktop-widths} {
-      width: 280px;
-    }
+    background-color: $grey-border;
+  }
+  @media #{$desktop-widths} {
+    width: 280px;
+  }
 }
 
 .form__inside-header::after {
@@ -95,7 +91,6 @@
     @media #{$tablet-widths} {
       top: 64px;
     }
-
 }
 
 .form__inside-header--border::before {
@@ -103,7 +98,6 @@
       top: 64px;
   }
 }
-
 
 .form__inside-header--tablet::after {
   display: none;
@@ -122,7 +116,6 @@
 }
 
 .form__submit {
-
   margin: 18px;
   margin-top: 30px;
   margin-bottom: 25px;
@@ -144,7 +137,6 @@
     width: 40%;
     margin-bottom: -60px;
   }
-
 }
 
 .form__checker {
@@ -158,8 +150,8 @@
     font-size: 14px;
     right: 0;
     margin-top: 46px;
- }
- @media #{$desktop-widths} {
-   margin-right: 120px;
- }
+  }
+  @media #{$desktop-widths} {
+    margin-right: 120px;
+  }
 }

@@ -1,34 +1,32 @@
 .video-block {
- min-height: 500px;
- margin-bottom: -20px;
- margin-top: 30px;
- position: relative;
+  min-height: 500px;
+  margin-bottom: -20px;
+  margin-top: 30px;
+  position: relative;
 
- @media #{$tablet-widths} {
-   min-height: 580px;
-   margin-bottom: -55px;
-   }
+  @media #{$tablet-widths} {
+    min-height: 580px;
+    margin-bottom: -55px;
+  }
 
   @media #{$desktop-widths} {
     margin-bottom: -145px;
-    }
+  }
 }
 
 .video-block__wrapper {
-
   @media #{$tablet-widths} {
     margin-left: 60px;
     margin-right: 60px;
- }
+  }
 
   @media #{$desktop-widths} {
     margin-left: 200px;
     margin-right: 200px;
-
   }
 }
 
-.video__header{
+.video__header {
   text-align: center;
   text-transform: uppercase;
   font-size: 18px;
@@ -39,13 +37,12 @@
     font-size: 30px;
     }
 
-   @media #{$desktop-widths} {
-     margin-top: 67px;
-
-     }
+  @media #{$desktop-widths} {
+    margin-top: 67px;
+  }
 }
 
-.video__text{
+.video__text {
   @include sub-header;
   margin: 26px;
 
@@ -59,21 +56,10 @@
     line-height: 24px;
     }
 
-   @media #{$desktop-widths} {
-     margin-left: 10%;
-     margin-right: 10%;
-     margin-top: 32px;
-    }
-}
-
-.video__image {
-
-  @media #{$tablet-widths} {
-
- }
-
   @media #{$desktop-widths} {
-
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 32px;
   }
 }
 
@@ -94,7 +80,6 @@
     width: 800px;
     height: 500px;
   }
-
 }
 
 .video__box-controls {
@@ -122,11 +107,6 @@
     left: 0px;
     top: -101px;
   }
-
-   @media #{$desktop-widths} {
-
-    }
-
 }
 
 .video__box-controls::after {
@@ -158,17 +138,17 @@
   }
 
   @media #{$tablet-widths} {
-  fill: white;
-  width: 26px;
-  height: 26px;
- }
+    fill: white;
+    width: 26px;
+    height: 26px;
+  }
 
- @media #{$desktop-widths} {
-   margin-top: 5px;
- }
+  @media #{$desktop-widths} {
+    margin-top: 5px;
+  }
 }
 
-.video__replay-button{
+.video__replay-button {
   margin-right: 80px;
   z-index: 3;
   background-color: rgba(0, 0, 0, 0);
@@ -197,10 +177,6 @@
     @media #{$tablet-widths} {
       margin: 35px;
    }
-
-    @media #{$desktop-widths} {
-
-    }
 }
 
 .video__time {
@@ -210,10 +186,6 @@
 
   @media #{$tablet-widths} {
     width: auto;
- }
-
-  @media #{$desktop-widths} {
-
   }
 }
 
@@ -232,7 +204,7 @@
     left: 100px;
 
     width: 60%;
- }
+  }
 
   @media #{$desktop-widths} {
 

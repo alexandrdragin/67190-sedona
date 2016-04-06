@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-content: stretch;
-  justify-content:space-around;
+  justify-content: space-around;
 
   text-align: center;
 
@@ -13,7 +13,6 @@
 
   margin-top: 5px;
   margin-bottom: 20px;
-
 
   @media #{$tablet-widths} {
     flex-direction: row;
@@ -26,14 +25,10 @@
       margin-top: 160px;
       margin-bottom: 60px;
     }
-
   }
 }
 
-.social__item-wrapper {
-}
-
-.social__header{
+.social__header {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 700;
@@ -41,16 +36,10 @@
   @media #{$tablet-widths} {
     position: relative;
     top:-5px;
-
   }
-
-  @media #{$desktop-widths} {
-
-  }
-
 }
 
-.social__item{
+.social__item {
   display: inline-block;
   position: relative;
   margin: 1px;
@@ -69,41 +58,36 @@
 
   &:active {
     background-color: $downblue;
-    fill: #88B6D1;
+    fill: #88b6d1;
   }
 }
 
-.social__icon{
+.social__icon {
   position: absolute;
   margin: 0;
   top: 14px;
   left: 15px;
 
   &:active {
-    fill: #88B6D1;
+    fill: #88b6d1;
   }
 }
 
 .social__copyrigth {
   @include sub-header;
   position: relative;
-  top:5px;
+  top: 5px;
   left: 5px;
   display: inline;
 
   @media #{$tablet-widths} {
-    top:-5px;
-  }
-
-  @media #{$desktop-widths} {
-
-
+    top: -5px;
   }
 }
 
 .social__copyrigth-icon {
   position: relative;
-  top:-5px;
+  top: -5px;
   margin-bottom: -20px;
   fill: black;
 

@@ -6,21 +6,17 @@
     height: 500px;
   }
 
-  &__header{
+  &__header {
     @include mobile-padding;
     margin-top: 40px;
 
     @media #{$tablet-widths} {
-      margin-top:22px;
+      margin-top: 22px;
       font-size: 30px;
     }
-
-     @media #{$desktop-widths} {
-
-      }
   }
 
-  &__text{
+  &__text {
     @include mobile-padding;
     @include sub-header;
 
@@ -63,17 +59,15 @@
 
     &:active {
       background-color: $downblue;
-      color: #94B9D2;
+      color: #94b9d2;
       font-weight: 700;
     }
   }
 
-  &__picture-map{
-
+  &__picture-map {
     @media #{$tablet-widths} {
       margin-top: 40px;
     }
-
   }
 
   &__map-image {
@@ -83,12 +77,11 @@
       margin-top: 15px;
       height: 350px;
       width: 768px;
-      }
+    }
 
     @media #{$desktop-widths} {
       margin-top: 25px;
       width: 1200px;
     }
   }
-
 }
