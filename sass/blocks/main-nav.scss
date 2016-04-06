@@ -12,14 +12,14 @@
     display: flex;
 
     background-color: white;
-
+    align-items: center;
     flex-direction: row;
   }
 }
 
 .main-nav__item {
   text-align: center;
-  align-self: stretch;
+  align-self: center;
   padding: 20px 0 8px 0;
   color: white;
   margin: auto;
@@ -135,4 +135,23 @@
 
 .main-nav__icon-menu {
   fill: $someblue;
+}
+
+.main-nav__item--active {
+  @media #{$tablet-widths} {
+    color: #766357;
+  }
+
+  &:hover {
+    @media #{$tablet-widths} {
+      color: #604E43;
+    }
+
+  &:active {
+    @media #{$tablet-widths} {
+      color: #DBD8D5;
+    }
+  }
+
+  }
 }
