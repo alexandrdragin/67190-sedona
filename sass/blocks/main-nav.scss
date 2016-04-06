@@ -136,3 +136,22 @@
 .main-nav__icon-menu {
   fill: $someblue;
 }
+
+.main-nav__item--active {
+  @media #{$tablet-widths} {
+    color: #766357;
+  }
+
+  &:hover {
+    @media #{$tablet-widths} {
+      color: #604E43;
+    }
+
+  &:active {
+    @media #{$tablet-widths} {
+      color: #DBD8D5;
+    }
+  }
+
+  }
+}
