@@ -1,5 +1,6 @@
 .main-nav {
   display: flex;
+
   flex-direction: column;
   align-items: stretch;
 
@@ -8,21 +9,18 @@
   @media #{$tablet-widths} {
     height: 55px;
     color: black;
-    background-color:white;
+    display: flex;
+
+    background-color: white;
+
     flex-direction: row;
-
-  }
-
-  @media #{$desktop-widths} {
-
   }
 }
 
 .main-nav__item {
   text-align: center;
   align-self: stretch;
-  margin: auto;
-  padding: 14px 0 14px 0;
+  padding: 20px 0 8px 0;
   color: white;
   margin: auto;
 
@@ -30,21 +28,39 @@
   text-decoration: none;
   list-style: none;
 
+  line-height: 12px;
+
+  min-height: 26px;
+
   width: 100%;
+
+  &:hover {
+    background-color: $hoverblue;
+  }
+
+  &:active {
+    background-color: $downblue;
+    color: #94b9d2;
+  }
 
   @media #{$tablet-widths} {
     border-top: none;
-    border-bottom:none;
-    padding:0;
+    border-bottom: none;
+    padding: 0;
     color: black;
-    font-size: 10px;
+    font-size: 14px;
+    line-height: 20px;
 
-    font-family: "PT Sans";
     font-weight: 700;
-  }
 
-  @media #{$desktop-widths} {
+    &:hover {
+      background-color: white;
+      color: $hoverblue;
+    }
 
+    &:active {
+      color: $grey;
+    }
   }
 }
 
@@ -52,7 +68,7 @@
   border-bottom: 1px solid $border-menu-dark;
 
   @media #{$tablet-widths} {
-    border-bottom:none;
+    border-bottom: none;
   }
 }
 
@@ -65,7 +81,7 @@
 }
 
 .main-nav__item:last-of-type {
-  box-shadow: inset 0px -5px 12px -6px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 -5px 12px -6px rgba(0, 0, 0, 0.5);
 
   @media #{$tablet-widths} {
     box-shadow: none;
@@ -75,13 +91,15 @@
 
 @media #{$mobile-widths} {
   .main-nav__item:nth-child(3) {
-     display: none;
-   }
+    display: none;
+  }
 }
 
 .main-nav__button {
   margin: 0;
   padding: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0);
 
   list-style: none;
 
@@ -89,31 +107,32 @@
 
   @media #{$tablet-widths} {
     display: none;
-    }
+  }
 }
 
-.main-nav__button--close{
+.main-nav__button--close {
   position: absolute;
-  top:0;
-  right: 0;
-
-  width: 55px;
-  height: 55px;
-
+  display: block;
   border: none;
-  background: url("../img/icon-cross.svg") 50% 50% no-repeat;
+
+  top: -207px;
+  left: 10px;
+
+  fill: white;
 }
 
 .main-nav__button--open {
-  position: absolute;
-  top:0;
-  right: 0;
-
-  width: 55px;
-  height: 55px;
-
   border: none;
-  background: url("../img/icon-menu.svg") 50% 50% no-repeat;
-
   display: none;
+  position: absolute;
+  top: 15px;
+  left: 10px;
+
+  @media #{$tablet-widths} {
+    display: none;
+  }
+}
+
+.main-nav__icon-menu {
+  fill: $someblue;
 }

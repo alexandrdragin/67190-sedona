@@ -1,0 +1,84 @@
+.modal-overlay {
+  &__done {
+
+    position: fixed;
+    top: 30vh;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 18px 1px rgba(0, 0, 0, 0.2);
+
+    @media #{$tablet-widths} {
+      width: 640px;
+    }
+  }
+
+  &__fail {
+    position: fixed;
+    top: 40vh;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 18px 1px rgba(0, 0, 0, 0.2);
+
+    @media #{$tablet-widths} {
+      width: 400px;
+    }
+  }
+
+  &__header {
+    text-align: center;
+    text-transform: uppercase;
+
+    font-size: 18px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+    @media #{$tablet-widths} {
+      font-size: 24px;
+    }
+  }
+
+  &__text {
+    @include sub-header;
+    margin: 0;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+
+  &__button-block {
+    width: 100%;
+    margin-top: 30px;
+
+    text-align: center;
+    background-color: $ligthgrey;
+
+    @media #{$tablet-widths} {
+      width: 100%;
+      min-height: 150px;
+    }
+  }
+
+  &__button {
+    background-color: $someblue;
+    color: white;
+    margin: 20px;
+
+    width: 280px;
+
+    height: 60px;
+
+    @media #{$tablet-widths} {
+      width: 80%;
+      margin: 45px;
+    }
+  }
+
+  &--hidden {
+    display: none;
+  }
+}

@@ -1,46 +1,38 @@
-.reasons-block {
+.reasons-block__wrapper {
+  display: flex;
+  flex-wrap: wrap;
 
-}
+  align-items: stretch;
+  align-content: stretch;
+  justify-content: space-between;
 
-.reasons-block__wrapper{
-   display: flex;
-   flex-wrap: wrap;
-
-   align-items:stretch;
-   align-content:stretch;
-   justify-content:space-between;
-
-   @media #{$tablet-widths} {
-     min-height: 1100px;
-   }
-
-   @media #{$desktop-widths} {
-
-   }
+  @media #{$tablet-widths} {
+    min-height: 1100px;
+  }
 }
 
 .reasons-main-header__header {
   text-align: center;
   text-transform: uppercase;
-  font-size: 16px;
-  margin: 18px;
+  font-size: 18px;
+  margin: 25px;
   margin-top: 40px;
-  color: #333333;
+  color: #333;
 
   @media #{$tablet-widths} {
     text-align: center;
     font-size: 20px;
-    margin-top: 50px;
+    margin-top: 60px;
     margin-bottom: 25px;
     margin-left: 170px;
     margin-right: 170px;
-    }
+  }
 
-   @media #{$desktop-widths} {
-     margin-left: 320px;
-     margin-right: 320px;
-     margin-top: 50px;
-     }
+  @media #{$desktop-widths} {
+    margin-left: 320px;
+    margin-right: 320px;
+
+  }
 }
 
 .reasons-main-header__text {
@@ -49,8 +41,8 @@
   font-size: 12px;
   margin: 14px;
   margin-top: 25px;
-  margin-bottom: 35px;
-  color: #333333;
+  margin-bottom: 40px;
+  color: #333;
 
   @media #{$tablet-widths} {
     margin: 30px;
@@ -59,14 +51,12 @@
     font-size: 14px;
   }
 
-   @media #{$desktop-widths} {
-     margin-top: 10px;
-     font-size: 14px;
-    }
+  @media #{$desktop-widths} {
+    margin-top: 10px;
+  }
 }
 
 .reasons {
-
   text-align: center;
   text-transform: uppercase;
   font-size: 12px;
@@ -75,39 +65,23 @@
   @media #{$tablet-widths} {
     width: 33%;
   }
-
-  @media #{$desktop-widths} {
-
-  }
 }
 
 .reasons--blue {
-background-color: $someblue;
+  background-color: $someblue;
   color: white;
-  height: 200px;
 
-    @media #{$tablet-widths} {
-      height: 255px;
-      width: 33.5%;
-
-    }
-
-     @media #{$desktop-widths} {
-
-    }
+  @media #{$tablet-widths} {
+    width: 33%;
+    flex-grow: 1;
+  }
 }
 
 .reasons--order {
-
-    @media #{$tablet-widths} {
-      order:2;
-    }
-
-     @media #{$desktop-widths} {
-
-    }
+  @media #{$tablet-widths} {
+    order: 2;
+  }
 }
-
 
 .reasons__header {
   margin-top: 40px;
@@ -115,55 +89,22 @@ background-color: $someblue;
   @media #{$tablet-widths} {
     margin-top: 30px;
   }
-
-   @media #{$desktop-widths} {
-  }
 }
 
 .reasons__header--blue {
+  @media #{$tablet-widths} {
+    padding: 12px;
+    padding-bottom: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: 100;
+  }
 
-    @media #{$tablet-widths} {
-      padding: 12px;
-      padding-bottom: 0;
-      margin-left: 20px;
-      margin-right: 20px;
-      font-size: 20px;
-      font-weight: 100;
-
-    }
-
-     @media #{$desktop-widths} {
-       margin-top: 40px;
-       margin-left: 90px;
-       margin-right: 90px;
-    }
-}
-
-.reasons__text--blue {
-  padding-left: 25px;
-  padding-right: 25px;
-
-
-    @media #{$tablet-widths} {
-      font-size: 14px;
-
-    }
-
-     @media #{$desktop-widths} {
-
-    }
-}
-
-.reasons--triangle::before {
-
-  @media #{$mobile-widths} {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 40px;
-    position: absolute;
-    top: -15px;
-    background: url("../img/bg-triangle.svg") 0% 50% no-repeat;
+  @media #{$desktop-widths} {
+    margin-top: 40px;
+    margin-left: 90px;
+    margin-right: 90px;
   }
 }
 
@@ -172,7 +113,29 @@ background-color: $someblue;
   margin-top: -10px;
 }
 
-.reasons__image{
+.reasons__text--blue {
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 27px;
+
+  @media #{$tablet-widths} {
+    font-size: 14px;
+  }
+}
+
+.reasons--triangle::before {
+  @media #{$mobile-widths} {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    top: -20px;
+    background: url("../img/bg-triangle.svg") 0% 50% no-repeat;
+  }
+}
+
+.reasons__image {
   height: 255px;
   width: 320px;
   text-align: center;
@@ -182,53 +145,48 @@ background-color: $someblue;
   @media #{$tablet-widths} {
     height: 255px;
     width: 510px;
-    }
+  }
 
-   @media #{$desktop-widths} {
-       width: 798px;
-     }
+  @media #{$desktop-widths} {
+    width: 798px;
+  }
 }
 
 .reasons__image--sity {
-    background: url("../img/photo-city.jpg" ) 50% 50% no-repeat;
+  background: url("../img/photo-city.jpg") 50% 50% no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 1.5dppx) {
+    background: url("../img/photo-city@2x.jpg") 50% 100% no-repeat;
     background-size: cover;
-
-
-    @media (min-resolution: 1.5dppx) {
-      background: url("../img/photo-city@2x.jpg") 50% 100% no-repeat;
-      background-size: cover;
-
-
-    }
+  }
 }
 
 .reasons__image--bridge {
-    background: url("../img/photo-bridge.jpg" ) 50% 50% no-repeat;
-    background-size: cover;
+  background: url("../img/photo-bridge.jpg") 50% 50% no-repeat;
+  background-size: cover;
 
-    @media (min-resolution: 1.5dppx) {
-      background: url("../img/photo-bridge@2x.jpg") 50% 100% no-repeat;
-      background-size: cover;
-    }
+  @media (min-resolution: 1.5dppx) {
+    background: url("../img/photo-bridge@2x.jpg") 50% 100% no-repeat;
+    background-size: cover;
+  }
 }
 
 .reasons--close {
-  background-color: #EEEEEE;
-
-  order:5;
+  background-color: #eee;
+  order: 5;
 
   @media #{$tablet-widths} {
-
     margin-bottom: 35px;
-    }
+    flex-grow: 1;
+  }
 
-   @media #{$desktop-widths} {
-     padding-bottom: 40px;
-   }
+  @media #{$desktop-widths} {
+    padding-bottom: 40px;
+  }
 }
 
 .reasons--close:not(:last-of-type)::after {
-
   @media #{$mobile-widths} {
     content: "";
     display: block;
@@ -240,9 +198,8 @@ background-color: $someblue;
 }
 
 .reasons__header--close {
-  margin-top:25px;
+  margin-top: 25px;
   margin-bottom: 15px;
-
 
   @media #{$tablet-widths} {
     font-size: 20px;
@@ -252,11 +209,10 @@ background-color: $someblue;
     margin-bottom: 10px;
   }
 
-   @media #{$desktop-widths} {
-     margin-left: 140px;
-     margin-right: 140px;
-     margin-bottom: 8px;
-
+  @media #{$desktop-widths} {
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-bottom: 8px;
   }
 }
 
@@ -272,10 +228,9 @@ background-color: $someblue;
     line-height: 19px;
   }
 
-   @media #{$desktop-widths} {
-     margin-left: 60px;
-     margin-right: 60px;
-     margin-bottom: 25px;
-
+  @media #{$desktop-widths} {
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 25px;
   }
 }
