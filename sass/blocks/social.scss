@@ -9,7 +9,7 @@
 
   align-items: center;
 
-  min-height: 220px;
+  min-height: 210px;
 
   margin-top: 5px;
   margin-bottom: 20px;
@@ -20,12 +20,17 @@
     margin-top: 25px;
     min-height: 60px;
 
+    justify-content: space-around;
+
     @media #{$desktop-widths} {
-      margin-top: 155px;
+      margin-top: 160px;
       margin-bottom: 60px;
     }
 
   }
+}
+
+.social__item-wrapper {
 }
 
 .social__header{
@@ -34,6 +39,8 @@
   font-weight: 700;
 
   @media #{$tablet-widths} {
+    position: relative;
+    top:-5px;
 
   }
 
@@ -45,57 +52,66 @@
 
 .social__item{
   display: inline-block;
+  position: relative;
   margin: 1px;
   width: 48px;
   height: 48px;
+  background: $someblue;
 
   @media #{$tablet-widths} {
     width: 48px;
     height: 48px;
   }
 
-  @media #{$desktop-widths} {
-    width: 48px;
-    height: 48px;
+  &:hover {
+    background-color: $hoverblue;
+  }
+
+  &:active {
+    background-color: $downblue;
+    fill: #88B6D1;
   }
 }
 
-.social__item--fb{
-  background: $someblue url("../img/icon-facebook.svg") 50% 50% no-repeat;
-  fill: white;
-}
+.social__icon{
+  position: absolute;
+  margin: 0;
+  top: 14px;
+  left: 15px;
 
-.social__item--tw{
-  background: $someblue url("../img/icon-twitter.svg") 50% 50% no-repeat;
-}
-
-.social__item--yt{
-  background: $someblue url("../img/icon-youtube.svg") 50% 50% no-repeat;
+  &:active {
+    fill: #88B6D1;
+  }
 }
 
 .social__copyrigth {
   @include sub-header;
   position: relative;
+  top:5px;
+  left: 5px;
+  display: inline;
 
   @media #{$tablet-widths} {
-
+    top:-5px;
   }
 
   @media #{$desktop-widths} {
 
+
   }
 }
 
-.social__copyrigth::after {
-  content: "";
-  display: inline-block;
+.social__copyrigth-icon {
+  position: relative;
+  top:-5px;
   margin-bottom: -20px;
-  width: 40px;
-  height: 40px;
+  fill: black;
 
-  background: url("../img/logo-htmlacademy.svg") 100% 0% no-repeat;
-}
+  &:hover {
+    fill: $someblue;
+  }
 
-.social__item-wrapper {
-
+  &:active {
+   fill: $grey;
+  }
 }

@@ -21,13 +21,14 @@
   justify-content: flex-start;
 
   @media #{$tablet-widths} {
+    margin-top: 32px;
 
     align-items: stretch;
     align-content: space-between;
   }
 
   @media #{$desktop-widths} {
-
+    margin-top: 0;
   }
 }
 
