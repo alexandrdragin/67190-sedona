@@ -8,6 +8,7 @@
 
     margin-top: 70px;
     margin-bottom: 13px;
+
   }
 
 }
@@ -24,12 +25,14 @@
     position: relative;
 
     justify-content:space-between;
-    align-content: flex-start;
+
   }
 
   @media #{$desktop-widths} {
     flex-wrap: nowrap;
     width: 50%;
+
+
   }
 
   &:first-child {

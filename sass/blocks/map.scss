@@ -51,9 +51,20 @@
     border: none;
     text-transform: uppercase;
 
+
     @media #{$tablet-widths} {
       width: 460px;
       margin-bottom: 43px;
+    }
+
+    &:hover {
+      background-color: $hoverblue;
+    }
+
+    &:active {
+      background-color: $downblue;
+      color: #94B9D2;
+      font-weight: 700;
     }
   }
 

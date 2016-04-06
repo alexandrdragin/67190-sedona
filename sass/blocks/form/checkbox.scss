@@ -59,7 +59,16 @@
     width: 55px;
     height: 55px;
     border-radius: 5px;
-    background: $ligthgrey;
+    background-color: $ligthgrey;
+
+    &:hover {
+      background-color: #E4E4E4;
+    }
+
+    &:active {
+      background-color: #D5D5D5;
+    }
+
   }
 
   &__input:checked + .checkbox__label::after {
@@ -72,7 +81,16 @@
     height: 55px;
 
     background: url("../img/icon-tick.svg") 50% 50% no-repeat;
-    background-color:   $ligthgrey;
+    background-color: $ligthgrey;
+
+    &:hover {
+      background-color: #E4E4E4;
+    }
+
+    &:active {
+      background-color: #D5D5D5;
+    }
+
   }
 
   &__label{

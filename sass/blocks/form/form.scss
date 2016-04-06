@@ -155,6 +155,16 @@
     margin-bottom: -60px;
   }
 
+  &:hover {
+    background-color: $hoverblue;
+  }
+
+  &:active {
+    background-color: $downblue;
+    color: #94B9D2;
+  }
+
+
 }
 
 .form__checker {

@@ -20,6 +20,8 @@
     margin-top: 25px;
     min-height: 60px;
 
+    justify-content: space-around;
+
     @media #{$desktop-widths} {
       margin-top: 160px;
       margin-bottom: 60px;
@@ -29,7 +31,6 @@
 }
 
 .social__item-wrapper {
-
 }
 
 .social__header{
@@ -61,6 +62,15 @@
     width: 48px;
     height: 48px;
   }
+
+  &:hover {
+    background-color: $hoverblue;
+  }
+
+  &:active {
+    background-color: $downblue;
+    fill: #88B6D1;
+  }
 }
 
 .social__icon{
@@ -68,8 +78,11 @@
   margin: 0;
   top: 14px;
   left: 15px;
-}
 
+  &:active {
+    fill: #88B6D1;
+  }
+}
 
 .social__copyrigth {
   @include sub-header;
@@ -83,8 +96,8 @@
   }
 
   @media #{$desktop-widths} {
-    left: 110px;
-    margin-right:120px;
+
+
   }
 }
 
@@ -93,8 +106,12 @@
   top:-5px;
   margin-bottom: -20px;
   fill: black;
-}
 
-.social__copyrigth-icon:hover {
-  fill: $someblue;
+  &:hover {
+    fill: $someblue;
+  }
+
+  &:active {
+   fill: $grey;
+  }
 }

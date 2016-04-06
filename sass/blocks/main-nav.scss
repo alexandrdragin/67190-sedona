@@ -6,7 +6,6 @@
 
   background-color: $blue;
 
-
   @media #{$tablet-widths} {
     height: 55px;
     color: black;
@@ -38,6 +37,15 @@
 
   width: 100%;
 
+  &:hover {
+    background-color: $hoverblue;
+  }
+
+  &:active {
+    background-color: $downblue;
+    color: #94B9D2;
+  }
+
   @media #{$tablet-widths} {
     border-top: none;
     border-bottom:none;
@@ -46,6 +54,15 @@
     font-size: 14px;
 
     font-weight: 700;
+
+    &:hover {
+      background-color: white;
+      color: $hoverblue;
+    }
+
+    &:active {
+      color: $grey;
+    }
   }
 
   @media #{$desktop-widths} {

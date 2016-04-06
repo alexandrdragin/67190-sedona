@@ -46,6 +46,16 @@
     @media #{$desktop-widths} {
      margin-right:120px;
     }
+
+    &:hover {
+    background-color: $grey;
+    color:black;
+    }
+
+    &:active {
+      background-color: white;
+      
+    }
   }
 
 }

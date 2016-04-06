@@ -146,6 +146,14 @@
 .video__icon-button {
   fill: #595959;
 
+  &:hover {
+    fill: #333333;
+  }
+
+  &:active {
+    fill: $grey;
+  }
+
   @media #{$tablet-widths} {
   fill: white;
   width: 26px;
@@ -230,6 +238,6 @@
 
 .video__time[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
-    background-color: #666;
-    opacity: 1;
+  background-color: #666;
+  opacity: 1;
 }
