@@ -35,7 +35,7 @@
 
   @media #{$tablet-widths} {
     position: relative;
-    top:-5px;
+    top: -5px;
   }
 }
 
@@ -96,6 +96,6 @@
   }
 
   &:active {
-   fill: $grey;
+    fill: $grey;
   }
 }

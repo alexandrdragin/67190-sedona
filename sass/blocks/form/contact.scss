@@ -69,6 +69,7 @@
 
     &--desktop {
       display: none;
+
       @media #{$desktop-widths} {
         display: block;
       }
@@ -92,7 +93,7 @@
       flex-grow: 1;
       margin-top: 0;
       margin-left: 0;
-      margin-right:0;
+      margin-right: 0;
       margin-bottom: 20px;
     }
 
@@ -149,7 +150,6 @@
     height: 59px;
 
     background-color: $grey;
-
 
     @media #{$tablet-widths} {
       margin-top: -20px;
