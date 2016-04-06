@@ -1,29 +1,23 @@
 .modal-overlay {
-  &__done {
+  position: fixed;
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 18px 1px rgba(0, 0, 0, 0.2);
 
-    position: fixed;
+  &--done {
+
     top: 30vh;
-    margin: auto;
-    left: 0;
-    right: 0;
-    width: 100%;
-    background-color: white;
-    box-shadow: 0 4px 18px 1px rgba(0, 0, 0, 0.2);
 
     @media #{$tablet-widths} {
       width: 640px;
     }
   }
 
-  &__fail {
-    position: fixed;
+  &--fail {
     top: 40vh;
-    margin: auto;
-    left: 0;
-    right: 0;
-    width: 100%;
-    background-color: white;
-    box-shadow: 0 4px 18px 1px rgba(0, 0, 0, 0.2);
 
     @media #{$tablet-widths} {
       width: 400px;
