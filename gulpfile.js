@@ -6,8 +6,8 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 
+var mqpacker = require("css-mqpacker");
 var minify = require("gulp-csso");
-var cmq = require('gulp-combine-media-queries');
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var svgstore = require("gulp-svgstore");
@@ -48,11 +48,10 @@ gulp.task("style", function() {
         "last 2 Firefox versions",
         "last 2 Opera versions",
         "last 2 Edge versions"
-      ]})
+      ]}),
+      mqpacker({
+        sort: true })
     ]))
-    .pipe(cmq({
-      log: true
-    }))
     .pipe(gulp.dest("css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
@@ -84,5 +83,5 @@ gulp.task("serve", ["style"], function() {
   gulp.watch("*.html").on("change", server.reload);
 });
 
-gulp.task("build", ["clean", "style", "symbols", "images", "copy"], function() {
+gulp.task("build", ["style", "symbols", "images", "copy"], function() {
 });
