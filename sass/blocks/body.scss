@@ -40,21 +40,21 @@ body {
   box-sizing: border-box;
 
 
-    /*background-color: #f2f2f2;*/
+    background-color: #f2f2f2;
 
 
-  background: $bg-ligthtgrey url('/img/sedona-form-mobile.png') no-repeat center top / 320px auto;
+/*;  background: $bg-ligthtgrey url('/img/sedona-photo-mobile.png') no-repeat center top / 320px auto;
       min-height: 2555px;
 
     @media #{$tablet-widths} {
-      background: $bg-ligthtgrey url('/img/sedona-form-tablet.png') no-repeat center top / 768px auto;
+      background: $bg-ligthtgrey url('/img/sedona-photo-tablet.png') no-repeat center top / 768px auto;
       min-height: 2900px;
     }
 
     @media #{$desktop-widths} {
-      background: $bg-ligthtgrey url('/img/sedona-form-desktop.png') no-repeat center top / 1280px auto;
+      background: $bg-ligthtgrey url('/img/sedona-photo-desktop.png') no-repeat center top / 1280px auto;
       min-height: 3250px;
-    }
+    }*/
 }
 
 fieldset {

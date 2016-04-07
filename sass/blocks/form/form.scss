@@ -36,7 +36,7 @@
   margin-top: 18px;
 
   @media #{$tablet-widths} {
-    margin-top: 40px;
+    margin-top: 36px;
     margin-bottom: 20px;
     font-size: 20px;
     margin-left: 0;
@@ -47,6 +47,7 @@
 
   @media #{$desktop-widths} {
     font-size: 22px;
+    margin-top: 42px;
   }
 
   &::before {
@@ -193,6 +194,7 @@
   display: none;
 
   @media #{$tablet-widths} {
+    margin-top: 40px;
     display: block;
     padding: 0;
     padding-left: 55px;
@@ -290,6 +292,7 @@
   margin-bottom: -6px;
 
   @media #{$tablet-widths} {
+    margin-top: 40px;
     margin-bottom: 36px;
     padding: 0;
     text-align: left;
@@ -303,7 +306,12 @@
 }
 
 .form__inside-header--border {
+  @media #{$tablet-widths} {
+    margin-top: 40px;
+
+  }
   @media #{$desktop-widths} {
+
     margin-right: 20%;
     margin-left: 20%;
   }
