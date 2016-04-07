@@ -28,6 +28,7 @@
 
   background: url("../img/bg-back-mobile.jpg") 50% 50% no-repeat;
   background-size: cover;
+  background-color: #d6e7f1;
 
   @media #{$mobile-widths} and (min-resolution: 1.5dppx) {
     background: url("../img/bg-back-mobile@2x.jpg") 50% 50% no-repeat;

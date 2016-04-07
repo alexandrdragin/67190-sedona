@@ -2,8 +2,8 @@
 
 (function() {
 
-  var buttonCl = document.querySelector('.main-nav__button--close');
-  var buttonOp = document.querySelector('.main-nav__button--open');
+  var buttonCl = document.querySelector('.button-nav--close');
+  var buttonOp = document.querySelector('.button-nav--open ');
   var nav = document.querySelector('.main-nav');
 
   buttonCl.addEventListener('click', closeFun);

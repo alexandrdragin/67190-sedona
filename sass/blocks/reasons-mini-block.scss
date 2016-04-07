@@ -53,6 +53,7 @@
 .mini-reasons__header::before {
   content: "";
   display: inline-block;
+  vertical-align: baseline;
   position: absolute;
 
   left: -60px;
@@ -115,9 +116,11 @@
     margin-left: 25px;
     margin-right: 25px;
     margin-bottom: 30px;
+    text-align: center;
   }
 
   @media #{$desktop-widths} {
     margin-bottom: 50px;
+    text-align: center;
   }
 }

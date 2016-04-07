@@ -1,0 +1,41 @@
+.button-nav {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0);
+
+  list-style: none;
+
+  cursor: pointer;
+
+  @media #{$tablet-widths} {
+    display: none;
+  }
+}
+
+.button-nav--close {
+  position: absolute;
+  display: block;
+  border: none;
+
+  top: -207px;
+  left: 10px;
+
+  fill: white;
+}
+
+.button-nav--open {
+  border: none;
+  display: none;
+  position: absolute;
+  top: 15px;
+  left: 10px;
+
+  @media #{$tablet-widths} {
+    display: none;
+  }
+}
+
+.button-nav__icon-menu {
+  fill: $someblue;
+}
