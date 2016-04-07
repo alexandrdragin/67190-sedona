@@ -1,7 +1,6 @@
 .page-header {
-  @include container;
-  position: relative;
 
+  position: relative;
 }
 
 .page-header__logo {
@@ -39,7 +38,6 @@
 
     margin-top: 0;
     height: 290px;
-
   }
 
   @media #{$tablet-widths} and (min-resolution: 1.5dppx) {
