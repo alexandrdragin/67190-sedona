@@ -22,6 +22,7 @@
 .name__label {
   font-size: 14px;
   margin-left: 10px;
+  margin-right: 5px;
 
   @media #{$desktop-widths} {
     margin-left: 35px;
@@ -44,14 +45,26 @@
 
   &::-webkit-input-placeholder {
     color: black;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
   }
 
   &::-moz-placeholder {
     color: black;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
   }
 
   &:-ms-input-placeholder {
     color: black;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
   }
 
   &:hover {

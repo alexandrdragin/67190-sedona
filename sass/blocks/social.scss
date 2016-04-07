@@ -1,5 +1,4 @@
 .social {
-  @include container;
   display: flex;
   flex-direction: column;
   align-content: stretch;
@@ -12,18 +11,22 @@
   min-height: 210px;
 
   margin-top: 5px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 
   @media #{$tablet-widths} {
     flex-direction: row;
     margin-top: 25px;
     min-height: 60px;
+    padding-bottom: 40px;
 
-    justify-content: space-around;
 
     @media #{$desktop-widths} {
       margin-top: 160px;
-      margin-bottom: 60px;
+      margin-bottom: 0;
+      margin-left: 120px;
+      margin-right: 40px;
+
+      justify-content: space-between;
     }
   }
 }
@@ -31,6 +34,9 @@
 .social__header {
   text-transform: uppercase;
   font-size: 20px;
+
+  font-size: 21px;
+  line-height: 26px;
   font-weight: 700;
 
   @media #{$tablet-widths} {
@@ -63,6 +69,12 @@
   }
 }
 
+.social__item-wrapper {
+  @media #{$desktop-widths} {
+    margin-right: 75px;
+  }
+}
+
 .social__icon {
   position: absolute;
   margin: 0;
@@ -86,6 +98,7 @@
   @media #{$tablet-widths} {
     top: -5px;
   }
+
 }
 
 .social__copyrigth-icon {

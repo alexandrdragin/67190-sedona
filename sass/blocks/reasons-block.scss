@@ -15,6 +15,7 @@
   text-align: center;
   text-transform: uppercase;
   font-size: 18px;
+  line-height: 26px;
   margin: 25px;
   margin-top: 40px;
   color: #333;
@@ -24,35 +25,37 @@
     font-size: 20px;
     margin-top: 60px;
     margin-bottom: 25px;
-    margin-left: 170px;
-    margin-right: 170px;
+    margin-left: 160px;
+    margin-right: 160px;
+    font-size: 21px;
+
   }
 
   @media #{$desktop-widths} {
     margin-left: 320px;
     margin-right: 320px;
-
   }
 }
 
 .reasons-block__text {
   text-align: center;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 14px;
+  line-height: 26px;
   margin: 14px;
-  margin-top: 25px;
-  margin-bottom: 40px;
+  margin-top: 26px;
+  margin-bottom: 45px;
   color: #333;
 
   @media #{$tablet-widths} {
     margin: 30px;
     margin-top: 8px;
     margin-bottom: 50px;
-    font-size: 14px;
   }
 
   @media #{$desktop-widths} {
     margin-top: 10px;
+    margin-bottom: 55px;
   }
 }
 
@@ -85,20 +88,27 @@
 
 .reasons__header {
   margin-top: 40px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
 
   @media #{$tablet-widths} {
     margin-top: 30px;
+    font-size: 21px;
   }
 }
 
 .reasons__header--blue {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+
   @media #{$tablet-widths} {
     padding: 12px;
     padding-bottom: 0;
     margin-left: 20px;
     margin-right: 20px;
-    font-size: 20px;
-    font-weight: 100;
+    font-size: 21px;
   }
 
   @media #{$desktop-widths} {
@@ -143,7 +153,6 @@
 
 
   @media #{$tablet-widths} {
-    height: 255px;
     width: 510px;
   }
 
