@@ -31,6 +31,7 @@
   text-transform: uppercase;
   text-align: center;
   font-size: 18px;
+  line-height: 26px;
   margin-left: -10px;
   margin-top: 18px;
 
@@ -133,6 +134,10 @@
   text-transform: uppercase;
   border: none;
   outline: none;
+
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
 
   @media #{$tablet-widths} {
     margin: 0;

@@ -1,9 +1,10 @@
 .main {
-  
+
 }
 
 .global-wrapper {
   @include container;
-  background-color: white;
+
   box-shadow: 0 4px 18px 1px rgba(0, 0, 0, 0.2);
+  z-index: -5;
 }

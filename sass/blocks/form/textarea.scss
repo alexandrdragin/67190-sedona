@@ -25,14 +25,25 @@
 
   &::-webkit-input-placeholder {
     color: black;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
   }
 
   &::-moz-placeholder {
     color: black;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
   }
 
   &:-ms-input-placeholder {
     color: black;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
   }
 
   &:hover {
