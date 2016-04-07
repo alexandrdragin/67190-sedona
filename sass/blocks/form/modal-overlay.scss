@@ -9,7 +9,7 @@
 
   &--done {
 
-    top: 30vh;
+    top: 10vh;
 
     @media #{$tablet-widths} {
       width: 640px;
@@ -17,7 +17,7 @@
   }
 
   &--fail {
-    top: 40vh;
+    top: 10vh;
 
     @media #{$tablet-widths} {
       width: 400px;
@@ -35,6 +35,10 @@
 
     @media #{$tablet-widths} {
       font-size: 24px;
+    }
+
+    @media #{$desktop-widths} {
+      font-size: 30px;
     }
   }
 
@@ -64,6 +68,9 @@
     background-color: $someblue;
     color: white;
     margin: 20px;
+    font-size: 21px;
+    line-height: 26px;
+
 
     width: 280px;
 
@@ -72,6 +79,10 @@
     @media #{$tablet-widths} {
       width: 80%;
       margin: 45px;
+    }
+
+    @media #{$desktop-widths} {
+      width: 70%;
     }
   }
 
