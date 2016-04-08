@@ -101,6 +101,8 @@ gulp.task("clean", function() {
 
 gulp.task("copy", function() {
   gulp.src("*.html").pipe(gulp.dest("build"));
+  gulp.src("*.json").pipe(gulp.dest("build"));
+  gulp.src("*.js").pipe(gulp.dest("build"));
   gulp.src("fonts/**/*.{woff,woff2}").pipe(gulp.dest("build/fonts"));
   gulp.src("img/**.{png,jpg,gif,svg}").pipe(gulp.dest("build/img"));
   gulp.src("js/**.js").pipe(gulp.dest("build/js"));
