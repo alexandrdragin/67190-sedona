@@ -50,11 +50,14 @@
   vertical-align: baseline;
   position: relative;
   margin: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   width: 48px;
   height: 48px;
   background: $someblue;
 
   @media #{$tablet-widths} {
+    margin: 1px;
     width: 48px;
     height: 48px;
   }
