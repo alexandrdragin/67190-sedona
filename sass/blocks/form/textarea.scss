@@ -11,6 +11,12 @@
 
   margin-bottom: 20px;
 
+  font-family: "PT Sans", Arial, sans-serif;
+  color: black;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+
   @media #{$tablet-widths} {
     margin-top: 25px;
     width: 97%;
@@ -26,6 +32,7 @@
   &::-webkit-input-placeholder {
     color: black;
     font-size: 18px;
+    font-family: "PT Sans", Arial, sans-serif;
     line-height: 26px;
     font-weight: 700;
   }

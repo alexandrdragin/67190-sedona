@@ -121,16 +121,16 @@
 .reasons__text {
   margin: 20px;
   margin-top: -10px;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .reasons__text--blue {
   padding-left: 25px;
   padding-right: 25px;
   margin-bottom: 27px;
-
-  @media #{$tablet-widths} {
-    font-size: 14px;
-  }
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .reasons--triangle::before {
@@ -211,7 +211,7 @@
   margin-bottom: 15px;
 
   @media #{$tablet-widths} {
-    font-size: 20px;
+    font-size: 21px;
     margin-top: 45px;
     margin-left: 60px;
     margin-right: 60px;
