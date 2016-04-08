@@ -27,8 +27,6 @@
 
   position: relative;
   z-index: 0;
-    width:280px;
-    height: 280px;
 
   @media #{$tablet-widths} {
     width: 324px;
@@ -42,8 +40,10 @@
 }
 
 .photo-block__image-image {
-  padding-left: 20px;
-  margin-top: -5px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 20px;
 
   @media #{$tablet-widths} {
     margin: 0;
@@ -59,17 +59,16 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 2px;
+  margin-bottom: 0;
 
   @media #{$tablet-widths} {
     margin-bottom: 0;
-    margin-top: -7px;
+    margin-top: 0;
     width: 100%;
     height: 80px;
 
     margin-left: 0;
     background-color: $ligthgrey;
-
   }
 
   @media #{$desktop-widths} {
@@ -81,20 +80,18 @@
 }
 
 .photo-block__header {
-  margin-top: 5px;
+  margin-top: 15px;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: bold;
 
   @media #{$tablet-widths} {
 
-    padding-top: 10px;
     margin-left: 20px;
   }
 
   @media #{$desktop-widths} {
     color: white;
-    padding-top: 10px;
   }
 }
 
