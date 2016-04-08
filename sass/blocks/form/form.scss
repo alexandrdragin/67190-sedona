@@ -33,7 +33,7 @@
   font-size: 18px;
   line-height: 26px;
   margin-left: -10px;
-  margin-top: 18px;
+  margin-top:15px;
 
   @media #{$tablet-widths} {
     margin-top: 36px;
@@ -47,7 +47,7 @@
 
   @media #{$desktop-widths} {
     font-size: 22px;
-    margin-top: 42px;
+    margin-top: 40px;
   }
 
   &::before {
@@ -292,6 +292,7 @@
 }
 
 .form__inside-header--for-radio {
+  margin-top: 20px;
   margin-bottom: -6px;
 
   @media #{$tablet-widths} {

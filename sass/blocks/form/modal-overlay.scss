@@ -1,7 +1,9 @@
 .modal-overlay {
   position: fixed;
   margin: auto;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   right: 0;
   width: 100%;
   background-color: white;
@@ -9,15 +11,12 @@
 
   &--done {
 
-    top: 10vh;
-
     @media #{$tablet-widths} {
       width: 640px;
     }
   }
 
   &--fail {
-    top: 10vh;
 
     @media #{$tablet-widths} {
       width: 400px;
