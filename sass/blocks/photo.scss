@@ -78,7 +78,6 @@
 .photo__image--big-for-tablet {
   @media #{$tablet-widths} {
     width: 100%;
-
   }
 
   @media #{$desktop-widths} {
@@ -89,7 +88,7 @@
 .photo--big-for-tablet {
   @media #{$tablet-widths} {
     width: 100%;
-    min-height: 460px;
+    min-height: 480px;
     display: block;
   }
 
