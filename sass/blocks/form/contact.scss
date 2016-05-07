@@ -32,6 +32,12 @@
     width: 50%;
   }
 
+  &--desktop-widths{
+    @media #{$desktop-widths} {
+      width: 400px;
+    }
+  }
+
   &:first-child {
     @media #{$desktop-widths} {
       margin-right: 20px;
@@ -53,6 +59,7 @@
     text-transform: uppercase;
 
     @media #{$tablet-widths} {
+      margin-top: 5px;
       margin-left: 20px;
     }
 
@@ -83,7 +90,7 @@
 
     margin-top: 5px;
     margin-left: 10px;
-    margin-right: -10px;
+    margin-right: -5px;
     margin-bottom: 5px;
     padding: 18px;
     font-weight: bold;
@@ -128,7 +135,7 @@
     color: red;
     font-size: 14px;
     margin-left: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 
     @media #{$tablet-widths} {
       position: absolute;
@@ -138,16 +145,16 @@
     }
 
     @media #{$desktop-widths} {
-      top: -30px;
-      right: 60px;
+      top: -32px;
+      right: -5px;
       width: 300px;
     }
   }
 
   &__icon-box {
     margin-top: 0;
-    width: 60px;
-    height: 59px;
+    width: 58px;
+    height: 58px;
 
     background-color: $grey;
 
@@ -161,8 +168,7 @@
   }
 
   &__icon {
-    margin-left: 15px;
-    margin-top: 15px;
+    margin-left: 20px;
+    margin-top: 19px;
   }
-
 }

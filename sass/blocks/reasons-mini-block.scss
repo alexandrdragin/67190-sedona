@@ -2,8 +2,8 @@
   display: flex;
   flex-wrap: wrap;
 
-  margin-top: 10px;
-  margin-bottom: 35px;
+  margin-top: 15px;
+  margin-bottom: 40px;
 
   color: black;
   margin-left: 70px;
@@ -14,10 +14,14 @@
     padding: 0;
     width: 100%;
     margin-left: 0;
+
+    margin-top: 5px;
+    margin-bottom: 30px;
   }
 
   @media #{$desktop-widths} {
     justify-content: space-around;
+    margin-bottom: 35px;
   }
 }
 
@@ -26,6 +30,12 @@
 
   @media #{$desktop-widths} {
     width: 30%;
+  }
+}
+
+.reasons-mini:last-child{
+  @media #{$mobile-widths} {
+    margin-bottom: -5px;
   }
 }
 
@@ -38,11 +48,15 @@
 
 .mini-reasons__header {
   margin-top: 24px;
+
   text-transform: uppercase;
   position: relative;
+  font-size: 18px;
+  line-height: 26px;
 
   @media #{$tablet-widths} {
-    margin-top: 65px;
+    margin-top: 70px;
+    font-size: 21px;
   }
 
   @media #{$desktop-widths} {
@@ -77,35 +91,39 @@
 
   @media #{$tablet-widths} {
     background-size: 75px;
+      top: -22px;
   }
 }
 
 .mini-reasons--gift::before {
-  top: -18px;
+  top: -22px;
   background: url("../img/icon-gift.svg") 50% 50% no-repeat;
   background-size: 30px;
 
   @media #{$tablet-widths} {
-    top: -20px;
+    top: -24px;
     background-size: 65px;
   }
 }
 
 .mini-reasons--burger::before {
-  top: -14px;
+  top: -18px;
   background: url("../img/icon-burger.svg") 50% 50% no-repeat;
   background-size: 38px;
 
   @media #{$tablet-widths} {
-    top: -18px;
+    top: -22px;
     background-size: 75px;
   }
 }
 
 .mini-reasons__text {
-  margin-bottom: 0;
+  margin-bottom: 5px;
   line-height: 20px;
-  margin-top: -4px;
+  margin-top: -6px;
+
+  font-size: 14px;
+  line-height: 21px;
 
   @include sub-header;
   padding-right: 20px;

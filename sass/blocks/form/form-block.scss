@@ -1,4 +1,5 @@
 .form-block {
+  position: relative;
 
   margin-bottom: 30px;
 
@@ -36,6 +37,7 @@
   text-align: center;
   text-transform: uppercase;
   font-size: 18px;
+  line-height: 26px;
   margin-top: 35px;
 
   @media #{$tablet-widths} {

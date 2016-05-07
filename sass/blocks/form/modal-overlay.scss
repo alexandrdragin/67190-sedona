@@ -1,7 +1,9 @@
 .modal-overlay {
   position: fixed;
   margin: auto;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   right: 0;
   width: 100%;
   background-color: white;
@@ -9,15 +11,12 @@
 
   &--done {
 
-    top: 30vh;
-
     @media #{$tablet-widths} {
       width: 640px;
     }
   }
 
   &--fail {
-    top: 40vh;
 
     @media #{$tablet-widths} {
       width: 400px;
@@ -29,11 +28,16 @@
     text-transform: uppercase;
 
     font-size: 18px;
+    line-height: 26px;
     margin-top: 50px;
     margin-bottom: 20px;
 
     @media #{$tablet-widths} {
       font-size: 24px;
+    }
+
+    @media #{$desktop-widths} {
+      font-size: 30px;
     }
   }
 
@@ -42,6 +46,8 @@
     margin: 0;
     margin-left: 70px;
     margin-right: 70px;
+    font-size: 14px;
+    line-height: 24px;
   }
 
   &__button-block {
@@ -61,6 +67,9 @@
     background-color: $someblue;
     color: white;
     margin: 20px;
+    font-size: 21px;
+    line-height: 26px;
+
 
     width: 280px;
 
@@ -69,6 +78,10 @@
     @media #{$tablet-widths} {
       width: 80%;
       margin: 45px;
+    }
+
+    @media #{$desktop-widths} {
+      width: 70%;
     }
   }
 
