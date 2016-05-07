@@ -1,3 +1,3 @@
-# Личный проект «Седона»
+# Alexandr Dragin
 
-* Alexandr Dragin
+html5, BEM, sass, adaptive, gulp and etc.
